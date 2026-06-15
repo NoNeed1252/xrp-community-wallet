@@ -1,0 +1,39 @@
+{
+  "actions": {
+    "viewAll": "Tout voir",
+    "copy": "Copier",
+    "copied": "Copié",
+    "retry": "Réessayer",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "close": "Fermer"
+  },
+  "status": {
+    "open": "Ouvert",
+    "pending": "En attente",
+    "completed": "Terminé",
+    "failed": "Échoué",
+    "inactive": "Inactif"
+  },
+  "nav": {
+    "home": "Accueil",
+    "send": "Envoyer",
+    "receive": "Recevoir",
+    "history": "Historique",
+    "portfolio": "Portefeuille",
+    "staking": "Staking",
+    "settings": "Paramètres",
+    "more": "Plus",
+    "lockNow": "Verrouiller le portefeuille"
+  },
+  "topbar": {
+    "help": "Aide",
+    "notifications": "Notifications",
+    "settings": "Paramètres",
+    "account": "Compte",
+    "context": "Portefeuille"
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu principal"
+  }
+}

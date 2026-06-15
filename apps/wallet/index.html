@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="light dark" />
+    <!--
+      Defense-in-depth CSP (security audit I1). Strict server-side CSP
+      header takes precedence when present; meta-CSP is the safety net
+      when the wallet is served from static hosting without one.
+      `connect-src` enumerates the public RPC / explorer / price endpoints
+      currently used by the wallet.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; worker-src 'self' blob:; font-src 'self' data:; connect-src 'self' https://xrplcluster.com https://s1.ripple.com https://s2.ripple.com https://api.coingecko.com https://api.github.com https://cloudflare-eth.com https://ethereum-rpc.publicnode.com https://bsc-dataseed.binance.org https://bsc.publicnode.com https://polygon-rpc.com https://polygon-bor-rpc.publicnode.com https://eth.blockscout.com https://polygon.blockscout.com https://raw.githubusercontent.com"
+    />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=()" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <title>Ripple Community Wallet</title>
+    <script src="/theme-init.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "title": "Connect your Ledger",
+  "subtitle": "Use a hardware wallet to sign transactions without exposing your keys.",
+  "badge": "Hardware",
+  "support": {
+    "unsupported": {
+      "title": "Hardware wallet support requires a Chromium-based browser",
+      "body": "WebHID, used to talk to Ledger devices, is available in Chrome, Edge, Brave and Opera. Open this wallet in a supported browser to add a hardware account."
+    },
+    "docs": "Learn more"
+  },
+  "connect": {
+    "steps": {
+      "1": "Plug in your Ledger via USB",
+      "2": "Open the XRP app on the device",
+      "3": "Approve the browser permission prompt",
+      "4": "Confirm the address on the device screen"
+    },
+    "cta": {
+      "connect": "Connect Ledger",
+      "retry": "Try again",
+      "done": "Continue"
+    },
+    "status": {
+      "device": {
+        "none": "Not connected",
+        "connecting": "Connecting…",
+        "connected": "Connected: {{name}}"
+      },
+      "app": {
+        "unknown": "—",
+        "notOpen": "Open the XRP app on the device",
+        "open": "XRP app open"
+      },
+      "address": {
+        "label": "Address",
+        "pending": "Waiting…"
+      }
+    }
+  },
+  "naming": {
+    "title": "Name your Ledger account",
+    "label": "Account name",
+    "placeholder": "e.g. Ledger Nano X",
+    "cta": "Add account"
+  },
+  "errors": {
+    "unsupported": "WebHID is not supported in this browser.",
+    "permission_denied": "Browser permission was denied. Click Connect Ledger again and approve the prompt.",
+    "no_device": "No Ledger device found. Plug it in and try again.",
+    "transport": "Couldn't connect to the device. Reconnect the USB cable and try again.",
+    "app_not_open": "Open the XRP app on your Ledger and try again.",
+    "app_locked": "Unlock your Ledger with the PIN and try again.",
+    "user_rejected": "You declined the request on the device.",
+    "timeout": "The device didn't respond in time.",
+    "path_forbidden": "This derivation path is not allowed.",
+    "address_mismatch": "The address returned by the device doesn't match its public key. Disconnect and try again.",
+    "generic": "Something went wrong while talking to the Ledger."
+  },
+  "sign": {
+    "title": "Review on your Ledger",
+    "body": "Approve the payment on your device using both buttons.",
+    "fields": {
+      "to": "To",
+      "amount": "Amount",
+      "fee": "Fee",
+      "memo": "Destination tag"
+    },
+    "cancel": "Cancel",
+    "cancelled": "Sign cancelled."
+  },
+  "send": {
+    "disabled": {
+      "title": "Ledger sending is not yet available",
+      "body": "Real XRPL transaction signing on Ledger devices is still being implemented. To send funds for now, switch to a software (seed-based) account in the account picker."
+    }
+  }
+}

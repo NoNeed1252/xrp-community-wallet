@@ -1,0 +1,54 @@
+{
+  "title": "Recevoir",
+  "subtitle": "Partage ton adresse pour recevoir les actifs pris en charge sur chaque réseau.",
+  "asset": {
+    "label": "Actif"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "Ethereum, BSC, Polygon",
+      "helper": "Même adresse pour Ethereum, BSC et Polygon. L'expéditeur choisit le réseau à utiliser."
+    }
+  },
+  "address": {
+    "label": "Ton adresse",
+    "copy": "Copier",
+    "copied": "Adresse copiée",
+    "share": "Partager"
+  },
+  "banner": {
+    "inactive": {
+      "title": "Compte non activé",
+      "body": "Reçois au moins 1 XRP pour activer ce compte sur le XRP Ledger. En attendant, l'adresse est réservée sur le réseau mais n'est pas encore enregistrée.",
+      "learnMore": "En savoir plus"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "Que signifie l'activation ?",
+      "body": "Sur le XRP Ledger, une adresse n'existe que lorsqu'elle détient au moins 1 XRP — c'est ce qu'on appelle la réserve de base. La réserve n'est pas un frais ; elle reste sur l'adresse et peut être récupérée lors de la suppression du compte.\n\nTant que tu n'as pas reçu ce premier 1 XRP, l'adresse est à toi pour la partager, mais le réseau ne l'affichera pas dans le ledger. Une fois qu'un paiement arrive, le compte est activé automatiquement.",
+      "dismiss": "Compris"
+    }
+  },
+  "qr": {
+    "alt": "Code QR pour l'adresse {{address}}",
+    "destinationTagHint": "Sous-compte actif — destination tag {{tag}} inclus dans le QR."
+  },
+  "subAccount": {
+    "title": "Créer un sous-compte",
+    "body": "Génère un destination tag pour qu'une plateforme d'échange puisse créditer les paiements entrants à un utilisateur spécifique.",
+    "labelField": "Libellé",
+    "labelPlaceholder": "ex. Bureau de trading",
+    "tagField": "Destination tag",
+    "create": "Créer le sous-compte",
+    "creating": "Création…",
+    "error": {
+      "label": "Le libellé est requis",
+      "range": "Le tag doit être compris entre 0 et 4294967295"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Staking",
+  "subtitle": "Verdiene Belohnungen, indem du XRP an den Community-Pool delegierst.",
+  "hero": {
+    "tagline": "Community-Pool",
+    "title": "Lass deine XRP arbeiten",
+    "body": "Stake XRP, um Belohnungen mit {{apr}}% APR zu verdienen. Die Gelder bleiben im XRPL — Auszahlungen erfolgen automatisch monatlich.",
+    "totalStaked": "Gesamt gestaked",
+    "totalRewards": "Aufgelaufene Belohnungen",
+    "apr": "APR",
+    "startCta": "XRP staken"
+  },
+  "pool": {
+    "title": "Pool-Details",
+    "helper": "Operative Richtlinie und On-Chain-Kennung.",
+    "body": "Verwahrter XRP-Pool. Belohnungen laufen täglich auf und werden alle 30 Tage ausgezahlt.",
+    "apr": "APR",
+    "minDeposit": "Mindesteinzahlung",
+    "payoutFreq": "Auszahlung",
+    "payoutFreqValue": "alle {{days}} Tage",
+    "destinationTag": "Destination Tag",
+    "nextPayout": "Nächste Auszahlung: {{date}}",
+    "docs": "Docs"
+  },
+  "positions": {
+    "title": "Deine Positionen",
+    "openedAt": "Eröffnet {{date}}",
+    "accrued": "Aufgelaufen",
+    "unstakeCta": "Abheben",
+    "status": {
+      "active": "Aktiv",
+      "pending": "Ausstehend",
+      "withdrawing": "Wird abgehoben",
+      "closed": "Geschlossen"
+    },
+    "empty": {
+      "title": "Noch keine Staking-Positionen",
+      "body": "Stake etwas XRP, um Belohnungen zu verdienen. Du kannst jederzeit abheben."
+    }
+  },
+  "modal": {
+    "title": "XRP staken",
+    "intro": "Delegiere XRP an den Community-Pool und verdiene {{apr}}% APR. Belohnungen laufen täglich auf und werden monatlich ausgezahlt.",
+    "amount": {
+      "label": "Zu stakender Betrag",
+      "balance": "Verfügbar: {{amount}} XRP",
+      "max": "Max",
+      "error": {
+        "tooBig": "Betrag übersteigt verfügbares Guthaben",
+        "tooSmall": "Mindest-Stake ist {{min}} XRP"
+      }
+    },
+    "summary": {
+      "apr": "APR",
+      "estYearly": "Gesch. jährliche Belohnung",
+      "fee": "Netzwerkgebühr"
+    },
+    "disclaimer": "Staking-Belohnungen sind Schätzungen. Die tatsächlichen Erträge hängen von der Pool-Performance ab und können variieren.",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen & staken"
+  }
+}

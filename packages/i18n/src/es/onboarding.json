@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "Atrás",
+    "continue": "Continuar",
+    "finish": "Finalizar configuración"
+  },
+  "steps": {
+    "label": "Paso {{current}} de {{total}}"
+  },
+  "welcome": {
+    "title": "Bienvenido a tu wallet",
+    "subtitle": "¿Cómo quieres empezar?",
+    "options": {
+      "create": {
+        "title": "Crear una wallet nueva",
+        "body": "Genera una frase semilla nueva. Recomendado para usuarios nuevos."
+      },
+      "importSeed": {
+        "title": "Importar una frase semilla",
+        "body": "Restaura una wallet con tus 12 o 24 palabras BIP-39."
+      },
+      "importKey": {
+        "title": "Importar una clave privada",
+        "body": "Pega tu family seed de XRPL (empieza por sEd... o s...)."
+      },
+      "ledger": {
+        "title": "Conectar un dispositivo Ledger",
+        "body": "Firma transacciones en tu wallet hardware. Disponible en una versión posterior."
+      }
+    }
+  },
+  "create": {
+    "title": "Tu frase semilla",
+    "helper": "12 palabras BIP-39 que controlan por completo esta wallet.",
+    "body": "Anota estas palabras en orden y guárdalas sin conexión. Cualquiera con estas palabras puede acceder a tus fondos.",
+    "disclaimer": "Te pediremos confirmar algunas de ellas en el siguiente paso.",
+    "actions": {
+      "regenerate": "Generar nueva",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "next": "Ya la guardé, continuar"
+    },
+    "copy": {
+      "warning": "El portapapeles se vaciará automáticamente en 60 segundos."
+    }
+  },
+  "confirm": {
+    "title": "Confirma tu frase semilla",
+    "body": "Escribe las palabras solicitadas exactamente como se mostraron antes.",
+    "prompt": "Palabra #{{n}}",
+    "error": "No coincide"
+  },
+  "importSeed": {
+    "title": "Importa tu frase semilla",
+    "body": "Introduce 12 o 24 palabras BIP-39 separadas por espacios.",
+    "label": "Frase semilla",
+    "helper": "Esperamos {{count}} palabras. Se ignoran mayúsculas y minúsculas.",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "Dirección detectada",
+    "error": {
+      "wordCount": "Debe contener exactamente 12 o 24 palabras.",
+      "notInDict": "Una o más palabras no están en el diccionario BIP-39.",
+      "invalidChecksum": "La suma de comprobación es inválida — revisa las palabras."
+    }
+  },
+  "importKey": {
+    "title": "Importar una clave privada",
+    "body": "Pega un family seed de XRPL (empieza por sEd... o s...).",
+    "label": "Clave privada",
+    "helper": "La clave permanece en este dispositivo.",
+    "derivedAddress": "Dirección detectada",
+    "error": {
+      "invalidFormat": "No es un family seed de XRPL válido."
+    }
+  },
+  "setPassword": {
+    "title": "Protege tu wallet",
+    "body": "Esta contraseña cifra tu wallet en este dispositivo. No podemos recuperarla por ti.",
+    "password": "Contraseña",
+    "confirm": "Confirma la contraseña",
+    "requirements": "Al menos 10 caracteres con mayúsculas y minúsculas, un dígito y un carácter especial.",
+    "securing": "Asegurando tu contraseña…",
+    "strength": {
+      "weak": "Débil",
+      "fair": "Aceptable",
+      "good": "Buena",
+      "strong": "Fuerte"
+    },
+    "error": {
+      "mismatch": "Las contraseñas no coinciden."
+    },
+    "addMode": {
+      "title": "Añadir cuenta",
+      "body": "Introduce la contraseña de tu wallet para cifrar la nueva cuenta.",
+      "password": "Contraseña de la wallet",
+      "submit": "Añadir cuenta"
+    }
+  },
+  "done": {
+    "title": "Todo listo",
+    "body": "Tu wallet está lista para usar. Puedes bloquearla y desbloquearla en cualquier momento desde ajustes.",
+    "cta": "Abrir wallet"
+  },
+  "ledger": {
+    "title": "Próximamente",
+    "body": "El flujo de wallet hardware está en desarrollo (sprint W8). Por ahora utiliza una de las opciones basadas en frase semilla."
+  },
+  "unlock": {
+    "title": "Bienvenido de nuevo",
+    "tagline": "Inicia sesión en tu wallet comunitaria.",
+    "autoLockHint": "Bloqueada automáticamente por tu seguridad.",
+    "body": "Introduce tu contraseña para desbloquear la wallet.",
+    "password": "Contraseña",
+    "action": "Desbloquear",
+    "error": {
+      "wrongPassword": "Contraseña incorrecta.",
+      "cooldown": "Demasiados intentos. Inténtalo de nuevo en {{sec}} segundos."
+    },
+    "forgot": {
+      "link": "¿Olvidaste la contraseña? Restablecer wallet…",
+      "modal": {
+        "title": "¿Restablecer wallet?",
+        "body": "Esto borra permanentemente la wallet cifrada en este dispositivo. Con tu frase semilla podrás importarla de nuevo — sin ella, los fondos son irrecuperables.",
+        "confirmText": "BORRAR",
+        "typeToConfirm": "Escribe {{word}} para confirmar",
+        "helper": "Se ignoran mayúsculas y minúsculas. Esta acción no se puede deshacer.",
+        "confirm": "Borrar wallet"
+      }
+    }
+  }
+}

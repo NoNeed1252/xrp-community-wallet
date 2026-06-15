@@ -1,0 +1,43 @@
+{
+  "title": "Portfólio",
+  "subtitle": "Seus ativos e o mercado em uma visão geral.",
+  "tabs": {
+    "my-assets": "Meus ativos",
+    "market": "Mercado"
+  },
+  "total": {
+    "label": "Valor total estimado",
+    "change24h": {
+      "up": "+{{pct}}% 24h",
+      "down": "−{{pct}}% 24h"
+    }
+  },
+  "holdings": {
+    "columns": {
+      "asset": "Ativo",
+      "price": "Preço",
+      "balance": "Saldo",
+      "value": "Valor",
+      "change24h": "24h"
+    },
+    "empty": {
+      "title": "Nenhum ativo ainda",
+      "body": "Receba XRP ou outro ativo para começar a construir seu portfólio.",
+      "cta": "Receber sua primeira transação"
+    }
+  },
+  "market": {
+    "loading": "Carregando dados do mercado…",
+    "error": {
+      "title": "Dados do mercado indisponíveis",
+      "body": "Não foi possível alcançar o CoinGecko. Tente novamente em instantes."
+    },
+    "columns": {
+      "asset": "Ativo",
+      "price": "Preço",
+      "change24h": "24h",
+      "marketCap": "Cap. de mercado",
+      "chart": "Gráfico 24h"
+    }
+  }
+}

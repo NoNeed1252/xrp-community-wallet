@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "Zurück",
+    "continue": "Weiter",
+    "finish": "Einrichtung abschließen"
+  },
+  "steps": {
+    "label": "Schritt {{current}} von {{total}}"
+  },
+  "welcome": {
+    "title": "Willkommen in deiner Wallet",
+    "subtitle": "Wie möchtest du starten?",
+    "options": {
+      "create": {
+        "title": "Neue Wallet erstellen",
+        "body": "Generiere eine neue Seed-Phrase. Empfohlen für neue Nutzer."
+      },
+      "importSeed": {
+        "title": "Seed-Phrase importieren",
+        "body": "Stelle eine Wallet mit deinen 12 oder 24 BIP-39-Wörtern wieder her."
+      },
+      "importKey": {
+        "title": "Privaten Schlüssel importieren",
+        "body": "Füge deinen XRPL Family Seed ein (beginnt mit sEd... oder s...)."
+      },
+      "ledger": {
+        "title": "Ledger-Gerät verbinden",
+        "body": "Signiere Transaktionen mit deiner Hardware-Wallet. In einem späteren Release verfügbar."
+      }
+    }
+  },
+  "create": {
+    "title": "Deine Seed-Phrase",
+    "helper": "12 BIP-39-Wörter, die diese Wallet vollständig kontrollieren.",
+    "body": "Schreibe diese Wörter in der richtigen Reihenfolge auf und bewahre sie offline auf. Jeder mit diesen Wörtern hat Zugriff auf dein Guthaben.",
+    "disclaimer": "Im nächsten Schritt wirst du gebeten, einige davon zu bestätigen.",
+    "actions": {
+      "regenerate": "Neu generieren",
+      "copy": "Kopieren",
+      "copied": "Kopiert",
+      "next": "Gespeichert, weiter"
+    },
+    "copy": {
+      "warning": "Die Zwischenablage wird automatisch nach 60 Sekunden geleert."
+    }
+  },
+  "confirm": {
+    "title": "Bestätige deine Seed-Phrase",
+    "body": "Gib die angeforderten Wörter genau so ein, wie sie zuvor angezeigt wurden.",
+    "prompt": "Wort #{{n}}",
+    "error": "Stimmt nicht überein"
+  },
+  "importSeed": {
+    "title": "Seed-Phrase importieren",
+    "body": "Gib 12 oder 24 BIP-39-Wörter durch Leerzeichen getrennt ein.",
+    "label": "Seed-Phrase",
+    "helper": "Wir erwarten {{count}} Wörter. Groß-/Kleinschreibung wird ignoriert.",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "Erkannte Adresse",
+    "error": {
+      "wordCount": "Muss genau 12 oder 24 Wörter enthalten.",
+      "notInDict": "Ein oder mehrere Wörter sind nicht im BIP-39-Wörterbuch enthalten.",
+      "invalidChecksum": "Prüfsumme ungültig — bitte die Wörter erneut prüfen."
+    }
+  },
+  "importKey": {
+    "title": "Privaten Schlüssel importieren",
+    "body": "Füge einen XRPL Family Seed ein (beginnt mit sEd... oder s...).",
+    "label": "Privater Schlüssel",
+    "helper": "Der Schlüssel bleibt auf diesem Gerät.",
+    "derivedAddress": "Erkannte Adresse",
+    "error": {
+      "invalidFormat": "Kein gültiger XRPL Family Seed."
+    }
+  },
+  "setPassword": {
+    "title": "Schütze deine Wallet",
+    "body": "Dieses Passwort verschlüsselt deine Wallet auf diesem Gerät. Wir können es nicht für dich wiederherstellen.",
+    "password": "Passwort",
+    "confirm": "Passwort bestätigen",
+    "requirements": "Mindestens 10 Zeichen mit Groß- und Kleinschreibung, einer Ziffer und einem Sonderzeichen.",
+    "securing": "Passwort wird gesichert…",
+    "strength": {
+      "weak": "Schwach",
+      "fair": "Mittel",
+      "good": "Gut",
+      "strong": "Stark"
+    },
+    "error": {
+      "mismatch": "Passwörter stimmen nicht überein."
+    },
+    "addMode": {
+      "title": "Konto hinzufügen",
+      "body": "Gib dein Wallet-Passwort ein, um das neue Konto zu verschlüsseln.",
+      "password": "Wallet-Passwort",
+      "submit": "Konto hinzufügen"
+    }
+  },
+  "done": {
+    "title": "Alles bereit",
+    "body": "Deine Wallet ist einsatzbereit. Du kannst sie jederzeit über die Einstellungen sperren und entsperren.",
+    "cta": "Wallet öffnen"
+  },
+  "ledger": {
+    "title": "Demnächst verfügbar",
+    "body": "Der Hardware-Wallet-Flow wird gerade entwickelt (Sprint W8). Nutze vorerst eine der Seed-basierten Optionen."
+  },
+  "unlock": {
+    "title": "Willkommen zurück",
+    "tagline": "Melde dich bei deiner Community Wallet an.",
+    "autoLockHint": "Zu deinem Schutz automatisch gesperrt.",
+    "body": "Gib dein Passwort ein, um die Wallet zu entsperren.",
+    "password": "Passwort",
+    "action": "Entsperren",
+    "error": {
+      "wrongPassword": "Falsches Passwort.",
+      "cooldown": "Zu viele Versuche. Erneut versuchen in {{sec}} Sekunden."
+    },
+    "forgot": {
+      "link": "Passwort vergessen? Wallet zurücksetzen…",
+      "modal": {
+        "title": "Wallet zurücksetzen?",
+        "body": "Dies löscht die verschlüsselte Wallet auf diesem Gerät dauerhaft. Mit deiner Seed-Phrase kannst du sie erneut importieren — ohne sie sind die Gelder nicht wiederherstellbar.",
+        "confirmText": "WIPE",
+        "typeToConfirm": "Gib {{word}} ein, um zu bestätigen",
+        "helper": "Groß-/Kleinschreibung wird ignoriert. Diese Aktion kann nicht rückgängig gemacht werden.",
+        "confirm": "Wallet löschen"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "おかえりなさい!",
+    "welcomeBackNamed": "おかえりなさい、{{name}}さん!"
+  },
+  "cta": {
+    "createTransaction": "トランザクションを作成",
+    "menu": {
+      "send": "送信",
+      "stake": "ステーキングを追加"
+    }
+  },
+  "warnings": {
+    "evmReimport": "EVMアセットを有効にするためにシードを再インポートしてください"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "未処理のインテント",
+      "helper": "トレジャリーボールトをまたぐ保留中のアクション。",
+      "empty": "未処理のインテントはありません",
+      "columns": {
+        "createdAt": "作成日時",
+        "intent": "インテント",
+        "initiatedBy": "起案者",
+        "status": "ステータス"
+      }
+    },
+    "lastTransactions": {
+      "title": "最新のトランザクション",
+      "helper": "アクティブなアカウントの直近のオンチェーン活動。",
+      "empty": "トランザクションはまだありません",
+      "columns": {
+        "createdAt": "作成日時",
+        "source": "送信元",
+        "destination": "宛先",
+        "value": "金額",
+        "status": "ステータス"
+      }
+    },
+    "balances": {
+      "title": "残高",
+      "helper": "保有資産の推定合計価値。",
+      "estTotalValue": "推定合計価値",
+      "empty": "アセットはまだありません"
+    },
+    "accounts": {
+      "title": "アカウント",
+      "helper": "ウォレットと対応チェーンの一覧。",
+      "empty": "アカウントはまだありません",
+      "kinds": {
+        "multi": "マルチチェーン",
+        "ledger": "Ledger",
+        "importedKey": "インポート済みキー",
+        "legacy": "XRPLのみ"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "アカウント「{{label}}」は有効化されていません",
+      "body": "XRP Ledger上で有効化するには、最低1 XRPを受け取ってください。",
+      "cta": "受取アドレスを表示"
+    },
+    "backup": {
+      "title": "シードフレーズをバックアップしてください",
+      "body": "シードフレーズのバックアップが確認されていません。これがないとウォレットを復元できません。",
+      "cta": "バックアップを確認"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "ダッシュボードの読み込みに失敗しました",
+      "body": "問題が発生しました。再試行してください。"
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "近日公開",
+      "body": "このセクションは今後のスプリントで構築されます。"
+    }
+  }
+}

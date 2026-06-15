@@ -1,0 +1,197 @@
+{
+  "title": "Settings",
+  "subtitle": "Manage your wallet, security, and preferences.",
+  "nav": {
+    "general": "General",
+    "security": "Security",
+    "accounts": "Accounts",
+    "subAccounts": "Sub-accounts",
+    "tokens": "Tokens"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "rename": "Rename",
+    "delete": "Delete",
+    "close": "Close"
+  },
+  "general": {
+    "appearance": {
+      "title": "Appearance",
+      "body": "Customize how the wallet looks on this device."
+    },
+    "security": {
+      "title": "Security & lock",
+      "body": "Manage automatic locking of your wallet."
+    },
+    "about": {
+      "title": "About",
+      "version": "Version",
+      "network": "Networks"
+    },
+    "language": { "label": "Language" },
+    "theme": {
+      "label": "Theme",
+      "light": "Light",
+      "system": "System",
+      "dark": "Dark",
+      "helper": "Dark theme is available; “System” follows your OS preference."
+    },
+    "autoLock": {
+      "label": "Auto-lock",
+      "helper": "Wallet locks after this period of inactivity.",
+      "options": {
+        "1": "1m",
+        "5": "5m",
+        "15": "15m",
+        "30": "30m",
+        "60": "1h"
+      },
+      "lockOnHidden": "Lock when tab is hidden",
+      "lockOnHiddenHelper": "Lock immediately whenever you switch away from this tab."
+    }
+  },
+  "security": {
+    "password": {
+      "title": "Password",
+      "body": "Used to encrypt your wallet on this device.",
+      "change": "Change password",
+      "modal": {
+        "title": "Change password",
+        "old": "Current password",
+        "new": "New password",
+        "confirm": "Confirm new password",
+        "submit": "Update password",
+        "working": "Re-encrypting wallet…",
+        "strength": "Strength",
+        "strength_weak": "Weak",
+        "strength_fair": "Fair",
+        "strength_good": "Good",
+        "strength_strong": "Strong",
+        "error": {
+          "wrong": "Current password is wrong.",
+          "mismatch": "Passwords don't match.",
+          "weak": "Password is too weak."
+        },
+        "success": "Password updated"
+      }
+    },
+    "seed": {
+      "title": "Seed phrase",
+      "body": "Reveal the secret that controls this wallet. Never share it.",
+      "view": "View seed",
+      "modal": {
+        "title": "View seed phrase",
+        "warning": "Anyone with this key controls your wallet. Never share it. We never ask for it.",
+        "passwordPrompt": "Enter your password to reveal",
+        "reveal": "Reveal",
+        "autoHide": "This will hide automatically in 60 seconds.",
+        "error": "Wrong password"
+      }
+    },
+    "lockNow": {
+      "title": "Lock now",
+      "body": "Immediately lock the wallet on this device.",
+      "cta": "Lock"
+    },
+    "reset": {
+      "title": "Reset wallet",
+      "body": "Erase the encrypted wallet on this device. You can restore from your seed phrase.",
+      "cta": "Reset…",
+      "modal": {
+        "title": "Reset wallet?",
+        "body": "All accounts on this device will be removed. Your seed phrase still works to import them again — without it, funds are unrecoverable.",
+        "confirmPrompt": "Type {{word}} to confirm",
+        "confirm": "Wipe wallet"
+      }
+    }
+  },
+  "accounts": {
+    "list": { "title": "Accounts on this device" },
+    "active": "Active",
+    "hardware": "Hardware",
+    "setActive": "Set active",
+    "switched": "Account switched",
+    "add": { "cta": "Add account" },
+    "rename": {
+      "cta": "Rename",
+      "modal": { "title": "Rename account", "label": "Account name" },
+      "success": "Account renamed"
+    },
+    "delete": {
+      "cta": "Delete",
+      "success": "Account deleted",
+      "failed": "Couldn't delete account",
+      "modal": {
+        "title": "Delete account?",
+        "body": "Removing {{label}} from this device cannot be undone — you'll need the seed phrase to import it again.",
+        "confirmPrompt": "Type {{label}} to confirm",
+        "confirm": "Delete account"
+      }
+    }
+  },
+  "subAccounts": {
+    "title": "Sub-accounts",
+    "subtitle": "Use destination tags to group payments for {{label}}.",
+    "dtPrefix": "Destination tag",
+    "empty": {
+      "title": "No sub-accounts yet",
+      "body": "Sub-accounts let you receive grouped payments via destination tags."
+    },
+    "add": {
+      "cta": "Add sub-account",
+      "success": "Sub-account added",
+      "fields": {
+        "label": "Label",
+        "destinationTag": "Destination tag",
+        "dtHelper": "Any number 0–4294967295. Senders include it to identify your sub-account.",
+        "note": "Note (optional)"
+      },
+      "errors": {
+        "labelEmpty": "Label is required",
+        "tagRange": "Tag must be in 0–4294967295",
+        "tagDuplicate": "Tag is already used in this account",
+        "generic": "Couldn't add sub-account"
+      },
+      "modal": { "title": "Add sub-account", "submit": "Add" }
+    },
+    "rename": { "title": "Rename sub-account", "success": "Sub-account renamed" },
+    "delete": {
+      "title": "Delete sub-account?",
+      "body": "{{label}} will be removed. This action cannot be undone.",
+      "success": "Sub-account deleted"
+    }
+  },
+  "tokens": {
+    "notMultiChain": "Custom tokens are available for multi-chain wallets only. Re-import your seed phrase to enable EVM.",
+    "added": "Token added",
+    "removed": "Token removed",
+    "list": {
+      "title": "Added tokens",
+      "empty": "No custom tokens yet. Add a contract address above.",
+      "loading": "Loading…"
+    },
+    "scamWarning": {
+      "title": "Verify the contract before adding",
+      "body": "Anyone can deploy a fake ERC-20. Make sure the address comes from a trusted source — block explorer, project's official site, or a verified token list. The wallet does not endorse imported tokens."
+    },
+    "add": {
+      "title": "Add a token",
+      "body": "Add an ERC-20 token by its contract address. Name, symbol and decimals are read directly from the contract on-chain.",
+      "chainLabel": "Network",
+      "addressLabel": "Contract address",
+      "addressHelper": "Paste the 0x… contract address. We'll fetch the metadata.",
+      "previewCta": "Look up token",
+      "confirmCta": "Add to wallet",
+      "decimals": "Decimals: {{decimals}}",
+      "verifyHint": "Double-check"
+    },
+    "errors": {
+      "invalid_address": "This is not a valid contract address.",
+      "no_contract": "No contract found at this address on the selected network.",
+      "not_erc20": "This contract is not an ERC-20 token.",
+      "network": "Couldn't reach the network. Try again in a moment.",
+      "duplicate": "This token is already added."
+    }
+  }
+}

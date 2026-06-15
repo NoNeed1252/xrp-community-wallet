@@ -1,0 +1,78 @@
+{
+  "title": "Transaction history",
+  "subtitle": "All payments and staking activity across your networks.",
+  "filters": {
+    "types": {
+      "label": "Type",
+      "payment": "Payment",
+      "staking_deposit": "Staking deposit",
+      "staking_payout": "Staking payout"
+    },
+    "status": {
+      "label": "Status",
+      "all": "All",
+      "pending": "Pending",
+      "completed": "Completed",
+      "failed": "Failed"
+    },
+    "period": {
+      "label": "Period",
+      "today": "Today",
+      "7d": "Last 7 days",
+      "30d": "Last 30 days",
+      "all": "All time"
+    },
+    "search": {
+      "placeholder": "Search by address, label or memo…"
+    },
+    "clear": "Clear filters"
+  },
+  "list": {
+    "columns": {
+      "date": "Date",
+      "type": "Type",
+      "counterparty": "Counterparty",
+      "amount": "Amount",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "showing": "Showing {{shown}} of {{total}}"
+  },
+  "empty": {
+    "title": "No transactions yet",
+    "body": "Your payments and staking activity will appear here.",
+    "send": "Send",
+    "receive": "Receive",
+    "filtered": {
+      "title": "No transactions match your filters",
+      "body": "Try changing the filters or clear them to see everything."
+    }
+  },
+  "details": {
+    "title": "Transaction details",
+    "from": "From",
+    "to": "To",
+    "memo": "Destination tag",
+    "memoText": "Memo",
+    "amount": "Amount",
+    "fee": "Fee",
+    "status": "Status",
+    "txHash": "Transaction hash",
+    "ledgerIndex": "Ledger index",
+    "created": "Created at",
+    "completed": "Completed at",
+    "failed": {
+      "code": "Failure code"
+    },
+    "copy": "Copy",
+    "copied": "Copied",
+    "viewOnExplorer": "View on explorer",
+    "userSendBadge": "Sent from this wallet"
+  },
+  "errors": {
+    "explorer": {
+      "title": "Some history is unavailable",
+      "body": "One of the explorers didn't respond. The list might be incomplete — try again later."
+    }
+  }
+}

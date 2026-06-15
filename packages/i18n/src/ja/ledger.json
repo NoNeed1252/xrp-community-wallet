@@ -1,0 +1,78 @@
+{
+  "title": "Ledgerを接続",
+  "subtitle": "ハードウェアウォレットを使って鍵を露出させずにトランザクションに署名します。",
+  "badge": "ハードウェア",
+  "support": {
+    "unsupported": {
+      "title": "ハードウェアウォレットのサポートにはChromiumベースのブラウザが必要です",
+      "body": "LedgerデバイスとのやりとりにはWebHIDが使用され、Chrome、Edge、Brave、Operaで利用できます。ハードウェアアカウントを追加するには対応ブラウザでこのウォレットを開いてください。"
+    },
+    "docs": "詳細を見る"
+  },
+  "connect": {
+    "steps": {
+      "1": "LedgerをUSBで接続してください",
+      "2": "デバイス上でXRPアプリを開いてください",
+      "3": "ブラウザの許可プロンプトを承認してください",
+      "4": "デバイス画面でアドレスを確認してください"
+    },
+    "cta": {
+      "connect": "Ledgerを接続",
+      "retry": "再試行",
+      "done": "続ける"
+    },
+    "status": {
+      "device": {
+        "none": "未接続",
+        "connecting": "接続中…",
+        "connected": "接続済み: {{name}}"
+      },
+      "app": {
+        "unknown": "—",
+        "notOpen": "デバイスでXRPアプリを開いてください",
+        "open": "XRPアプリが開いています"
+      },
+      "address": {
+        "label": "アドレス",
+        "pending": "待機中…"
+      }
+    }
+  },
+  "naming": {
+    "title": "Ledgerアカウントに名前を付ける",
+    "label": "アカウント名",
+    "placeholder": "例: Ledger Nano X",
+    "cta": "アカウントを追加"
+  },
+  "errors": {
+    "unsupported": "このブラウザではWebHIDがサポートされていません。",
+    "permission_denied": "ブラウザの許可が拒否されました。再度「Ledgerを接続」をクリックしてプロンプトを承認してください。",
+    "no_device": "Ledgerデバイスが見つかりません。接続して再試行してください。",
+    "transport": "デバイスに接続できませんでした。USBケーブルを再接続して再試行してください。",
+    "app_not_open": "LedgerでXRPアプリを開いて再試行してください。",
+    "app_locked": "PINでLedgerのロックを解除して再試行してください。",
+    "user_rejected": "デバイス上でリクエストを拒否しました。",
+    "timeout": "デバイスが時間内に応答しませんでした。",
+    "path_forbidden": "この導出パスは許可されていません。",
+    "address_mismatch": "デバイスが返したアドレスがその公開鍵と一致しません。切断して再試行してください。",
+    "generic": "Ledgerとのやりとり中に問題が発生しました。"
+  },
+  "sign": {
+    "title": "Ledgerで確認してください",
+    "body": "両方のボタンを使ってデバイス上で支払いを承認してください。",
+    "fields": {
+      "to": "宛先",
+      "amount": "金額",
+      "fee": "手数料",
+      "memo": "宛先タグ"
+    },
+    "cancel": "キャンセル",
+    "cancelled": "署名をキャンセルしました。"
+  },
+  "send": {
+    "disabled": {
+      "title": "Ledger による送信はまだ利用できません",
+      "body": "Ledger デバイス上での XRPL トランザクションの実署名はまだ実装中です。送金には、アカウント選択でシードベースのソフトウェアアカウントに切り替えてください。"
+    }
+  }
+}

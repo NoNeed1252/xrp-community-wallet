@@ -1,0 +1,43 @@
+{
+  "title": "资产组合",
+  "subtitle": "一目了然地查看你的持仓和市场动态。",
+  "tabs": {
+    "my-assets": "我的资产",
+    "market": "市场"
+  },
+  "total": {
+    "label": "估算总价值",
+    "change24h": {
+      "up": "+{{pct}}% 24h",
+      "down": "−{{pct}}% 24h"
+    }
+  },
+  "holdings": {
+    "columns": {
+      "asset": "资产",
+      "price": "价格",
+      "balance": "余额",
+      "value": "价值",
+      "change24h": "24h"
+    },
+    "empty": {
+      "title": "暂无资产",
+      "body": "接收 XRP 或其他资产以开始构建你的资产组合。",
+      "cta": "接收你的第一笔交易"
+    }
+  },
+  "market": {
+    "loading": "正在加载市场数据…",
+    "error": {
+      "title": "市场数据不可用",
+      "body": "无法连接 CoinGecko。请稍后重试。"
+    },
+    "columns": {
+      "asset": "资产",
+      "price": "价格",
+      "change24h": "24h",
+      "marketCap": "市值",
+      "chart": "24h 走势"
+    }
+  }
+}

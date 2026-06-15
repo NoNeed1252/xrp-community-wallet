@@ -1,0 +1,197 @@
+{
+  "title": "设置",
+  "subtitle": "管理你的钱包、安全和偏好。",
+  "nav": {
+    "general": "通用",
+    "security": "安全",
+    "accounts": "账户",
+    "subAccounts": "子账户",
+    "tokens": "代币"
+  },
+  "actions": {
+    "cancel": "取消",
+    "save": "保存",
+    "rename": "重命名",
+    "delete": "删除",
+    "close": "关闭"
+  },
+  "general": {
+    "appearance": {
+      "title": "外观",
+      "body": "自定义钱包在本设备上的显示方式。"
+    },
+    "security": {
+      "title": "安全与锁定",
+      "body": "管理钱包的自动锁定。"
+    },
+    "about": {
+      "title": "关于",
+      "version": "版本",
+      "network": "网络"
+    },
+    "language": { "label": "语言" },
+    "theme": {
+      "label": "主题",
+      "light": "浅色",
+      "system": "跟随系统",
+      "dark": "深色",
+      "helper": "支持深色主题;“跟随系统” 会沿用你的系统偏好。"
+    },
+    "autoLock": {
+      "label": "自动锁定",
+      "helper": "无操作达到该时长后锁定钱包。",
+      "options": {
+        "1": "1 分",
+        "5": "5 分",
+        "15": "15 分",
+        "30": "30 分",
+        "60": "1 小时"
+      },
+      "lockOnHidden": "标签页隐藏时锁定",
+      "lockOnHiddenHelper": "切换离开此标签页时立即锁定。"
+    }
+  },
+  "security": {
+    "password": {
+      "title": "密码",
+      "body": "用于在本设备上加密你的钱包。",
+      "change": "修改密码",
+      "modal": {
+        "title": "修改密码",
+        "old": "当前密码",
+        "new": "新密码",
+        "confirm": "确认新密码",
+        "submit": "更新密码",
+        "working": "正在重新加密钱包…",
+        "strength": "强度",
+        "strength_weak": "弱",
+        "strength_fair": "一般",
+        "strength_good": "良好",
+        "strength_strong": "强",
+        "error": {
+          "wrong": "当前密码错误。",
+          "mismatch": "两次密码不一致。",
+          "weak": "密码太弱。"
+        },
+        "success": "密码已更新"
+      }
+    },
+    "seed": {
+      "title": "助记词",
+      "body": "查看控制此钱包的秘密。切勿分享。",
+      "view": "查看助记词",
+      "modal": {
+        "title": "查看助记词",
+        "warning": "任何拿到此密钥的人都能控制你的钱包。切勿分享。我们从不索要。",
+        "passwordPrompt": "输入密码以显示",
+        "reveal": "显示",
+        "autoHide": "将在 60 秒后自动隐藏。",
+        "error": "密码错误"
+      }
+    },
+    "lockNow": {
+      "title": "立即锁定",
+      "body": "立即锁定本设备上的钱包。",
+      "cta": "锁定"
+    },
+    "reset": {
+      "title": "重置钱包",
+      "body": "清除本设备上的加密钱包。可使用助记词恢复。",
+      "cta": "重置…",
+      "modal": {
+        "title": "重置钱包?",
+        "body": "本设备上的所有账户将被删除。你的助记词仍可重新导入它们 — 没有助记词则资金无法恢复。",
+        "confirmPrompt": "输入 {{word}} 以确认",
+        "confirm": "清除钱包"
+      }
+    }
+  },
+  "accounts": {
+    "list": { "title": "本设备上的账户" },
+    "active": "活动中",
+    "hardware": "硬件",
+    "setActive": "设为活动",
+    "switched": "已切换账户",
+    "add": { "cta": "添加账户" },
+    "rename": {
+      "cta": "重命名",
+      "modal": { "title": "重命名账户", "label": "账户名称" },
+      "success": "账户已重命名"
+    },
+    "delete": {
+      "cta": "删除",
+      "success": "账户已删除",
+      "failed": "无法删除账户",
+      "modal": {
+        "title": "删除账户?",
+        "body": "从本设备移除 {{label}} 无法撤销 — 需要助记词才能再次导入。",
+        "confirmPrompt": "输入 {{label}} 以确认",
+        "confirm": "删除账户"
+      }
+    }
+  },
+  "subAccounts": {
+    "title": "子账户",
+    "subtitle": "使用目标标签为 {{label}} 分组付款。",
+    "dtPrefix": "目标标签",
+    "empty": {
+      "title": "暂无子账户",
+      "body": "子账户可通过目标标签接收分组付款。"
+    },
+    "add": {
+      "cta": "添加子账户",
+      "success": "已添加子账户",
+      "fields": {
+        "label": "标签",
+        "destinationTag": "目标标签",
+        "dtHelper": "0–4294967295 之间的任意数字。发送方使用它来识别你的子账户。",
+        "note": "备注(可选)"
+      },
+      "errors": {
+        "labelEmpty": "标签为必填项",
+        "tagRange": "标签必须在 0–4294967295 之间",
+        "tagDuplicate": "此账户中已使用该标签",
+        "generic": "无法添加子账户"
+      },
+      "modal": { "title": "添加子账户", "submit": "添加" }
+    },
+    "rename": { "title": "重命名子账户", "success": "子账户已重命名" },
+    "delete": {
+      "title": "删除子账户?",
+      "body": "{{label}} 将被删除。此操作无法撤销。",
+      "success": "子账户已删除"
+    }
+  },
+  "tokens": {
+    "notMultiChain": "自定义代币仅适用于多链钱包。请重新导入助记词以启用 EVM。",
+    "added": "代币已添加",
+    "removed": "代币已移除",
+    "list": {
+      "title": "已添加的代币",
+      "empty": "暂无自定义代币。在上方添加合约地址。",
+      "loading": "加载中…"
+    },
+    "scamWarning": {
+      "title": "添加前请核实合约",
+      "body": "任何人都可以部署仿冒的 ERC-20。请确保地址来自可信来源 — 区块浏览器、项目官网或经过验证的代币列表。钱包不为导入的代币背书。"
+    },
+    "add": {
+      "title": "添加代币",
+      "body": "通过合约地址添加 ERC-20 代币。名称、符号和小数位将直接从链上合约读取。",
+      "chainLabel": "网络",
+      "addressLabel": "合约地址",
+      "addressHelper": "粘贴 0x… 合约地址,我们将获取元数据。",
+      "previewCta": "查询代币",
+      "confirmCta": "添加到钱包",
+      "decimals": "小数位:{{decimals}}",
+      "verifyHint": "请仔细核对"
+    },
+    "errors": {
+      "invalid_address": "这不是有效的合约地址。",
+      "no_contract": "在所选网络的该地址上未找到合约。",
+      "not_erc20": "此合约不是 ERC-20 代币。",
+      "network": "无法连接网络。请稍后重试。",
+      "duplicate": "此代币已添加。"
+    }
+  }
+}

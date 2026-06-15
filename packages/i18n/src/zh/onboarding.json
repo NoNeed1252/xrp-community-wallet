@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "返回",
+    "continue": "继续",
+    "finish": "完成设置"
+  },
+  "steps": {
+    "label": "第 {{current}} 步,共 {{total}} 步"
+  },
+  "welcome": {
+    "title": "欢迎使用你的钱包",
+    "subtitle": "你想如何开始?",
+    "options": {
+      "create": {
+        "title": "创建新钱包",
+        "body": "生成一组新的助记词。推荐新用户使用。"
+      },
+      "importSeed": {
+        "title": "导入助记词",
+        "body": "使用 12 或 24 个 BIP-39 单词恢复钱包。"
+      },
+      "importKey": {
+        "title": "导入私钥",
+        "body": "粘贴你的 XRPL family seed(以 sEd... 或 s... 开头)。"
+      },
+      "ledger": {
+        "title": "连接 Ledger 设备",
+        "body": "用硬件钱包签署交易。后续版本将支持。"
+      }
+    }
+  },
+  "create": {
+    "title": "你的助记词",
+    "helper": "12 个 BIP-39 单词,完全控制此钱包。",
+    "body": "按顺序抄写这些单词并离线保存。任何人拿到这些单词都能动用你的资金。",
+    "disclaimer": "下一步我们会让你确认其中几个。",
+    "actions": {
+      "regenerate": "重新生成",
+      "copy": "复制",
+      "copied": "已复制",
+      "next": "已保存,继续"
+    },
+    "copy": {
+      "warning": "剪贴板将在 60 秒后自动清空。"
+    }
+  },
+  "confirm": {
+    "title": "确认你的助记词",
+    "body": "请按之前显示的内容准确输入指定单词。",
+    "prompt": "第 {{n}} 个单词",
+    "error": "不匹配"
+  },
+  "importSeed": {
+    "title": "导入你的助记词",
+    "body": "输入用空格分隔的 12 或 24 个 BIP-39 单词。",
+    "label": "助记词",
+    "helper": "我们需要 {{count}} 个单词。不区分大小写。",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "检测到的地址",
+    "error": {
+      "wordCount": "必须正好是 12 或 24 个单词。",
+      "notInDict": "存在不在 BIP-39 词典中的单词。",
+      "invalidChecksum": "校验和无效 — 请仔细核对单词。"
+    }
+  },
+  "importKey": {
+    "title": "导入私钥",
+    "body": "粘贴一个 XRPL family seed(以 sEd... 或 s... 开头)。",
+    "label": "私钥",
+    "helper": "密钥仅保存在本设备上。",
+    "derivedAddress": "检测到的地址",
+    "error": {
+      "invalidFormat": "不是有效的 XRPL family seed。"
+    }
+  },
+  "setPassword": {
+    "title": "保护你的钱包",
+    "body": "此密码用于在本设备上加密你的钱包。我们无法为你恢复。",
+    "password": "密码",
+    "confirm": "确认密码",
+    "requirements": "至少 10 位字符,包含大小写、数字和特殊字符。",
+    "securing": "正在加密密码…",
+    "strength": {
+      "weak": "弱",
+      "fair": "一般",
+      "good": "良好",
+      "strong": "强"
+    },
+    "error": {
+      "mismatch": "两次密码不一致。"
+    },
+    "addMode": {
+      "title": "添加账户",
+      "body": "输入钱包密码以加密新账户。",
+      "password": "钱包密码",
+      "submit": "添加账户"
+    }
+  },
+  "done": {
+    "title": "全部完成",
+    "body": "你的钱包已准备就绪。可以随时在设置中锁定或解锁。",
+    "cta": "打开钱包"
+  },
+  "ledger": {
+    "title": "即将推出",
+    "body": "硬件钱包流程正在开发中(W8 迭代)。请先使用助记词方式。"
+  },
+  "unlock": {
+    "title": "欢迎回来",
+    "tagline": "登录你的社区钱包。",
+    "autoLockHint": "为保护安全已自动锁定。",
+    "body": "输入密码以解锁钱包。",
+    "password": "密码",
+    "action": "解锁",
+    "error": {
+      "wrongPassword": "密码错误。",
+      "cooldown": "尝试次数过多。请在 {{sec}} 秒后重试。"
+    },
+    "forgot": {
+      "link": "忘记密码?重置钱包…",
+      "modal": {
+        "title": "重置钱包?",
+        "body": "这将永久清除本设备上的加密钱包。有助记词可重新导入 — 没有则资金无法恢复。",
+        "confirmText": "WIPE",
+        "typeToConfirm": "输入 {{word}} 以确认",
+        "helper": "不区分大小写。此操作无法撤销。",
+        "confirm": "清除钱包"
+      }
+    }
+  }
+}

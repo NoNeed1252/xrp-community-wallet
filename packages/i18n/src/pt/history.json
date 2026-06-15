@@ -1,0 +1,78 @@
+{
+  "title": "Histórico de transações",
+  "subtitle": "Todos os pagamentos e atividade de staking nas tuas redes.",
+  "filters": {
+    "types": {
+      "label": "Tipo",
+      "payment": "Pagamento",
+      "staking_deposit": "Depósito de staking",
+      "staking_payout": "Pagamento de staking"
+    },
+    "status": {
+      "label": "Estado",
+      "all": "Todos",
+      "pending": "Pendente",
+      "completed": "Concluído",
+      "failed": "Falhado"
+    },
+    "period": {
+      "label": "Período",
+      "today": "Hoje",
+      "7d": "Últimos 7 dias",
+      "30d": "Últimos 30 dias",
+      "all": "Todo o período"
+    },
+    "search": {
+      "placeholder": "Procurar por endereço, etiqueta ou memo…"
+    },
+    "clear": "Limpar filtros"
+  },
+  "list": {
+    "columns": {
+      "date": "Data",
+      "type": "Tipo",
+      "counterparty": "Contraparte",
+      "amount": "Quantia",
+      "status": "Estado",
+      "actions": "Ações"
+    },
+    "showing": "A mostrar {{shown}} de {{total}}"
+  },
+  "empty": {
+    "title": "Ainda sem transações",
+    "body": "Os teus pagamentos e atividade de staking vão aparecer aqui.",
+    "send": "Enviar",
+    "receive": "Receber",
+    "filtered": {
+      "title": "Nenhuma transação corresponde aos filtros",
+      "body": "Tenta alterar os filtros ou limpa-os para ver tudo."
+    }
+  },
+  "details": {
+    "title": "Detalhes da transação",
+    "from": "De",
+    "to": "Para",
+    "memo": "Destination tag",
+    "memoText": "Memo",
+    "amount": "Quantia",
+    "fee": "Taxa",
+    "status": "Estado",
+    "txHash": "Hash da transação",
+    "ledgerIndex": "Índice do ledger",
+    "created": "Criada em",
+    "completed": "Concluída em",
+    "failed": {
+      "code": "Código de falha"
+    },
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "viewOnExplorer": "Ver no explorador",
+    "userSendBadge": "Enviada desta carteira"
+  },
+  "errors": {
+    "explorer": {
+      "title": "Parte do histórico está indisponível",
+      "body": "Um dos exploradores não respondeu. A lista pode estar incompleta — tenta novamente mais tarde."
+    }
+  }
+}

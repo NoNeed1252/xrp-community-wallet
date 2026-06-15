@@ -1,0 +1,62 @@
+{
+  "title": "Staking",
+  "subtitle": "Guadagna ricompense delegando XRP al pool della community.",
+  "hero": {
+    "tagline": "Pool della community",
+    "title": "Fai lavorare i tuoi XRP",
+    "body": "Fai staking di XRP per guadagnare ricompense al {{apr}}% APR. I fondi rimangono sull'XRPL — i pagamenti arrivano automaticamente con cadenza mensile.",
+    "totalStaked": "Totale in stake",
+    "totalRewards": "Ricompense maturate",
+    "apr": "APR",
+    "startCta": "Stake XRP"
+  },
+  "pool": {
+    "title": "Dettagli pool",
+    "helper": "Policy operativa e identificatore on-chain.",
+    "body": "Pool custodial XRP. Le ricompense maturano giornalmente e vengono pagate ogni 30 giorni.",
+    "apr": "APR",
+    "minDeposit": "Deposito min.",
+    "payoutFreq": "Pagamento",
+    "payoutFreqValue": "ogni {{days}} giorni",
+    "destinationTag": "Destination tag",
+    "nextPayout": "Prossimo pagamento: {{date}}",
+    "docs": "Documentazione"
+  },
+  "positions": {
+    "title": "Le tue posizioni",
+    "openedAt": "Aperta {{date}}",
+    "accrued": "Maturato",
+    "unstakeCta": "Preleva",
+    "status": {
+      "active": "Attiva",
+      "pending": "In sospeso",
+      "withdrawing": "Prelievo",
+      "closed": "Chiusa"
+    },
+    "empty": {
+      "title": "Nessuna posizione di staking",
+      "body": "Fai staking di un po' di XRP per iniziare a guadagnare ricompense. Puoi prelevare in qualsiasi momento."
+    }
+  },
+  "modal": {
+    "title": "Stake XRP",
+    "intro": "Delega XRP al pool della community e guadagna {{apr}}% APR. Le ricompense maturano giornalmente e vengono pagate mensilmente.",
+    "amount": {
+      "label": "Importo da mettere in stake",
+      "balance": "Disponibile: {{amount}} XRP",
+      "max": "Max",
+      "error": {
+        "tooBig": "L'importo supera il saldo disponibile",
+        "tooSmall": "Lo stake minimo è {{min}} XRP"
+      }
+    },
+    "summary": {
+      "apr": "APR",
+      "estYearly": "Ricompensa annua stimata",
+      "fee": "Commissione di rete"
+    },
+    "disclaimer": "Le ricompense di staking sono stime. I rendimenti effettivi dipendono dalla performance del pool e possono variare.",
+    "cancel": "Annulla",
+    "confirm": "Conferma e stake"
+  }
+}

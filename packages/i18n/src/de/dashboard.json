@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "Willkommen zurück!",
+    "welcomeBackNamed": "Willkommen zurück, {{name}}!"
+  },
+  "cta": {
+    "createTransaction": "Transaktion erstellen",
+    "menu": {
+      "send": "Senden",
+      "stake": "Stake hinzufügen"
+    }
+  },
+  "warnings": {
+    "evmReimport": "Importiere deine Seed-Phrase neu, um EVM-Assets zu aktivieren"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "Offene Vorgänge",
+      "helper": "Ausstehende Aktionen in deinen Treasury-Vaults.",
+      "empty": "Keine offenen Vorgänge",
+      "columns": {
+        "createdAt": "Erstellt am",
+        "intent": "Vorgang",
+        "initiatedBy": "Initiiert von",
+        "status": "Status"
+      }
+    },
+    "lastTransactions": {
+      "title": "Letzte Transaktionen",
+      "helper": "Aktuelle On-Chain-Aktivitäten für das aktive Konto.",
+      "empty": "Noch keine Transaktionen",
+      "columns": {
+        "createdAt": "Erstellt am",
+        "source": "Quelle",
+        "destination": "Ziel",
+        "value": "Wert",
+        "status": "Status"
+      }
+    },
+    "balances": {
+      "title": "Guthaben",
+      "helper": "Geschätzter Gesamtwert deiner Assets.",
+      "estTotalValue": "Gesch. Gesamtwert",
+      "empty": "Noch keine Assets"
+    },
+    "accounts": {
+      "title": "Konten",
+      "helper": "Deine Wallets und die abgedeckten Chains.",
+      "empty": "Noch keine Konten",
+      "kinds": {
+        "multi": "Multi-Chain",
+        "ledger": "Ledger",
+        "importedKey": "Importierter Schlüssel",
+        "legacy": "Nur XRPL"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "Konto \"{{label}}\" ist nicht aktiviert",
+      "body": "Empfange mindestens 1 XRP, um es im XRP Ledger zu aktivieren.",
+      "cta": "Empfangsadresse anzeigen"
+    },
+    "backup": {
+      "title": "Sichere deine Seed-Phrase",
+      "body": "Du hast deine Seed-Phrase-Sicherung noch nicht bestätigt. Ohne sie kannst du deine Wallet nicht wiederherstellen.",
+      "cta": "Sicherung bestätigen"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "Dashboard konnte nicht geladen werden",
+      "body": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "Demnächst verfügbar",
+      "body": "Dieser Bereich wird in einem zukünftigen Sprint umgesetzt."
+    }
+  }
+}

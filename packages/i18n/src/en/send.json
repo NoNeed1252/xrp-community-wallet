@@ -1,0 +1,148 @@
+{
+  "title": "Send",
+  "subtitle": "Send assets to another address. Double-check the recipient — blockchain transfers cannot be reversed.",
+  "form": {
+    "asset": {
+      "label": "Asset"
+    },
+    "recipient": {
+      "label": "Recipient address",
+      "helper": "Paste an XRPL address starting with r…",
+      "helperKnown": "Known contact: {{label}}",
+      "helperEvm": "Paste a 0x… address on this network.",
+      "detectedLabel": "{{label}} — {{address}}",
+      "error": {
+        "required": "Address is required",
+        "invalid": "Not a valid XRPL address",
+        "invalidEvm": "Not a valid 0x address",
+        "checksum": "Address checksum (EIP-55) is wrong. Re-check the case of the letters.",
+        "selfSend": "This is your own address. Make sure that's what you want."
+      },
+      "flagsUnverified": {
+        "title": "Could not verify recipient settings",
+        "body": "We couldn't reach the XRPL network to check if a destination tag is required. If this is an exchange or custodial account, confirm the requirement manually before sending."
+      }
+    },
+    "amount": {
+      "label": "Amount",
+      "max": "Max",
+      "balance": "Available: {{amount}} XRP",
+      "balanceWithReserve": "Available: {{amount}} XRP (reserve {{reserve}} XRP)",
+      "balanceUnknown": "{{symbol}} balance is unavailable",
+      "balanceLoading": "Loading {{symbol}} balance…",
+      "balanceError": "Couldn't fetch {{symbol}} balance",
+      "balanceGeneric": "Available: {{amount}} {{symbol}}",
+      "error": {
+        "zero": "Amount must be greater than zero",
+        "exceedsBalance": "Amount exceeds available balance (reserve 1 XRP)",
+        "exceedsBalanceGeneric": "Amount exceeds available balance",
+        "invalid": "Invalid amount"
+      }
+    },
+    "memo": {
+      "label": "Destination tag (memo)",
+      "helper": "A numeric tag used by exchanges and custodial services to identify your transfer.",
+      "badge": {
+        "required": "Required",
+        "optional": "Optional"
+      },
+      "error": {
+        "requiredByRecipient": "This recipient requires a destination tag",
+        "range": "Tag must be 0–4294967295"
+      }
+    },
+    "fee": {
+      "label": "Network fee",
+      "estimated": "Estimated gas"
+    },
+    "gas": {
+      "customize": "Customize gas",
+      "hide": "Hide gas settings",
+      "helper": "Leave fields empty to use the network estimate. Values in gwei.",
+      "gasLimit": "Gas limit (units)",
+      "gasLimitPlaceholder": "Estimated automatically",
+      "maxFee": "Max fee per gas (gwei)",
+      "priority": "Priority fee (gwei)"
+    },
+    "total": "Total",
+    "destinationTag": {
+      "label": "Destination tag",
+      "helper": "A numeric tag used by exchanges and custodial services to identify your transfer.",
+      "badge": {
+        "required": "Required",
+        "optional": "Optional"
+      },
+      "error": {
+        "requiredByRecipient": "This recipient requires a destination tag",
+        "range": "Tag must be 0–4294967295"
+      }
+    },
+    "memoText": {
+      "label": "Memo",
+      "helper": "Optional free-form note attached to the transaction (up to 100 bytes).",
+      "placeholder": "e.g. Invoice #42",
+      "error": {
+        "tooLong": "Memo must be 100 bytes or less"
+      }
+    }
+  },
+  "cta": {
+    "review": "Review",
+    "back": "Back",
+    "confirm": "Confirm & sign",
+    "close": "Close"
+  },
+  "warnings": {
+    "notActivated": {
+      "title": "Your wallet is not activated",
+      "body": "Receive at least 1 XRP to activate your wallet before you can send."
+    },
+    "ledgerEvm": {
+      "title": "Ledger supports only XRP in this release",
+      "body": "Switch to a multi-chain account to send EVM assets, or update the supported app in a future release."
+    }
+  },
+  "review": {
+    "title": "Review payment",
+    "firstTime": {
+      "title": "First time sending to this address",
+      "body": "Always verify the address with the recipient. Blockchain transfers cannot be reversed."
+    },
+    "summary": {
+      "from": "From",
+      "to": "To",
+      "memo": "Destination tag",
+      "amount": "Amount",
+      "fee": "Network fee",
+      "total": "Total",
+      "network": "Network",
+      "destinationTag": "Destination tag"
+    },
+    "preview": {
+      "disclaimer": "You're about to sign and broadcast a payment to {{address}}.",
+      "disclaimerEvm": "You're about to sign and broadcast an EVM transaction to {{address}}."
+    }
+  },
+  "sign": {
+    "title": "Signing on this device…",
+    "body": "Your key stays local. We sign the transaction and broadcast it to the network.",
+    "broadcasting": "Broadcasting to the network…"
+  },
+  "status": {
+    "success": {
+      "title": "Sent successfully",
+      "body": "{{amount}} sent to {{recipient}}.",
+      "toRecipient": "to {{recipient}}",
+      "txid": "Transaction ID",
+      "copyTxid": "Copy transaction ID",
+      "copied": "Copied",
+      "viewOnExplorer": "View on explorer",
+      "close": "Done"
+    },
+    "failure": {
+      "title": "Send failed",
+      "body": "We couldn't broadcast the transaction. Please try again.",
+      "retry": "Retry"
+    }
+  }
+}

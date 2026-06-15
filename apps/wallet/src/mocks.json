@@ -1,0 +1,1010 @@
+{
+  "meta": {
+    "version": "1.0.0-mocks",
+    "generatedAt": "2026-05-14T12:00:00.000Z",
+    "notes": "Все XRP-суммы — в drops (1 XRP = 1_000_000 drops) как строки. Фиатные суммы — десятичные строки. Изменение структуры — синхронно с api-docs.md.",
+    "supportedLocales": ["en", "es", "zh", "de", "ar", "fr", "it", "pt", "pt-BR", "ja", "ko"],
+    "defaultLocale": "en",
+    "themes": ["light", "dark"],
+    "defaultTheme": "light",
+    "networks": [
+      {
+        "id": "xrpl",
+        "name": "XRP Ledger",
+        "nativeAsset": "XRP",
+        "nativeDecimals": 6,
+        "explorerTxUrl": "https://livenet.xrpl.org/transactions/{hash}",
+        "explorerAccountUrl": "https://livenet.xrpl.org/accounts/{address}",
+        "activationReserveDrops": "1000000",
+        "enabled": true
+      },
+      { "id": "btc", "name": "Bitcoin", "nativeAsset": "BTC", "nativeDecimals": 8, "enabled": false },
+      { "id": "eth", "name": "Ethereum", "nativeAsset": "ETH", "nativeDecimals": 18, "enabled": false }
+    ]
+  },
+
+  "session": {
+    "authenticated": true,
+    "currentUserId": "usr_01H8VZK4Q1CHLOEKIM0001",
+    "activeAccountId": "acc_01H8VZK5MAINWALLET0001",
+    "activeSubAccountId": null,
+    "walletUnlocked": true,
+    "autoLockMinutes": 15,
+    "lastLoginAt": "2026-05-14T08:42:11.000Z",
+    "telegramModeEnabled": false
+  },
+
+  "users": [
+    {
+      "id": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "displayName": "Chloe Kim",
+      "email": "chloe.kim@example.com",
+      "locale": "en",
+      "theme": "light",
+      "createdAt": "2025-11-03T10:12:33.000Z",
+      "preferences": {
+        "fiatCurrency": "USD",
+        "compactNumbers": true,
+        "notifications": { "email": true, "telegram": false }
+      },
+      "security": {
+        "passwordSet": true,
+        "twoFactorEnabled": false,
+        "deviceRememberDays": 30
+      }
+    },
+    {
+      "id": "usr_01H8VZK4Q1JIANLEE000002",
+      "displayName": "Jian Lee",
+      "email": "jian.lee@example.com",
+      "locale": "en",
+      "theme": "light",
+      "createdAt": "2025-12-19T15:00:00.000Z",
+      "preferences": {
+        "fiatCurrency": "USD",
+        "compactNumbers": true,
+        "notifications": { "email": true, "telegram": false }
+      },
+      "security": {
+        "passwordSet": true,
+        "twoFactorEnabled": true,
+        "deviceRememberDays": 7
+      }
+    }
+  ],
+
+  "accounts": [
+    {
+      "id": "acc_01H8VZK5MAINWALLET0001",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Main wallet",
+      "address": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+      "network": "xrpl",
+      "type": "seed_generated",
+      "icon": { "type": "color", "value": "brand" },
+      "activated": true,
+      "activationReserveDrops": "1000000",
+      "ownerReserveDrops": "2000000",
+      "flags": { "requireDestTag": false, "disallowXRP": false, "depositAuth": false },
+      "balances": {
+        "native": { "currency": "XRP", "drops": "8550140250000" },
+        "issued": [
+          {
+            "currency": "USD",
+            "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B",
+            "issuerLabel": "Bitstamp",
+            "amount": "12500.5000"
+          },
+          {
+            "currency": "RLUSD",
+            "issuer": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De",
+            "issuerLabel": "Ripple USD",
+            "amount": "2490908.2300"
+          }
+        ]
+      },
+      "createdAt": "2025-11-03T10:13:00.000Z",
+      "lastActivityAt": "2026-05-14T11:50:00.000Z"
+    },
+    {
+      "id": "acc_01H8VZK5LEDGERWALLET002",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Ledger Nano X",
+      "address": "rPxKjmFhBh6yV9ahKBxnPpzD6vEYbZ1F2W",
+      "network": "xrpl",
+      "type": "ledger_hardware",
+      "ledger": { "model": "nano-x", "derivationPath": "44'/144'/0'/0/0" },
+      "icon": { "type": "color", "value": "neutral" },
+      "activated": true,
+      "activationReserveDrops": "1000000",
+      "ownerReserveDrops": "2000000",
+      "flags": { "requireDestTag": true, "disallowXRP": false, "depositAuth": false },
+      "balances": {
+        "native": { "currency": "XRP", "drops": "127340000000" },
+        "issued": []
+      },
+      "createdAt": "2026-01-10T09:00:00.000Z",
+      "lastActivityAt": "2026-05-12T14:22:11.000Z"
+    },
+    {
+      "id": "acc_01H8VZK5INACTIVEACC003",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Cold storage (new)",
+      "address": "rLpVcXynj3LqQGYBxk6BfHt8m4nWnRoSx8",
+      "network": "xrpl",
+      "type": "imported_seed",
+      "icon": { "type": "color", "value": "success" },
+      "activated": false,
+      "activationReserveDrops": "1000000",
+      "ownerReserveDrops": "0",
+      "flags": { "requireDestTag": false, "disallowXRP": false, "depositAuth": false },
+      "balances": {
+        "native": { "currency": "XRP", "drops": "0" },
+        "issued": []
+      },
+      "createdAt": "2026-05-13T20:15:00.000Z",
+      "lastActivityAt": null
+    },
+    {
+      "id": "acc_01H8VZK5LONGLABEL00000004",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Operational account for cross-border treasury settlements (long name truncation case)",
+      "address": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+      "network": "xrpl",
+      "type": "imported_key",
+      "icon": { "type": "color", "value": "warning" },
+      "activated": true,
+      "activationReserveDrops": "1000000",
+      "ownerReserveDrops": "6000000",
+      "flags": { "requireDestTag": false, "disallowXRP": false, "depositAuth": false },
+      "balances": {
+        "native": { "currency": "XRP", "drops": "999998500" },
+        "issued": [
+          {
+            "currency": "USDC",
+            "issuer": "rGDreBvnHfVZ5BkUWxQ8c8FwY8nKx9Z111",
+            "issuerLabel": "Circle USDC",
+            "amount": "17937.1500"
+          }
+        ]
+      },
+      "createdAt": "2026-02-22T11:11:11.000Z",
+      "lastActivityAt": "2026-05-10T07:00:00.000Z"
+    }
+  ],
+
+  "subAccounts": [
+    {
+      "id": "sub_01H8VZK6TRADINGDESK0001",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "label": "Trading Desk Portfolio",
+      "destinationTag": 4815162342,
+      "note": "Internal trading desk flows",
+      "createdAt": "2025-11-05T09:00:00.000Z"
+    },
+    {
+      "id": "sub_01H8VZK6FUNDINVEST0002",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "label": "Fund Investments",
+      "destinationTag": 1001,
+      "note": "Long-term holdings sub-account",
+      "createdAt": "2025-11-05T09:01:00.000Z"
+    },
+    {
+      "id": "sub_01H8VZK6ISSUERACC0000003",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "label": "Issuer Account",
+      "destinationTag": 23117,
+      "note": null,
+      "createdAt": "2025-12-01T12:00:00.000Z"
+    },
+    {
+      "id": "sub_01H8VZK6STAKING000000004",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "label": "Staking Account",
+      "destinationTag": 7777,
+      "note": "Mirror to staking pool deposits",
+      "createdAt": "2026-01-08T18:30:00.000Z"
+    },
+    {
+      "id": "sub_01H8VZK6PORTFOLIOGOV005",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "label": "Portfolio Governance",
+      "destinationTag": 9090,
+      "note": "Governance-related transfers",
+      "createdAt": "2026-02-14T10:00:00.000Z"
+    }
+  ],
+
+  "contacts": [
+    {
+      "id": "ctc_01H8VZK7TREASURY00000001",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Treasury Account",
+      "address": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+      "destinationTag": null,
+      "network": "xrpl",
+      "createdAt": "2025-11-04T10:00:00.000Z"
+    },
+    {
+      "id": "ctc_01H8VZK7ZEPHYRA000000002",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Zephyra Global Holdings (Singapore) Pte Ltd — long beneficiary name",
+      "address": "rZephYr4G1b8x2k9ZephYr4G1b8x2k9XXY",
+      "destinationTag": 8472,
+      "network": "xrpl",
+      "createdAt": "2026-03-12T08:00:00.000Z"
+    },
+    {
+      "id": "ctc_01H8VZK7LUNARIS00000003",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Lunaris",
+      "address": "rLunaR1sNxK9P4F7v3T2cQ1bD8s5Wm6Zu",
+      "destinationTag": 1,
+      "network": "xrpl",
+      "createdAt": "2026-04-01T12:00:00.000Z"
+    },
+    {
+      "id": "ctc_01H8VZK7STRYNEX00000004",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "label": "Strynex Corporation",
+      "address": "rStRyNX9PKwL4mJqV2bF8sR3dN6yWeC1Bx",
+      "destinationTag": 4242,
+      "network": "xrpl",
+      "createdAt": "2026-04-05T14:11:00.000Z"
+    }
+  ],
+
+  "transactions": [
+    {
+      "id": "tx_01H8VZK8PEND0000000001",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": null,
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "outgoing",
+      "counterparty": {
+        "address": "rFundInVestK9P4F7v3T2cQ1bD8s5Wm6Z",
+        "label": "Fund Investments",
+        "destinationTag": 1001
+      },
+      "amount": { "currency": "XRP", "drops": "8550140250000", "issuer": null },
+      "fee": { "drops": "12" },
+      "memo": null,
+      "status": "pending",
+      "ledgerIndex": null,
+      "txHash": "ED1F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F001",
+      "createdAt": "2026-05-14T11:23:00.000Z",
+      "completedAt": null
+    },
+    {
+      "id": "tx_01H8VZK8COMPL000000002",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": null,
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "outgoing",
+      "counterparty": {
+        "address": "0xbe3c0236a1b2c3d4e5f60718aaaabbbbcccc464a061",
+        "label": "Fund Investments",
+        "destinationTag": null
+      },
+      "amount": { "currency": "BTC", "value": "0.8472145", "issuer": null },
+      "fee": { "drops": "10" },
+      "memo": null,
+      "status": "completed",
+      "ledgerIndex": 89342211,
+      "txHash": "AA1F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F002",
+      "createdAt": "2026-05-14T11:07:00.000Z",
+      "completedAt": "2026-05-14T11:07:14.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8COMPL000000003",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": "sub_01H8VZK6PORTFOLIOGOV005",
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "incoming",
+      "counterparty": {
+        "address": "0xfc1b14a9b8c7d6e5f4031829aaaabbbbccccdd1bc2e80",
+        "label": null,
+        "destinationTag": 9090
+      },
+      "amount": { "currency": "BTC", "value": "75.10550082", "issuer": null },
+      "fee": { "drops": "10" },
+      "memo": "Governance reserve top-up",
+      "status": "completed",
+      "ledgerIndex": 89342000,
+      "txHash": "BB1F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F003",
+      "createdAt": "2026-05-14T10:42:00.000Z",
+      "completedAt": "2026-05-14T10:42:08.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8COMPL000000004",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": "sub_01H8VZK6FUNDINVEST0002",
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "incoming",
+      "counterparty": { "address": "rTreasuryAcc9P4F7v3T2cQ1bD8s5Wm6Zu", "label": "Treasury Account", "destinationTag": 1001 },
+      "amount": { "currency": "ETH", "value": "32.37348377", "issuer": null },
+      "fee": { "drops": "10" },
+      "memo": null,
+      "status": "completed",
+      "ledgerIndex": 89341500,
+      "txHash": "CC1F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F004",
+      "createdAt": "2026-05-14T08:11:00.000Z",
+      "completedAt": "2026-05-14T08:11:09.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8FAILED00000005",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": null,
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "outgoing",
+      "counterparty": { "address": "rZephYr4G1b8x2k9ZephYr4G1b8x2k9XXY", "label": "Zephyra Global Holdings", "destinationTag": 8472 },
+      "amount": { "currency": "XRP", "drops": "120000000", "issuer": null },
+      "fee": { "drops": "12" },
+      "memo": null,
+      "status": "failed",
+      "failure": { "code": "tecDST_TAG_NEEDED", "message": "Destination requires a memo, but none was provided." },
+      "ledgerIndex": null,
+      "txHash": "DD1F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F005",
+      "createdAt": "2026-05-13T19:55:00.000Z",
+      "completedAt": "2026-05-13T19:55:03.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8STAKING0000006",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": "sub_01H8VZK6STAKING000000004",
+      "network": "xrpl",
+      "type": "staking_deposit",
+      "direction": "outgoing",
+      "counterparty": { "address": "rPoo1Staking4F7v3T2cQ1bD8s5Wm6Zu", "label": "Staking Pool", "destinationTag": 7777 },
+      "amount": { "currency": "XRP", "drops": "5000000000", "issuer": null },
+      "fee": { "drops": "12" },
+      "memo": "Stake 5,000 XRP",
+      "status": "completed",
+      "ledgerIndex": 89340000,
+      "txHash": "EE1F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F006",
+      "createdAt": "2026-05-10T12:00:00.000Z",
+      "completedAt": "2026-05-10T12:00:11.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8MICRO000000007",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": null,
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "incoming",
+      "counterparty": { "address": "rDustSenderJ3T2cQ1bD8s5Wm6ZuABC", "label": null, "destinationTag": null },
+      "amount": { "currency": "XRP", "drops": "1", "issuer": null },
+      "fee": { "drops": "12" },
+      "memo": null,
+      "status": "completed",
+      "ledgerIndex": 89339000,
+      "txHash": "FF1F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F007",
+      "createdAt": "2026-05-09T03:14:00.000Z",
+      "completedAt": "2026-05-09T03:14:02.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8MEGA000000008",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": "sub_01H8VZK6FUNDINVEST0002",
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "incoming",
+      "counterparty": { "address": "rWha1eX9PKwL4mJqV2bF8sR3dN6yWeC1Bx", "label": "Whale Wallet", "destinationTag": 1001 },
+      "amount": { "currency": "XRP", "drops": "27000000000000000", "issuer": null },
+      "fee": { "drops": "12" },
+      "memo": "Q2 funding tranche",
+      "status": "completed",
+      "ledgerIndex": 89338000,
+      "txHash": "001F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F008",
+      "createdAt": "2026-05-07T17:00:00.000Z",
+      "completedAt": "2026-05-07T17:00:13.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8ISSUED00000009",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": null,
+      "network": "xrpl",
+      "type": "payment",
+      "direction": "outgoing",
+      "counterparty": { "address": "rLunaR1sNxK9P4F7v3T2cQ1bD8s5Wm6Zu", "label": "Lunaris", "destinationTag": 1 },
+      "amount": { "currency": "RLUSD", "value": "9997.00", "issuer": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De" },
+      "fee": { "drops": "12" },
+      "memo": null,
+      "status": "completed",
+      "ledgerIndex": 89337000,
+      "txHash": "111F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F009",
+      "createdAt": "2026-05-06T06:06:00.000Z",
+      "completedAt": "2026-05-06T06:06:08.000Z"
+    },
+    {
+      "id": "tx_01H8VZK8STAKING0000010",
+      "accountId": "acc_01H8VZK5MAINWALLET0001",
+      "subAccountId": "sub_01H8VZK6STAKING000000004",
+      "network": "xrpl",
+      "type": "staking_payout",
+      "direction": "incoming",
+      "counterparty": { "address": "rPoo1Staking4F7v3T2cQ1bD8s5Wm6Zu", "label": "Staking Pool", "destinationTag": 7777 },
+      "amount": { "currency": "XRP", "drops": "120000000", "issuer": null },
+      "fee": { "drops": "12" },
+      "memo": "Reward payout April 2026",
+      "status": "completed",
+      "ledgerIndex": 89336000,
+      "txHash": "222F8B2C0F3A1B2C3D4E5F6071829A0B1C2D3E4F5061728394A5B6C7D8E9F010",
+      "createdAt": "2026-04-30T23:59:00.000Z",
+      "completedAt": "2026-05-01T00:00:04.000Z"
+    }
+  ],
+
+  "portfolio": {
+    "accountId": "acc_01H8VZK5MAINWALLET0001",
+    "estimatedTotalUsd": "935000.00",
+    "estimatedTotalUsdCompact": "935K",
+    "breakdown": [
+      { "asset": "XRP", "percent": 62, "valueUsd": "579700.00", "iconKey": "xrp" },
+      { "asset": "BTC", "percent": 28, "valueUsd": "261800.00", "iconKey": "btc" },
+      { "asset": "OTHER", "percent": 10, "valueUsd": "93500.00", "iconKey": "generic" }
+    ],
+    "assetHoldings": [
+      {
+        "iconKey": "xrp",
+        "symbol": "XRP",
+        "name": "XRP",
+        "balanceNative": "8550140.25",
+        "balanceUsd": "4474073.39",
+        "priceUsd": "0.5234",
+        "change24hPct": "-1.45"
+      },
+      {
+        "iconKey": "rlusd",
+        "symbol": "RLUSD",
+        "name": "Ripple USD",
+        "issuer": "rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De",
+        "balanceNative": "2490908.23",
+        "balanceUsd": "2490908.23",
+        "priceUsd": "1.0000",
+        "change24hPct": "0.00"
+      },
+      {
+        "iconKey": "usdc",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "issuer": "rGDreBvnHfVZ5BkUWxQ8c8FwY8nKx9Z111",
+        "balanceNative": "17937.15",
+        "balanceUsd": "17937.15",
+        "priceUsd": "1.0000",
+        "change24hPct": "0.01"
+      }
+    ]
+  },
+
+  "marketAssets": [
+    {
+      "symbol": "XRP",
+      "name": "XRP",
+      "iconKey": "xrp",
+      "priceUsd": "0.5234",
+      "change24hPct": "-1.45",
+      "marketCapUsd": "28950000000",
+      "marketCapUsdCompact": "28.95B",
+      "volume24hUsd": "1240000000",
+      "sparkline24h": [0.5311, 0.5293, 0.5275, 0.5260, 0.5251, 0.5242, 0.5230, 0.5222, 0.5210, 0.5215, 0.5223, 0.5234]
+    },
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "iconKey": "btc",
+      "priceUsd": "67230.40",
+      "change24hPct": "2.13",
+      "marketCapUsd": "1320000000000",
+      "marketCapUsdCompact": "1.32T",
+      "volume24hUsd": "29000000000",
+      "sparkline24h": [65800, 65950, 66100, 66400, 66550, 66700, 66800, 66900, 67000, 67100, 67200, 67230]
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "iconKey": "eth",
+      "priceUsd": "3170.12",
+      "change24hPct": "-0.42",
+      "marketCapUsd": "381000000000",
+      "marketCapUsdCompact": "381B",
+      "volume24hUsd": "15000000000",
+      "sparkline24h": [3185, 3180, 3175, 3172, 3168, 3170, 3173, 3171, 3168, 3169, 3171, 3170]
+    },
+    {
+      "symbol": "USDT",
+      "name": "Tether",
+      "iconKey": "usdt",
+      "priceUsd": "1.0001",
+      "change24hPct": "0.01",
+      "marketCapUsd": "112000000000",
+      "marketCapUsdCompact": "112B",
+      "volume24hUsd": "48000000000",
+      "sparkline24h": [1.0000, 1.0000, 1.0001, 1.0001, 1.0001, 1.0000, 1.0001, 1.0001, 1.0001, 1.0000, 1.0001, 1.0001]
+    },
+    {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "iconKey": "usdc",
+      "priceUsd": "1.0000",
+      "change24hPct": "0.00",
+      "marketCapUsd": "33000000000",
+      "marketCapUsdCompact": "33B",
+      "volume24hUsd": "7000000000",
+      "sparkline24h": [1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000]
+    },
+    {
+      "symbol": "RLUSD",
+      "name": "Ripple USD",
+      "iconKey": "rlusd",
+      "priceUsd": "1.0000",
+      "change24hPct": "0.00",
+      "marketCapUsd": "780000000",
+      "marketCapUsdCompact": "780M",
+      "volume24hUsd": "120000000",
+      "sparkline24h": [1.0000, 1.0001, 1.0000, 1.0000, 1.0001, 1.0000, 1.0000, 1.0000, 1.0001, 1.0000, 1.0000, 1.0000]
+    },
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "iconKey": "sol",
+      "priceUsd": "162.55",
+      "change24hPct": "3.74",
+      "marketCapUsd": "72000000000",
+      "marketCapUsdCompact": "72B",
+      "volume24hUsd": "3100000000",
+      "sparkline24h": [156, 157, 158, 159, 160, 161, 161, 162, 162, 162, 163, 162.55]
+    },
+    {
+      "symbol": "ADA",
+      "name": "Cardano",
+      "iconKey": "ada",
+      "priceUsd": "0.4612",
+      "change24hPct": "-2.05",
+      "marketCapUsd": "16000000000",
+      "marketCapUsdCompact": "16B",
+      "volume24hUsd": "420000000",
+      "sparkline24h": [0.470, 0.469, 0.468, 0.467, 0.466, 0.465, 0.464, 0.463, 0.462, 0.461, 0.461, 0.4612]
+    }
+  ],
+
+  "exchangeRates": {
+    "base": "USD",
+    "asOf": "2026-05-14T11:55:00.000Z",
+    "stale": false,
+    "quotes": [
+      { "currency": "USD", "name": "US Dollar", "flagKey": "us", "rate": "1.0000" },
+      { "currency": "EUR", "name": "Euro", "flagKey": "eu", "rate": "0.9210" },
+      { "currency": "GBP", "name": "British Pound", "flagKey": "gb", "rate": "0.7820" },
+      { "currency": "MXN", "name": "Mexican Peso", "flagKey": "mx", "rate": "19.2400" },
+      { "currency": "BRL", "name": "Brazilian Real", "flagKey": "br", "rate": "5.1500" },
+      { "currency": "AED", "name": "UAE Dirham", "flagKey": "ae", "rate": "3.6730" },
+      { "currency": "SGD", "name": "Singapore Dollar", "flagKey": "sg", "rate": "1.3550" },
+      { "currency": "JPY", "name": "Japanese Yen", "flagKey": "jp", "rate": "156.4000" }
+    ]
+  },
+
+  "staking": {
+    "pool": {
+      "address": "rPoo1Staking4F7v3T2cQ1bD8s5Wm6Zu",
+      "destinationTag": 7777,
+      "currency": "XRP",
+      "aprPct": "5.20",
+      "totalStakedDrops": "12500000000000000",
+      "totalStakedDropsCompact": "12.5M XRP",
+      "minStakeDrops": "10000000",
+      "maxSingleWithdrawDrops": "100000000000",
+      "payoutFrequencyDays": 30,
+      "nextPayoutAt": "2026-05-31T00:00:00.000Z",
+      "policySummary": "Кастодиальное хранение XRP. Вознаграждение начисляется ежедневно, выплата раз в 30 дней.",
+      "documentationUrl": "https://domain.com/docs/staking"
+    },
+    "positions": [
+      {
+        "id": "stk_01H8VZK9POS0000000001",
+        "accountId": "acc_01H8VZK5MAINWALLET0001",
+        "subAccountId": "sub_01H8VZK6STAKING000000004",
+        "depositDrops": "5000000000",
+        "rewardsAccruedDrops": "120000000",
+        "aprPct": "5.20",
+        "openedAt": "2026-05-10T12:00:11.000Z",
+        "lastAccrualAt": "2026-05-14T00:00:00.000Z",
+        "status": "active",
+        "linkedDepositTxId": "tx_01H8VZK8STAKING0000006"
+      },
+      {
+        "id": "stk_01H8VZK9POS0000000002",
+        "accountId": "acc_01H8VZK5MAINWALLET0001",
+        "subAccountId": "sub_01H8VZK6STAKING000000004",
+        "depositDrops": "1500000000",
+        "rewardsAccruedDrops": "0",
+        "aprPct": "5.20",
+        "openedAt": "2026-05-14T11:23:00.000Z",
+        "lastAccrualAt": null,
+        "status": "pending",
+        "linkedDepositTxId": null
+      }
+    ],
+    "rewardsHistory": [
+      {
+        "id": "rew_01H8VZKAPAYOUT00000001",
+        "positionId": "stk_01H8VZK9POS0000000001",
+        "amountDrops": "120000000",
+        "accruedAt": "2026-04-30T23:59:00.000Z",
+        "paidAt": "2026-05-01T00:00:04.000Z",
+        "linkedTxId": "tx_01H8VZK8STAKING0000010"
+      },
+      {
+        "id": "rew_01H8VZKAPAYOUT00000002",
+        "positionId": "stk_01H8VZK9POS0000000001",
+        "amountDrops": "20000000",
+        "accruedAt": "2026-05-14T00:00:00.000Z",
+        "paidAt": null,
+        "linkedTxId": null
+      }
+    ]
+  },
+
+  "fiatOrders": [
+    {
+      "id": "fo_01H8VZKBORDER0000001",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "provider": "moonpay",
+      "fiatCurrency": "USD",
+      "fiatAmount": "500.00",
+      "cryptoCurrency": "XRP",
+      "cryptoAmount": "955.07",
+      "rate": "0.5234",
+      "feeFiat": "9.99",
+      "destinationAccountId": "acc_01H8VZK5MAINWALLET0001",
+      "destinationAddress": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+      "destinationTag": null,
+      "status": "completed",
+      "providerOrderId": "mp_ABCD-1234-EFGH-5678",
+      "createdAt": "2026-03-22T14:11:00.000Z",
+      "completedAt": "2026-03-22T14:18:09.000Z"
+    },
+    {
+      "id": "fo_01H8VZKBORDER0000002",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "provider": "moonpay",
+      "fiatCurrency": "EUR",
+      "fiatAmount": "100.00",
+      "cryptoCurrency": "XRP",
+      "cryptoAmount": "207.39",
+      "rate": "0.4823",
+      "feeFiat": "3.50",
+      "destinationAccountId": "acc_01H8VZK5MAINWALLET0001",
+      "destinationAddress": "rN7n7otQDd6FczFgLdSqtcsAUxDkw6fzRH",
+      "destinationTag": null,
+      "status": "pending",
+      "providerOrderId": "mp_ZZZZ-9999-YYYY-8888",
+      "createdAt": "2026-05-14T11:00:00.000Z",
+      "completedAt": null
+    }
+  ],
+
+  "openIntents": [
+    {
+      "id": "intent_01H8VZKCRQF0000001",
+      "createdAt": "2026-09-04T15:23:00.000Z",
+      "intent": "Release quarantined funds",
+      "initiatedBy": { "id": "usr_NOAH001", "name": "Noah Patel" },
+      "status": "open"
+    },
+    {
+      "id": "intent_01H8VZKCRQF0000002",
+      "createdAt": "2026-09-04T15:07:00.000Z",
+      "intent": "Transaction order",
+      "initiatedBy": { "id": "usr_ISA001", "name": "Isabella Rossi" },
+      "status": "open"
+    },
+    {
+      "id": "intent_01H8VZKCRQF0000003",
+      "createdAt": "2026-09-04T14:42:00.000Z",
+      "intent": "Update vault",
+      "initiatedBy": { "id": "usr_01H8VZK4Q1CHLOEKIM0001", "name": "Chloe Kim" },
+      "status": "open"
+    },
+    {
+      "id": "intent_01H8VZKCRQF0000004",
+      "createdAt": "2026-09-04T11:27:00.000Z",
+      "intent": "Create vault",
+      "initiatedBy": { "id": "usr_ALEX001", "name": "Alex Ryder" },
+      "status": "open"
+    },
+    {
+      "id": "intent_01H8VZKCRQF0000005",
+      "createdAt": "2026-09-04T11:12:00.000Z",
+      "intent": "Create vault",
+      "initiatedBy": { "id": "usr_ALEX001", "name": "Alex Ryder" },
+      "status": "open"
+    }
+  ],
+
+  "notifications": [
+    {
+      "id": "notif_01H8VZKDREC00000001",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "kind": "transaction_completed",
+      "title": "Incoming payment received",
+      "body": "You received 75.10550082 BTC from Portfolio Governance.",
+      "createdAt": "2026-05-14T10:42:08.000Z",
+      "read": false,
+      "link": "/history/tx_01H8VZK8COMPL000000003"
+    },
+    {
+      "id": "notif_01H8VZKDREC00000002",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "kind": "staking_payout",
+      "title": "Staking reward paid",
+      "body": "0.12 XRP reward paid for April 2026.",
+      "createdAt": "2026-05-01T00:00:04.000Z",
+      "read": true,
+      "link": "/staking"
+    },
+    {
+      "id": "notif_01H8VZKDREC00000003",
+      "userId": "usr_01H8VZK4Q1CHLOEKIM0001",
+      "kind": "security",
+      "title": "Backup not saved",
+      "body": "You haven't confirmed your seed phrase backup. Confirm it to remove this banner.",
+      "createdAt": "2025-11-03T10:20:00.000Z",
+      "read": false,
+      "link": "/settings/security"
+    }
+  ],
+
+  "dashboard": {
+    "greetingName": "Chloe",
+    "primaryCta": { "label": "Create transaction", "action": "open_send" },
+    "balancesWidget": {
+      "estimatedTotalUsd": "935000.00",
+      "estimatedTotalUsdCompact": "935k",
+      "donut": [
+        { "label": "XRP", "percent": 62, "color": "brand.600" },
+        { "label": "BTC", "percent": 28, "color": "brand.500" },
+        { "label": "Other", "percent": 10, "color": "warning.700" }
+      ]
+    },
+    "accountsWidget": {
+      "items": [
+        {
+          "subAccountId": "sub_01H8VZK6FUNDINVEST0002",
+          "label": "Fund Investments",
+          "assetsPreview": ["xrp", "btc", "rlusd", "usdc"],
+          "overflowCount": 5
+        },
+        {
+          "subAccountId": "sub_01H8VZK6ISSUERACC0000003",
+          "label": "Issuer Account",
+          "assetsPreview": ["xrp", "btc"],
+          "overflowCount": 0
+        },
+        {
+          "subAccountId": "sub_01H8VZK6TRADINGDESK0001",
+          "label": "Trading Desk Portfolio",
+          "assetsPreview": ["xrp", "rlusd", "ada", "sol"],
+          "overflowCount": 5
+        },
+        {
+          "subAccountId": "sub_01H8VZK6STAKING000000004",
+          "label": "Staking Account",
+          "assetsPreview": ["xrp", "btc"],
+          "overflowCount": 0
+        },
+        {
+          "subAccountId": "sub_01H8VZK6PORTFOLIOGOV005",
+          "label": "Portfolio Governance",
+          "assetsPreview": ["ada", "sol", "usdc"],
+          "overflowCount": 5
+        }
+      ]
+    },
+    "openIntentsWidget": {
+      "items": [
+        "intent_01H8VZKCRQF0000001",
+        "intent_01H8VZKCRQF0000002",
+        "intent_01H8VZKCRQF0000003",
+        "intent_01H8VZKCRQF0000004",
+        "intent_01H8VZKCRQF0000005"
+      ],
+      "viewAllLink": "/intents"
+    },
+    "lastTransactionsWidget": {
+      "items": [
+        "tx_01H8VZK8PEND0000000001",
+        "tx_01H8VZK8COMPL000000002",
+        "tx_01H8VZK8COMPL000000003",
+        "tx_01H8VZK8COMPL000000004",
+        "tx_01H8VZK8FAILED00000005",
+        "tx_01H8VZK8STAKING0000006",
+        "tx_01H8VZK8MEGA000000008"
+      ],
+      "viewAllLink": "/history"
+    },
+    "banners": [
+      {
+        "id": "banner_inactive_acc003",
+        "severity": "warning",
+        "title": "Account \"Cold storage (new)\" is not activated",
+        "body": "Receive at least 1 XRP to activate it on the XRP Ledger.",
+        "primaryAction": { "label": "Show receive address", "link": "/receive?account=acc_01H8VZK5INACTIVEACC003" },
+        "dismissible": false
+      },
+      {
+        "id": "banner_backup_not_saved",
+        "severity": "warning",
+        "title": "Backup your seed phrase",
+        "body": "You haven't confirmed your seed phrase backup. Without it you cannot recover your wallet.",
+        "primaryAction": { "label": "Confirm backup", "link": "/settings/security/backup" },
+        "dismissible": true
+      }
+    ]
+  },
+
+  "publicStats": {
+    "asOf": "2026-05-14T11:55:00.000Z",
+    "xrpPriceUsd": "0.5234",
+    "xrpChange24hPct": "-1.45",
+    "totalStakedXrpDrops": "12500000000000000",
+    "totalStakedXrpCompact": "12.5M XRP",
+    "activeStakers": 8472,
+    "networkStatus": "healthy"
+  },
+
+  "admin": {
+    "users": [
+      {
+        "id": "usr_01H8VZK4Q1CHLOEKIM0001",
+        "displayName": "Chloe Kim",
+        "email": "chloe.kim@example.com",
+        "createdAt": "2025-11-03T10:12:33.000Z",
+        "lastSeenAt": "2026-05-14T11:50:00.000Z",
+        "accountsCount": 4,
+        "stakedDrops": "5000000000",
+        "flags": [],
+        "notes": null
+      },
+      {
+        "id": "usr_01H8VZK4Q1JIANLEE000002",
+        "displayName": "Jian Lee",
+        "email": "jian.lee@example.com",
+        "createdAt": "2025-12-19T15:00:00.000Z",
+        "lastSeenAt": "2026-05-13T22:10:00.000Z",
+        "accountsCount": 1,
+        "stakedDrops": "0",
+        "flags": ["watchlist:high_volume"],
+        "notes": "Cross-border treasury client, follows manually."
+      },
+      {
+        "id": "usr_NOAH001",
+        "displayName": "Noah Patel",
+        "email": "noah.patel@example.com",
+        "createdAt": "2026-01-12T11:00:00.000Z",
+        "lastSeenAt": "2026-05-14T15:23:00.000Z",
+        "accountsCount": 2,
+        "stakedDrops": "200000000000",
+        "flags": [],
+        "notes": null
+      },
+      {
+        "id": "usr_ISA001",
+        "displayName": "Isabella Rossi",
+        "email": "isabella.rossi@example.com",
+        "createdAt": "2026-02-02T09:30:00.000Z",
+        "lastSeenAt": "2026-05-14T15:07:00.000Z",
+        "accountsCount": 3,
+        "stakedDrops": "0",
+        "flags": [],
+        "notes": null
+      },
+      {
+        "id": "usr_ALEX001",
+        "displayName": "Alex Ryder",
+        "email": "alex.ryder@example.com",
+        "createdAt": "2026-03-01T17:45:00.000Z",
+        "lastSeenAt": "2026-05-14T11:27:00.000Z",
+        "accountsCount": 1,
+        "stakedDrops": "50000000000",
+        "flags": [],
+        "notes": null
+      }
+    ],
+    "auditLog": [
+      {
+        "id": "audit_01H8VZKEAUD00000001",
+        "at": "2026-05-14T11:50:30.000Z",
+        "actorId": "usr_admin_01",
+        "actorName": "Admin Mira",
+        "action": "user.note_updated",
+        "targetType": "user",
+        "targetId": "usr_01H8VZK4Q1JIANLEE000002",
+        "details": "Added note: Cross-border treasury client."
+      },
+      {
+        "id": "audit_01H8VZKEAUD00000002",
+        "at": "2026-05-14T10:01:09.000Z",
+        "actorId": "usr_admin_02",
+        "actorName": "Admin Sergio",
+        "action": "staking.manual_payout",
+        "targetType": "staking_position",
+        "targetId": "stk_01H8VZK9POS0000000001",
+        "details": "Manually triggered reward payout for April 2026."
+      },
+      {
+        "id": "audit_01H8VZKEAUD00000003",
+        "at": "2026-05-13T18:15:00.000Z",
+        "actorId": "usr_admin_01",
+        "actorName": "Admin Mira",
+        "action": "user.flag_added",
+        "targetType": "user",
+        "targetId": "usr_01H8VZK4Q1JIANLEE000002",
+        "details": "Flag: watchlist:high_volume"
+      }
+    ],
+    "stakingPool": {
+      "address": "rPoo1Staking4F7v3T2cQ1bD8s5Wm6Zu",
+      "destinationTag": 7777,
+      "onChainBalanceDrops": "12500003200000000",
+      "ledgerAccountedBalanceDrops": "12500000000000000",
+      "reconciliationDeltaDrops": "3200000000",
+      "activePositions": 1248,
+      "pendingPositions": 7,
+      "lastSyncedAt": "2026-05-14T11:55:00.000Z"
+    },
+    "systemHealth": {
+      "api": "ok",
+      "queues": [
+        { "name": "staking-sync", "depth": 0, "oldestSeconds": 0, "status": "ok" },
+        { "name": "market-data-pull", "depth": 0, "oldestSeconds": 0, "status": "ok" },
+        { "name": "fiat-webhooks", "depth": 2, "oldestSeconds": 9, "status": "ok" }
+      ],
+      "xrplNodes": [
+        { "id": "primary", "endpoint": "wss://xrplcluster.com", "status": "healthy", "latencyMs": 92 },
+        { "id": "secondary", "endpoint": "wss://s1.ripple.com", "status": "healthy", "latencyMs": 148 }
+      ]
+    }
+  },
+
+  "landing": {
+    "hero": {
+      "headline": "The community wallet for XRP",
+      "subline": "Generate, import, or hardware-sign. Stake, swap to fiat, and stay in control.",
+      "ctaLabel": "Open wallet",
+      "ctaLink": "https://stack.domain.com"
+    },
+    "features": [
+      { "iconKey": "shield", "title": "Self-custody by default", "body": "Your seed never leaves your device unless you explicitly opt-in to Telegram mode." },
+      { "iconKey": "ledger", "title": "Ledger support", "body": "Sign transactions on your hardware device via WebHID." },
+      { "iconKey": "stake", "title": "Earn on XRP", "body": "Custodial staking with transparent payout policy." },
+      { "iconKey": "fiat", "title": "Buy with fiat", "body": "Top up XRP with USD, EUR, MXN and more." }
+    ],
+    "publicStatsRef": "publicStats",
+    "faq": [
+      {
+        "q": "Is my seed phrase stored on your servers?",
+        "a": "No. Seed is generated and stored only on your device. The only exception is the optional Telegram mode."
+      },
+      {
+        "q": "What is staking and how is it custodial?",
+        "a": "You send XRP to the staking pool address. We hold those funds, accrue rewards by policy, and pay out on schedule."
+      },
+      {
+        "q": "Why does my wallet say \"inactive\"?",
+        "a": "On XRP Ledger, an account is activated when it holds at least 1 XRP. Receive at least 1 XRP to activate."
+      }
+    ],
+    "legal": {
+      "termsUrl": "/legal/terms",
+      "privacyUrl": "/legal/privacy",
+      "cookiesUrl": "/legal/cookies"
+    }
+  }
+}

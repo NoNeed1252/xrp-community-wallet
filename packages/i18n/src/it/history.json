@@ -1,0 +1,78 @@
+{
+  "title": "Cronologia transazioni",
+  "subtitle": "Tutti i pagamenti e l'attività di staking sulle tue reti.",
+  "filters": {
+    "types": {
+      "label": "Tipo",
+      "payment": "Pagamento",
+      "staking_deposit": "Deposito staking",
+      "staking_payout": "Pagamento staking"
+    },
+    "status": {
+      "label": "Stato",
+      "all": "Tutti",
+      "pending": "In sospeso",
+      "completed": "Completato",
+      "failed": "Fallito"
+    },
+    "period": {
+      "label": "Periodo",
+      "today": "Oggi",
+      "7d": "Ultimi 7 giorni",
+      "30d": "Ultimi 30 giorni",
+      "all": "Tutto"
+    },
+    "search": {
+      "placeholder": "Cerca per indirizzo, etichetta o memo…"
+    },
+    "clear": "Cancella filtri"
+  },
+  "list": {
+    "columns": {
+      "date": "Data",
+      "type": "Tipo",
+      "counterparty": "Controparte",
+      "amount": "Importo",
+      "status": "Stato",
+      "actions": "Azioni"
+    },
+    "showing": "Mostra {{shown}} di {{total}}"
+  },
+  "empty": {
+    "title": "Nessuna transazione",
+    "body": "I tuoi pagamenti e l'attività di staking appariranno qui.",
+    "send": "Invia",
+    "receive": "Ricevi",
+    "filtered": {
+      "title": "Nessuna transazione corrisponde ai filtri",
+      "body": "Prova a modificare i filtri o cancellali per vedere tutto."
+    }
+  },
+  "details": {
+    "title": "Dettagli transazione",
+    "from": "Da",
+    "to": "A",
+    "memo": "Destination tag",
+    "memoText": "Memo",
+    "amount": "Importo",
+    "fee": "Commissione",
+    "status": "Stato",
+    "txHash": "Hash transazione",
+    "ledgerIndex": "Indice ledger",
+    "created": "Creato il",
+    "completed": "Completato il",
+    "failed": {
+      "code": "Codice errore"
+    },
+    "copy": "Copia",
+    "copied": "Copiato",
+    "viewOnExplorer": "Vedi sull'explorer",
+    "userSendBadge": "Inviato da questo wallet"
+  },
+  "errors": {
+    "explorer": {
+      "title": "Parte della cronologia non è disponibile",
+      "body": "Uno degli explorer non ha risposto. L'elenco potrebbe essere incompleto — riprova più tardi."
+    }
+  }
+}

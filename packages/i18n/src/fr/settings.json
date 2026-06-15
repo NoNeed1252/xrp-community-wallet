@@ -1,0 +1,197 @@
+{
+  "title": "Paramètres",
+  "subtitle": "Gère ton portefeuille, ta sécurité et tes préférences.",
+  "nav": {
+    "general": "Général",
+    "security": "Sécurité",
+    "accounts": "Comptes",
+    "subAccounts": "Sous-comptes",
+    "tokens": "Tokens"
+  },
+  "actions": {
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "rename": "Renommer",
+    "delete": "Supprimer",
+    "close": "Fermer"
+  },
+  "general": {
+    "appearance": {
+      "title": "Apparence",
+      "body": "Personnalise l'apparence du portefeuille sur cet appareil."
+    },
+    "security": {
+      "title": "Sécurité et verrouillage",
+      "body": "Gère le verrouillage automatique de ton portefeuille."
+    },
+    "about": {
+      "title": "À propos",
+      "version": "Version",
+      "network": "Réseaux"
+    },
+    "language": { "label": "Langue" },
+    "theme": {
+      "label": "Thème",
+      "light": "Clair",
+      "system": "Système",
+      "dark": "Sombre",
+      "helper": "Le thème sombre est disponible ; « Système » suit la préférence de ton OS."
+    },
+    "autoLock": {
+      "label": "Verrouillage automatique",
+      "helper": "Le portefeuille se verrouille après cette période d'inactivité.",
+      "options": {
+        "1": "1 min",
+        "5": "5 min",
+        "15": "15 min",
+        "30": "30 min",
+        "60": "1 h"
+      },
+      "lockOnHidden": "Verrouiller lorsque l'onglet est caché",
+      "lockOnHiddenHelper": "Verrouille immédiatement chaque fois que tu changes d'onglet."
+    }
+  },
+  "security": {
+    "password": {
+      "title": "Mot de passe",
+      "body": "Utilisé pour chiffrer ton portefeuille sur cet appareil.",
+      "change": "Changer le mot de passe",
+      "modal": {
+        "title": "Changer le mot de passe",
+        "old": "Mot de passe actuel",
+        "new": "Nouveau mot de passe",
+        "confirm": "Confirmer le nouveau mot de passe",
+        "submit": "Mettre à jour le mot de passe",
+        "working": "Rechiffrement du portefeuille…",
+        "strength": "Force",
+        "strength_weak": "Faible",
+        "strength_fair": "Acceptable",
+        "strength_good": "Bon",
+        "strength_strong": "Fort",
+        "error": {
+          "wrong": "Le mot de passe actuel est incorrect.",
+          "mismatch": "Les mots de passe ne correspondent pas.",
+          "weak": "Le mot de passe est trop faible."
+        },
+        "success": "Mot de passe mis à jour"
+      }
+    },
+    "seed": {
+      "title": "Phrase de récupération",
+      "body": "Affiche le secret qui contrôle ce portefeuille. Ne le partage jamais.",
+      "view": "Afficher la phrase",
+      "modal": {
+        "title": "Afficher la phrase de récupération",
+        "warning": "Quiconque possède cette clé contrôle ton portefeuille. Ne la partage jamais. Nous ne te la demandons jamais.",
+        "passwordPrompt": "Saisis ton mot de passe pour révéler",
+        "reveal": "Révéler",
+        "autoHide": "Cela sera masqué automatiquement dans 60 secondes.",
+        "error": "Mot de passe incorrect"
+      }
+    },
+    "lockNow": {
+      "title": "Verrouiller maintenant",
+      "body": "Verrouille immédiatement le portefeuille sur cet appareil.",
+      "cta": "Verrouiller"
+    },
+    "reset": {
+      "title": "Réinitialiser le portefeuille",
+      "body": "Efface le portefeuille chiffré sur cet appareil. Tu peux le restaurer à partir de ta phrase de récupération.",
+      "cta": "Réinitialiser…",
+      "modal": {
+        "title": "Réinitialiser le portefeuille ?",
+        "body": "Tous les comptes sur cet appareil seront supprimés. Ta phrase de récupération fonctionne toujours pour les réimporter — sans elle, les fonds sont irrécupérables.",
+        "confirmPrompt": "Tape {{word}} pour confirmer",
+        "confirm": "Effacer le portefeuille"
+      }
+    }
+  },
+  "accounts": {
+    "list": { "title": "Comptes sur cet appareil" },
+    "active": "Actif",
+    "hardware": "Matériel",
+    "setActive": "Définir comme actif",
+    "switched": "Compte changé",
+    "add": { "cta": "Ajouter un compte" },
+    "rename": {
+      "cta": "Renommer",
+      "modal": { "title": "Renommer le compte", "label": "Nom du compte" },
+      "success": "Compte renommé"
+    },
+    "delete": {
+      "cta": "Supprimer",
+      "success": "Compte supprimé",
+      "failed": "Impossible de supprimer le compte",
+      "modal": {
+        "title": "Supprimer le compte ?",
+        "body": "La suppression de {{label}} de cet appareil est irréversible — tu auras besoin de la phrase de récupération pour le réimporter.",
+        "confirmPrompt": "Tape {{label}} pour confirmer",
+        "confirm": "Supprimer le compte"
+      }
+    }
+  },
+  "subAccounts": {
+    "title": "Sous-comptes",
+    "subtitle": "Utilise les destination tags pour regrouper les paiements pour {{label}}.",
+    "dtPrefix": "Destination tag",
+    "empty": {
+      "title": "Aucun sous-compte pour l'instant",
+      "body": "Les sous-comptes te permettent de recevoir des paiements groupés via des destination tags."
+    },
+    "add": {
+      "cta": "Ajouter un sous-compte",
+      "success": "Sous-compte ajouté",
+      "fields": {
+        "label": "Libellé",
+        "destinationTag": "Destination tag",
+        "dtHelper": "N'importe quel nombre entre 0 et 4294967295. Les expéditeurs l'incluent pour identifier ton sous-compte.",
+        "note": "Note (facultatif)"
+      },
+      "errors": {
+        "labelEmpty": "Le libellé est requis",
+        "tagRange": "Le tag doit être compris entre 0 et 4294967295",
+        "tagDuplicate": "Le tag est déjà utilisé dans ce compte",
+        "generic": "Impossible d'ajouter le sous-compte"
+      },
+      "modal": { "title": "Ajouter un sous-compte", "submit": "Ajouter" }
+    },
+    "rename": { "title": "Renommer le sous-compte", "success": "Sous-compte renommé" },
+    "delete": {
+      "title": "Supprimer le sous-compte ?",
+      "body": "{{label}} sera supprimé. Cette action est irréversible.",
+      "success": "Sous-compte supprimé"
+    }
+  },
+  "tokens": {
+    "notMultiChain": "Les tokens personnalisés ne sont disponibles que pour les portefeuilles multi-chaînes. Réimporte ta phrase de récupération pour activer EVM.",
+    "added": "Token ajouté",
+    "removed": "Token supprimé",
+    "list": {
+      "title": "Tokens ajoutés",
+      "empty": "Aucun token personnalisé pour l'instant. Ajoute une adresse de contrat ci-dessus.",
+      "loading": "Chargement…"
+    },
+    "scamWarning": {
+      "title": "Vérifie le contrat avant de l'ajouter",
+      "body": "N'importe qui peut déployer un faux ERC-20. Assure-toi que l'adresse provient d'une source de confiance — explorateur de blocs, site officiel du projet ou liste de tokens vérifiée. Le portefeuille ne cautionne pas les tokens importés."
+    },
+    "add": {
+      "title": "Ajouter un token",
+      "body": "Ajoute un token ERC-20 par son adresse de contrat. Le nom, le symbole et les décimales sont lus directement depuis le contrat on-chain.",
+      "chainLabel": "Réseau",
+      "addressLabel": "Adresse du contrat",
+      "addressHelper": "Colle l'adresse de contrat 0x…. Nous récupérerons les métadonnées.",
+      "previewCta": "Rechercher le token",
+      "confirmCta": "Ajouter au portefeuille",
+      "decimals": "Décimales : {{decimals}}",
+      "verifyHint": "Vérifie bien"
+    },
+    "errors": {
+      "invalid_address": "Ce n'est pas une adresse de contrat valide.",
+      "no_contract": "Aucun contrat trouvé à cette adresse sur le réseau sélectionné.",
+      "not_erc20": "Ce contrat n'est pas un token ERC-20.",
+      "network": "Impossible de joindre le réseau. Réessaie dans un instant.",
+      "duplicate": "Ce token est déjà ajouté."
+    }
+  }
+}

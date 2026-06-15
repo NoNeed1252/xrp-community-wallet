@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "Bem-vindo de volta!",
+    "welcomeBackNamed": "Bem-vindo de volta, {{name}}!"
+  },
+  "cta": {
+    "createTransaction": "Criar transação",
+    "menu": {
+      "send": "Enviar",
+      "stake": "Adicionar stake"
+    }
+  },
+  "warnings": {
+    "evmReimport": "Reimporta a tua seed para ativar os ativos EVM"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "Intenções abertas",
+      "helper": "Ações pendentes nos teus cofres da tesouraria.",
+      "empty": "Sem intenções abertas",
+      "columns": {
+        "createdAt": "Criada em",
+        "intent": "Intenção",
+        "initiatedBy": "Iniciada por",
+        "status": "Estado"
+      }
+    },
+    "lastTransactions": {
+      "title": "Últimas transações",
+      "helper": "Atividade on-chain mais recente da conta ativa.",
+      "empty": "Ainda sem transações",
+      "columns": {
+        "createdAt": "Criada em",
+        "source": "Origem",
+        "destination": "Destino",
+        "value": "Valor",
+        "status": "Estado"
+      }
+    },
+    "balances": {
+      "title": "Saldos",
+      "helper": "Valor total estimado dos teus ativos.",
+      "estTotalValue": "Valor total est.",
+      "empty": "Ainda sem ativos"
+    },
+    "accounts": {
+      "title": "Contas",
+      "helper": "As tuas carteiras e as redes que cobrem.",
+      "empty": "Ainda sem contas",
+      "kinds": {
+        "multi": "Multi-rede",
+        "ledger": "Ledger",
+        "importedKey": "Chave importada",
+        "legacy": "Só XRPL"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "A conta \"{{label}}\" não está ativada",
+      "body": "Recebe pelo menos 1 XRP para a ativar no XRP Ledger.",
+      "cta": "Mostrar endereço de receção"
+    },
+    "backup": {
+      "title": "Faz backup da tua frase de recuperação",
+      "body": "Ainda não confirmaste o backup da tua frase de recuperação. Sem ele, não podes recuperar a carteira.",
+      "cta": "Confirmar backup"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "Falha ao carregar o painel",
+      "body": "Algo correu mal. Tenta novamente."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "Brevemente",
+      "body": "Esta secção está a ser construída num sprint futuro."
+    }
+  }
+}

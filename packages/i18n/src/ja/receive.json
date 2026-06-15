@@ -1,0 +1,54 @@
+{
+  "title": "受取",
+  "subtitle": "アドレスを共有して、各ネットワークで対応アセットを受け取ります。",
+  "asset": {
+    "label": "アセット"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "Ethereum、BSC、Polygon",
+      "helper": "Ethereum、BSC、Polygonで同一のアドレス。送信者がどのネットワークを使うかを選びます。"
+    }
+  },
+  "address": {
+    "label": "あなたのアドレス",
+    "copy": "コピー",
+    "copied": "アドレスをコピーしました",
+    "share": "共有"
+  },
+  "banner": {
+    "inactive": {
+      "title": "アカウントが有効化されていません",
+      "body": "XRP Ledger上でこのアカウントを有効化するには、最低1 XRPを受け取ってください。それまで、アドレスはネットワーク上で予約されていますがまだ保存されていません。",
+      "learnMore": "詳細を見る"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "有効化とは何ですか?",
+      "body": "XRP Ledger上では、アドレスは最低1 XRPを保有して初めて存在します。これは基本準備金と呼ばれます。準備金は手数料ではなく、アドレスに残り、アカウントを削除すると回収できます。\n\n最初の1 XRPを受け取るまで、アドレスは共有できますが、ネットワーク上の台帳には表示されません。支払いが届くと、アカウントは自動的に有効化されます。",
+      "dismiss": "了解"
+    }
+  },
+  "qr": {
+    "alt": "アドレス {{address}} のQRコード",
+    "destinationTagHint": "サブアカウントが有効 — 宛先タグ {{tag}} がQRに含まれています。"
+  },
+  "subAccount": {
+    "title": "サブアカウントを作成",
+    "body": "宛先タグを生成して、取引所が受信した支払いを特定のユーザーに振り分けられるようにします。",
+    "labelField": "ラベル",
+    "labelPlaceholder": "例: トレーディングデスク",
+    "tagField": "宛先タグ",
+    "create": "サブアカウントを作成",
+    "creating": "作成中…",
+    "error": {
+      "label": "ラベルは必須です",
+      "range": "タグは0〜4294967295である必要があります"
+    }
+  }
+}

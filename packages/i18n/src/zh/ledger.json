@@ -1,0 +1,78 @@
+{
+  "title": "连接你的 Ledger",
+  "subtitle": "使用硬件钱包签署交易,而无需暴露密钥。",
+  "badge": "硬件",
+  "support": {
+    "unsupported": {
+      "title": "硬件钱包支持需要基于 Chromium 的浏览器",
+      "body": "用于与 Ledger 设备通信的 WebHID 仅在 Chrome、Edge、Brave 和 Opera 中可用。请在受支持的浏览器中打开此钱包以添加硬件账户。"
+    },
+    "docs": "了解更多"
+  },
+  "connect": {
+    "steps": {
+      "1": "通过 USB 接入你的 Ledger",
+      "2": "在设备上打开 XRP 应用",
+      "3": "批准浏览器权限提示",
+      "4": "在设备屏幕上确认地址"
+    },
+    "cta": {
+      "connect": "连接 Ledger",
+      "retry": "重试",
+      "done": "继续"
+    },
+    "status": {
+      "device": {
+        "none": "未连接",
+        "connecting": "连接中…",
+        "connected": "已连接:{{name}}"
+      },
+      "app": {
+        "unknown": "—",
+        "notOpen": "在设备上打开 XRP 应用",
+        "open": "XRP 应用已打开"
+      },
+      "address": {
+        "label": "地址",
+        "pending": "等待中…"
+      }
+    }
+  },
+  "naming": {
+    "title": "为你的 Ledger 账户命名",
+    "label": "账户名称",
+    "placeholder": "例如 Ledger Nano X",
+    "cta": "添加账户"
+  },
+  "errors": {
+    "unsupported": "此浏览器不支持 WebHID。",
+    "permission_denied": "浏览器权限被拒。请再次点击“连接 Ledger”并允许提示。",
+    "no_device": "未找到 Ledger 设备。请接入后重试。",
+    "transport": "无法连接到设备。请重新插拔 USB 线后重试。",
+    "app_not_open": "请在你的 Ledger 上打开 XRP 应用后重试。",
+    "app_locked": "请用 PIN 码解锁你的 Ledger 后重试。",
+    "user_rejected": "你在设备上拒绝了请求。",
+    "timeout": "设备未及时响应。",
+    "path_forbidden": "不允许此派生路径。",
+    "address_mismatch": "设备返回的地址与其公钥不匹配。请断开后重试。",
+    "generic": "与 Ledger 通信时出错。"
+  },
+  "sign": {
+    "title": "在你的 Ledger 上审核",
+    "body": "在设备上使用双按键批准此付款。",
+    "fields": {
+      "to": "至",
+      "amount": "金额",
+      "fee": "手续费",
+      "memo": "目标标签"
+    },
+    "cancel": "取消",
+    "cancelled": "签名已取消。"
+  },
+  "send": {
+    "disabled": {
+      "title": "Ledger 发送功能尚不可用",
+      "body": "XRPL 交易在 Ledger 设备上的真实签名仍在开发中。目前如需发送资金，请在账户选择器中切换到基于助记词的软件账户。"
+    }
+  }
+}

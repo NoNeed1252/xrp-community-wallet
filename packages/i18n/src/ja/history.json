@@ -1,0 +1,78 @@
+{
+  "title": "トランザクション履歴",
+  "subtitle": "ネットワークをまたぐすべての支払いとステーキング活動。",
+  "filters": {
+    "types": {
+      "label": "種別",
+      "payment": "支払い",
+      "staking_deposit": "ステーキング預入",
+      "staking_payout": "ステーキング報酬支払"
+    },
+    "status": {
+      "label": "ステータス",
+      "all": "すべて",
+      "pending": "処理中",
+      "completed": "完了",
+      "failed": "失敗"
+    },
+    "period": {
+      "label": "期間",
+      "today": "本日",
+      "7d": "過去7日間",
+      "30d": "過去30日間",
+      "all": "全期間"
+    },
+    "search": {
+      "placeholder": "アドレス、ラベル、メモで検索…"
+    },
+    "clear": "フィルターをクリア"
+  },
+  "list": {
+    "columns": {
+      "date": "日付",
+      "type": "種別",
+      "counterparty": "相手方",
+      "amount": "金額",
+      "status": "ステータス",
+      "actions": "操作"
+    },
+    "showing": "{{total}}件中 {{shown}}件を表示"
+  },
+  "empty": {
+    "title": "トランザクションはまだありません",
+    "body": "支払いとステーキング活動はここに表示されます。",
+    "send": "送信",
+    "receive": "受取",
+    "filtered": {
+      "title": "フィルター条件に一致するトランザクションはありません",
+      "body": "フィルターを変更するか、クリアしてすべてを表示してください。"
+    }
+  },
+  "details": {
+    "title": "トランザクション詳細",
+    "from": "送信元",
+    "to": "宛先",
+    "memo": "宛先タグ",
+    "memoText": "メモ",
+    "amount": "金額",
+    "fee": "手数料",
+    "status": "ステータス",
+    "txHash": "トランザクションハッシュ",
+    "ledgerIndex": "レジャーインデックス",
+    "created": "作成日時",
+    "completed": "完了日時",
+    "failed": {
+      "code": "失敗コード"
+    },
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "viewOnExplorer": "エクスプローラーで表示",
+    "userSendBadge": "このウォレットから送信"
+  },
+  "errors": {
+    "explorer": {
+      "title": "一部の履歴は利用できません",
+      "body": "エクスプローラーの1つが応答しませんでした。リストが不完全な場合があります。後ほど再試行してください。"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+node_modules
+dist
+build
+.next
+.turbo
+coverage
+*.log
+.DS_Store
+.env
+.env.local
+.env.*.local
+.vite
+.vscode
+.idea
+
+# Visual test artifacts
+tests/visual/test-results
+tests/visual/playwright-report

@@ -1,0 +1,62 @@
+{
+  "title": "Staking",
+  "subtitle": "Gagne des récompenses en déléguant tes XRP au pool communautaire.",
+  "hero": {
+    "tagline": "Pool communautaire",
+    "title": "Fais travailler tes XRP",
+    "body": "Stake des XRP pour gagner des récompenses à {{apr}} % APR. Les fonds restent sur le XRPL — les versements arrivent automatiquement chaque mois.",
+    "totalStaked": "Total staké",
+    "totalRewards": "Récompenses accumulées",
+    "apr": "APR",
+    "startCta": "Staker des XRP"
+  },
+  "pool": {
+    "title": "Détails du pool",
+    "helper": "Politique opérationnelle et identifiant on-chain.",
+    "body": "Pool XRP avec garde. Les récompenses sont accumulées quotidiennement et versées tous les 30 jours.",
+    "apr": "APR",
+    "minDeposit": "Dépôt min.",
+    "payoutFreq": "Versement",
+    "payoutFreqValue": "tous les {{days}} jours",
+    "destinationTag": "Destination tag",
+    "nextPayout": "Prochain versement : {{date}}",
+    "docs": "Docs"
+  },
+  "positions": {
+    "title": "Tes positions",
+    "openedAt": "Ouverte le {{date}}",
+    "accrued": "Accumulé",
+    "unstakeCta": "Retirer",
+    "status": {
+      "active": "Active",
+      "pending": "En attente",
+      "withdrawing": "Retrait en cours",
+      "closed": "Fermée"
+    },
+    "empty": {
+      "title": "Aucune position de staking pour l'instant",
+      "body": "Stake des XRP pour commencer à gagner des récompenses. Tu peux retirer à tout moment."
+    }
+  },
+  "modal": {
+    "title": "Staker des XRP",
+    "intro": "Délègue des XRP au pool communautaire et gagne {{apr}} % APR. Les récompenses s'accumulent quotidiennement et sont versées mensuellement.",
+    "amount": {
+      "label": "Montant à staker",
+      "balance": "Disponible : {{amount}} XRP",
+      "max": "Max",
+      "error": {
+        "tooBig": "Le montant dépasse le solde disponible",
+        "tooSmall": "Le stake minimum est de {{min}} XRP"
+      }
+    },
+    "summary": {
+      "apr": "APR",
+      "estYearly": "Récompense annuelle est.",
+      "fee": "Frais réseau"
+    },
+    "disclaimer": "Les récompenses de staking sont des estimations. Les rendements réels dépendent de la performance du pool et peuvent varier.",
+    "cancel": "Annuler",
+    "confirm": "Confirmer et staker"
+  }
+}

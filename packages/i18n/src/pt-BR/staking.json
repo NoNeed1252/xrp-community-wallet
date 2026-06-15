@@ -1,0 +1,62 @@
+{
+  "title": "Staking",
+  "subtitle": "Ganhe recompensas delegando XRP ao pool da comunidade.",
+  "hero": {
+    "tagline": "Pool da comunidade",
+    "title": "Coloque seu XRP para trabalhar",
+    "body": "Faça staking de XRP para ganhar recompensas a {{apr}}% de APR. Os fundos permanecem no XRPL — os pagamentos chegam automaticamente em uma programação mensal.",
+    "totalStaked": "Total em stake",
+    "totalRewards": "Recompensas acumuladas",
+    "apr": "APR",
+    "startCta": "Fazer staking de XRP"
+  },
+  "pool": {
+    "title": "Detalhes do pool",
+    "helper": "Política operacional e identificador on-chain.",
+    "body": "Pool XRP custodial. As recompensas acumulam diariamente e são pagas a cada 30 dias.",
+    "apr": "APR",
+    "minDeposit": "Depósito mín.",
+    "payoutFreq": "Pagamento",
+    "payoutFreqValue": "a cada {{days}} dias",
+    "destinationTag": "Destination tag",
+    "nextPayout": "Próximo pagamento: {{date}}",
+    "docs": "Documentação"
+  },
+  "positions": {
+    "title": "Suas posições",
+    "openedAt": "Aberta em {{date}}",
+    "accrued": "Acumulado",
+    "unstakeCta": "Sacar",
+    "status": {
+      "active": "Ativa",
+      "pending": "Pendente",
+      "withdrawing": "Sacando",
+      "closed": "Fechada"
+    },
+    "empty": {
+      "title": "Nenhuma posição de staking ainda",
+      "body": "Faça staking de XRP para começar a ganhar recompensas. Você pode sacar a qualquer momento."
+    }
+  },
+  "modal": {
+    "title": "Fazer staking de XRP",
+    "intro": "Delegue XRP ao pool da comunidade e ganhe {{apr}}% de APR. As recompensas acumulam diariamente e são pagas mensalmente.",
+    "amount": {
+      "label": "Quantia para staking",
+      "balance": "Disponível: {{amount}} XRP",
+      "max": "Máx",
+      "error": {
+        "tooBig": "A quantia excede o saldo disponível",
+        "tooSmall": "O staking mínimo é de {{min}} XRP"
+      }
+    },
+    "summary": {
+      "apr": "APR",
+      "estYearly": "Recompensa anual est.",
+      "fee": "Taxa de rede"
+    },
+    "disclaimer": "As recompensas de staking são estimativas. Os retornos reais dependem do desempenho do pool e podem variar.",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar e fazer staking"
+  }
+}

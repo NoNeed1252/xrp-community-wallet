@@ -1,0 +1,39 @@
+{
+  "actions": {
+    "viewAll": "عرض الكل",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "retry": "إعادة المحاولة",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "close": "إغلاق"
+  },
+  "status": {
+    "open": "مفتوح",
+    "pending": "قيد الانتظار",
+    "completed": "مكتمل",
+    "failed": "فشل",
+    "inactive": "غير نشط"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "send": "إرسال",
+    "receive": "استلام",
+    "history": "السجل",
+    "portfolio": "المحفظة",
+    "staking": "الستيكنغ",
+    "settings": "الإعدادات",
+    "more": "المزيد",
+    "lockNow": "قفل المحفظة"
+  },
+  "topbar": {
+    "help": "المساعدة",
+    "notifications": "الإشعارات",
+    "settings": "الإعدادات",
+    "account": "الحساب",
+    "context": "المحفظة"
+  },
+  "a11y": {
+    "skipToContent": "الانتقال إلى المحتوى الرئيسي"
+  }
+}

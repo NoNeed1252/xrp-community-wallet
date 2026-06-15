@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "Retour",
+    "continue": "Continuer",
+    "finish": "Terminer la configuration"
+  },
+  "steps": {
+    "label": "Étape {{current}} sur {{total}}"
+  },
+  "welcome": {
+    "title": "Bienvenue dans ton portefeuille",
+    "subtitle": "Comment souhaites-tu commencer ?",
+    "options": {
+      "create": {
+        "title": "Créer un nouveau portefeuille",
+        "body": "Génère une nouvelle phrase de récupération. Recommandé pour les nouveaux utilisateurs."
+      },
+      "importSeed": {
+        "title": "Importer une phrase de récupération",
+        "body": "Restaure un portefeuille avec tes 12 ou 24 mots BIP-39."
+      },
+      "importKey": {
+        "title": "Importer une clé privée",
+        "body": "Colle ta family seed XRPL (commence par sEd... ou s...)."
+      },
+      "ledger": {
+        "title": "Connecter un appareil Ledger",
+        "body": "Signe tes transactions sur ton portefeuille matériel. Disponible dans une prochaine version."
+      }
+    }
+  },
+  "create": {
+    "title": "Ta phrase de récupération",
+    "helper": "12 mots BIP-39 qui contrôlent entièrement ce portefeuille.",
+    "body": "Note ces mots dans l'ordre et conserve-les hors ligne. Quiconque possède ces mots peut accéder à tes fonds.",
+    "disclaimer": "Nous te demanderons d'en confirmer quelques-uns à l'étape suivante.",
+    "actions": {
+      "regenerate": "Générer une nouvelle",
+      "copy": "Copier",
+      "copied": "Copié",
+      "next": "Je l'ai sauvegardée, continuer"
+    },
+    "copy": {
+      "warning": "Le presse-papier sera effacé automatiquement dans 60 secondes."
+    }
+  },
+  "confirm": {
+    "title": "Confirme ta phrase de récupération",
+    "body": "Saisis les mots demandés exactement comme affichés précédemment.",
+    "prompt": "Mot n° {{n}}",
+    "error": "Ne correspond pas"
+  },
+  "importSeed": {
+    "title": "Importer ta phrase de récupération",
+    "body": "Saisis 12 ou 24 mots BIP-39 séparés par des espaces.",
+    "label": "Phrase de récupération",
+    "helper": "Nous attendons {{count}} mots. La casse est ignorée.",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "Adresse détectée",
+    "error": {
+      "wordCount": "Doit contenir exactement 12 ou 24 mots.",
+      "notInDict": "Un ou plusieurs mots ne figurent pas dans le dictionnaire BIP-39.",
+      "invalidChecksum": "La somme de contrôle est invalide — vérifie les mots."
+    }
+  },
+  "importKey": {
+    "title": "Importer une clé privée",
+    "body": "Colle une family seed XRPL (commence par sEd... ou s...).",
+    "label": "Clé privée",
+    "helper": "La clé reste sur cet appareil.",
+    "derivedAddress": "Adresse détectée",
+    "error": {
+      "invalidFormat": "Ce n'est pas une family seed XRPL valide."
+    }
+  },
+  "setPassword": {
+    "title": "Protège ton portefeuille",
+    "body": "Ce mot de passe chiffre ton portefeuille sur cet appareil. Nous ne pouvons pas le récupérer pour toi.",
+    "password": "Mot de passe",
+    "confirm": "Confirmer le mot de passe",
+    "requirements": "Au moins 10 caractères avec majuscules et minuscules, un chiffre et un caractère spécial.",
+    "securing": "Sécurisation de ton mot de passe…",
+    "strength": {
+      "weak": "Faible",
+      "fair": "Acceptable",
+      "good": "Bon",
+      "strong": "Fort"
+    },
+    "error": {
+      "mismatch": "Les mots de passe ne correspondent pas."
+    },
+    "addMode": {
+      "title": "Ajouter un compte",
+      "body": "Saisis le mot de passe de ton portefeuille pour chiffrer le nouveau compte.",
+      "password": "Mot de passe du portefeuille",
+      "submit": "Ajouter le compte"
+    }
+  },
+  "done": {
+    "title": "Tout est prêt",
+    "body": "Ton portefeuille est prêt à l'emploi. Tu peux le verrouiller et le déverrouiller à tout moment depuis les paramètres.",
+    "cta": "Ouvrir le portefeuille"
+  },
+  "ledger": {
+    "title": "Bientôt disponible",
+    "body": "Le flux pour portefeuille matériel est en cours de développement (sprint W8). En attendant, utilise une des options basées sur la phrase de récupération."
+  },
+  "unlock": {
+    "title": "Bon retour",
+    "tagline": "Connecte-toi à ton portefeuille communautaire.",
+    "autoLockHint": "Verrouillé automatiquement pour ta protection.",
+    "body": "Saisis ton mot de passe pour déverrouiller le portefeuille.",
+    "password": "Mot de passe",
+    "action": "Déverrouiller",
+    "error": {
+      "wrongPassword": "Mot de passe incorrect.",
+      "cooldown": "Trop de tentatives. Réessaie dans {{sec}} secondes."
+    },
+    "forgot": {
+      "link": "Mot de passe oublié ? Réinitialiser le portefeuille…",
+      "modal": {
+        "title": "Réinitialiser le portefeuille ?",
+        "body": "Cela efface définitivement le portefeuille chiffré sur cet appareil. Avec ta phrase de récupération, tu peux réimporter — sans elle, les fonds sont irrécupérables.",
+        "confirmText": "EFFACER",
+        "typeToConfirm": "Tape {{word}} pour confirmer",
+        "helper": "La casse est ignorée. Cette action est irréversible.",
+        "confirm": "Effacer le portefeuille"
+      }
+    }
+  }
+}

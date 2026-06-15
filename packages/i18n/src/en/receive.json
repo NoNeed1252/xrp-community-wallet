@@ -1,0 +1,54 @@
+{
+  "title": "Receive",
+  "subtitle": "Share your address to receive supported assets on each network.",
+  "asset": {
+    "label": "Asset"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "Ethereum, BSC, Polygon",
+      "helper": "Same address for Ethereum, BSC and Polygon. The sender chooses which network to use."
+    }
+  },
+  "address": {
+    "label": "Your address",
+    "copy": "Copy",
+    "copied": "Address copied",
+    "share": "Share"
+  },
+  "banner": {
+    "inactive": {
+      "title": "Account not activated",
+      "body": "Receive at least 1 XRP to activate this account on the XRP Ledger. Until then, the address is reserved on the network but not yet stored.",
+      "learnMore": "Learn more"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "What does activation mean?",
+      "body": "On the XRP Ledger, an address only exists once it holds at least 1 XRP — this is called the base reserve. The reserve isn't a fee; it stays on the address and can be reclaimed when the account is deleted.\n\nUntil you receive that first 1 XRP, the address is yours to share, but the network won't show it in the ledger. Once a payment lands, the account is activated automatically.",
+      "dismiss": "Got it"
+    }
+  },
+  "qr": {
+    "alt": "QR code for address {{address}}",
+    "destinationTagHint": "Sub-account active — destination tag {{tag}} included in QR."
+  },
+  "subAccount": {
+    "title": "Create a sub-account",
+    "body": "Generate a destination tag so an exchange can credit incoming payments to a specific user.",
+    "labelField": "Label",
+    "labelPlaceholder": "e.g. Trading desk",
+    "tagField": "Destination tag",
+    "create": "Create sub-account",
+    "creating": "Creating…",
+    "error": {
+      "label": "Label is required",
+      "range": "Tag must be 0–4294967295"
+    }
+  }
+}

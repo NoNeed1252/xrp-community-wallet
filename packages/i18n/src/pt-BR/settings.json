@@ -1,0 +1,197 @@
+{
+  "title": "Configurações",
+  "subtitle": "Gerencie sua carteira, segurança e preferências.",
+  "nav": {
+    "general": "Geral",
+    "security": "Segurança",
+    "accounts": "Contas",
+    "subAccounts": "Sub-contas",
+    "tokens": "Tokens"
+  },
+  "actions": {
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "rename": "Renomear",
+    "delete": "Excluir",
+    "close": "Fechar"
+  },
+  "general": {
+    "appearance": {
+      "title": "Aparência",
+      "body": "Personalize como a carteira aparece neste dispositivo."
+    },
+    "security": {
+      "title": "Segurança e bloqueio",
+      "body": "Gerencie o bloqueio automático da sua carteira."
+    },
+    "about": {
+      "title": "Sobre",
+      "version": "Versão",
+      "network": "Redes"
+    },
+    "language": { "label": "Idioma" },
+    "theme": {
+      "label": "Tema",
+      "light": "Claro",
+      "system": "Sistema",
+      "dark": "Escuro",
+      "helper": "O tema escuro está disponível; \"Sistema\" segue a preferência do seu SO."
+    },
+    "autoLock": {
+      "label": "Bloqueio automático",
+      "helper": "A carteira é bloqueada após este período de inatividade.",
+      "options": {
+        "1": "1m",
+        "5": "5m",
+        "15": "15m",
+        "30": "30m",
+        "60": "1h"
+      },
+      "lockOnHidden": "Bloquear quando a aba estiver oculta",
+      "lockOnHiddenHelper": "Bloquear imediatamente sempre que você sair desta aba."
+    }
+  },
+  "security": {
+    "password": {
+      "title": "Senha",
+      "body": "Usada para criptografar sua carteira neste dispositivo.",
+      "change": "Alterar senha",
+      "modal": {
+        "title": "Alterar senha",
+        "old": "Senha atual",
+        "new": "Nova senha",
+        "confirm": "Confirmar nova senha",
+        "submit": "Atualizar senha",
+        "working": "Recriptografando carteira…",
+        "strength": "Força",
+        "strength_weak": "Fraca",
+        "strength_fair": "Razoável",
+        "strength_good": "Boa",
+        "strength_strong": "Forte",
+        "error": {
+          "wrong": "Senha atual está incorreta.",
+          "mismatch": "As senhas não coincidem.",
+          "weak": "A senha é muito fraca."
+        },
+        "success": "Senha atualizada"
+      }
+    },
+    "seed": {
+      "title": "Frase de recuperação",
+      "body": "Revele o segredo que controla esta carteira. Nunca compartilhe.",
+      "view": "Ver seed",
+      "modal": {
+        "title": "Ver frase de recuperação",
+        "warning": "Qualquer pessoa com esta chave controla sua carteira. Nunca compartilhe. Nós nunca pedimos.",
+        "passwordPrompt": "Digite sua senha para revelar",
+        "reveal": "Revelar",
+        "autoHide": "Isso será ocultado automaticamente em 60 segundos.",
+        "error": "Senha incorreta"
+      }
+    },
+    "lockNow": {
+      "title": "Bloquear agora",
+      "body": "Bloqueia imediatamente a carteira neste dispositivo.",
+      "cta": "Bloquear"
+    },
+    "reset": {
+      "title": "Resetar carteira",
+      "body": "Apague a carteira criptografada neste dispositivo. Você pode restaurar a partir da sua frase de recuperação.",
+      "cta": "Resetar…",
+      "modal": {
+        "title": "Resetar carteira?",
+        "body": "Todas as contas neste dispositivo serão removidas. Sua frase de recuperação ainda funciona para importá-las novamente — sem ela, os fundos são irrecuperáveis.",
+        "confirmPrompt": "Digite {{word}} para confirmar",
+        "confirm": "Apagar carteira"
+      }
+    }
+  },
+  "accounts": {
+    "list": { "title": "Contas neste dispositivo" },
+    "active": "Ativa",
+    "hardware": "Hardware",
+    "setActive": "Definir como ativa",
+    "switched": "Conta alternada",
+    "add": { "cta": "Adicionar conta" },
+    "rename": {
+      "cta": "Renomear",
+      "modal": { "title": "Renomear conta", "label": "Nome da conta" },
+      "success": "Conta renomeada"
+    },
+    "delete": {
+      "cta": "Excluir",
+      "success": "Conta excluída",
+      "failed": "Não foi possível excluir a conta",
+      "modal": {
+        "title": "Excluir conta?",
+        "body": "Remover {{label}} deste dispositivo não pode ser desfeito — você precisará da frase de recuperação para importá-la novamente.",
+        "confirmPrompt": "Digite {{label}} para confirmar",
+        "confirm": "Excluir conta"
+      }
+    }
+  },
+  "subAccounts": {
+    "title": "Sub-contas",
+    "subtitle": "Use destination tags para agrupar pagamentos para {{label}}.",
+    "dtPrefix": "Destination tag",
+    "empty": {
+      "title": "Nenhuma sub-conta ainda",
+      "body": "Sub-contas permitem que você receba pagamentos agrupados via destination tags."
+    },
+    "add": {
+      "cta": "Adicionar sub-conta",
+      "success": "Sub-conta adicionada",
+      "fields": {
+        "label": "Rótulo",
+        "destinationTag": "Destination tag",
+        "dtHelper": "Qualquer número entre 0–4294967295. Remetentes a incluem para identificar sua sub-conta.",
+        "note": "Nota (opcional)"
+      },
+      "errors": {
+        "labelEmpty": "O rótulo é obrigatório",
+        "tagRange": "A tag deve estar entre 0–4294967295",
+        "tagDuplicate": "A tag já está em uso nesta conta",
+        "generic": "Não foi possível adicionar a sub-conta"
+      },
+      "modal": { "title": "Adicionar sub-conta", "submit": "Adicionar" }
+    },
+    "rename": { "title": "Renomear sub-conta", "success": "Sub-conta renomeada" },
+    "delete": {
+      "title": "Excluir sub-conta?",
+      "body": "{{label}} será removida. Esta ação não pode ser desfeita.",
+      "success": "Sub-conta excluída"
+    }
+  },
+  "tokens": {
+    "notMultiChain": "Tokens personalizados estão disponíveis apenas para carteiras multi-chain. Reimporte sua frase de recuperação para habilitar EVM.",
+    "added": "Token adicionado",
+    "removed": "Token removido",
+    "list": {
+      "title": "Tokens adicionados",
+      "empty": "Nenhum token personalizado ainda. Adicione um endereço de contrato acima.",
+      "loading": "Carregando…"
+    },
+    "scamWarning": {
+      "title": "Verifique o contrato antes de adicionar",
+      "body": "Qualquer pessoa pode publicar um ERC-20 falso. Certifique-se de que o endereço vem de uma fonte confiável — block explorer, site oficial do projeto ou uma lista de tokens verificada. A carteira não endossa os tokens importados."
+    },
+    "add": {
+      "title": "Adicionar um token",
+      "body": "Adicione um token ERC-20 pelo seu endereço de contrato. Nome, símbolo e decimais são lidos diretamente do contrato on-chain.",
+      "chainLabel": "Rede",
+      "addressLabel": "Endereço do contrato",
+      "addressHelper": "Cole o endereço 0x… do contrato. Vamos buscar os metadados.",
+      "previewCta": "Consultar token",
+      "confirmCta": "Adicionar à carteira",
+      "decimals": "Decimais: {{decimals}}",
+      "verifyHint": "Verifique novamente"
+    },
+    "errors": {
+      "invalid_address": "Este não é um endereço de contrato válido.",
+      "no_contract": "Nenhum contrato encontrado neste endereço na rede selecionada.",
+      "not_erc20": "Este contrato não é um token ERC-20.",
+      "network": "Não foi possível alcançar a rede. Tente novamente em instantes.",
+      "duplicate": "Este token já foi adicionado."
+    }
+  }
+}

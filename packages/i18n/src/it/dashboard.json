@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "Bentornato!",
+    "welcomeBackNamed": "Bentornato, {{name}}!"
+  },
+  "cta": {
+    "createTransaction": "Crea transazione",
+    "menu": {
+      "send": "Invia",
+      "stake": "Aggiungi stake"
+    }
+  },
+  "warnings": {
+    "evmReimport": "Re-importa la tua seed per abilitare gli asset EVM"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "Intent aperti",
+      "helper": "Azioni in sospeso nei tuoi vault del tesoro.",
+      "empty": "Nessun intent aperto",
+      "columns": {
+        "createdAt": "Creato il",
+        "intent": "Intent",
+        "initiatedBy": "Avviato da",
+        "status": "Stato"
+      }
+    },
+    "lastTransactions": {
+      "title": "Ultime transazioni",
+      "helper": "Attività on-chain più recente per l'account attivo.",
+      "empty": "Nessuna transazione",
+      "columns": {
+        "createdAt": "Creato il",
+        "source": "Origine",
+        "destination": "Destinazione",
+        "value": "Valore",
+        "status": "Stato"
+      }
+    },
+    "balances": {
+      "title": "Saldi",
+      "helper": "Valore totale stimato dei tuoi asset.",
+      "estTotalValue": "Valore totale stimato",
+      "empty": "Nessun asset"
+    },
+    "accounts": {
+      "title": "Account",
+      "helper": "I tuoi wallet e le chain che coprono.",
+      "empty": "Nessun account",
+      "kinds": {
+        "multi": "Multi-chain",
+        "ledger": "Ledger",
+        "importedKey": "Chiave importata",
+        "legacy": "Solo XRPL"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "L'account \"{{label}}\" non è attivato",
+      "body": "Ricevi almeno 1 XRP per attivarlo sull'XRP Ledger.",
+      "cta": "Mostra indirizzo di ricezione"
+    },
+    "backup": {
+      "title": "Esegui il backup della tua frase di recupero",
+      "body": "Non hai confermato il backup della tua frase di recupero. Senza di essa non potrai recuperare il tuo wallet.",
+      "cta": "Conferma backup"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "Caricamento della dashboard fallito",
+      "body": "Qualcosa è andato storto. Riprova."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "Prossimamente",
+      "body": "Questa sezione verrà sviluppata in uno sprint futuro."
+    }
+  }
+}

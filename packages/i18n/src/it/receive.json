@@ -1,0 +1,54 @@
+{
+  "title": "Ricevi",
+  "subtitle": "Condividi il tuo indirizzo per ricevere asset supportati su ciascuna rete.",
+  "asset": {
+    "label": "Asset"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "Ethereum, BSC, Polygon",
+      "helper": "Stesso indirizzo per Ethereum, BSC e Polygon. Il mittente sceglie quale rete usare."
+    }
+  },
+  "address": {
+    "label": "Il tuo indirizzo",
+    "copy": "Copia",
+    "copied": "Indirizzo copiato",
+    "share": "Condividi"
+  },
+  "banner": {
+    "inactive": {
+      "title": "Account non attivato",
+      "body": "Ricevi almeno 1 XRP per attivare questo account sull'XRP Ledger. Fino ad allora, l'indirizzo è riservato sulla rete ma non ancora memorizzato.",
+      "learnMore": "Scopri di più"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "Cosa significa attivazione?",
+      "body": "Sull'XRP Ledger, un indirizzo esiste solo quando detiene almeno 1 XRP — questa è chiamata riserva base. La riserva non è una commissione; rimane sull'indirizzo e può essere recuperata quando l'account viene eliminato.\n\nFino a quando non ricevi quel primo 1 XRP, l'indirizzo è tuo da condividere, ma la rete non lo mostrerà nel ledger. Una volta che un pagamento arriva, l'account viene attivato automaticamente.",
+      "dismiss": "Ho capito"
+    }
+  },
+  "qr": {
+    "alt": "Codice QR per l'indirizzo {{address}}",
+    "destinationTagHint": "Sub-account attivo — destination tag {{tag}} incluso nel QR."
+  },
+  "subAccount": {
+    "title": "Crea un sub-account",
+    "body": "Genera un destination tag così uno scambio può accreditare i pagamenti in entrata a un utente specifico.",
+    "labelField": "Etichetta",
+    "labelPlaceholder": "es. Trading desk",
+    "tagField": "Destination tag",
+    "create": "Crea sub-account",
+    "creating": "Creazione…",
+    "error": {
+      "label": "L'etichetta è obbligatoria",
+      "range": "Il tag deve essere 0–4294967295"
+    }
+  }
+}

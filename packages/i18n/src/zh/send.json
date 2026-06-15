@@ -1,0 +1,148 @@
+{
+  "title": "发送",
+  "subtitle": "向其他地址发送资产。请核对收款方 — 区块链转账无法撤销。",
+  "form": {
+    "asset": {
+      "label": "资产"
+    },
+    "recipient": {
+      "label": "收款地址",
+      "helper": "粘贴一个以 r… 开头的 XRPL 地址",
+      "helperKnown": "已知联系人:{{label}}",
+      "helperEvm": "粘贴此网络上的 0x… 地址。",
+      "detectedLabel": "{{label}} — {{address}}",
+      "error": {
+        "required": "请输入地址",
+        "invalid": "不是有效的 XRPL 地址",
+        "invalidEvm": "不是有效的 0x 地址",
+        "checksum": "地址校验和(EIP-55)错误。请重新核对字母大小写。",
+        "selfSend": "这是你自己的地址。请确认操作无误。"
+      },
+      "flagsUnverified": {
+        "title": "无法验证收款方设置",
+        "body": "无法连接到 XRPL 网络检查是否需要目标标签。如果是交易所或托管账户，请在发送前手动确认。"
+      }
+    },
+    "amount": {
+      "label": "金额",
+      "max": "最大",
+      "balance": "可用:{{amount}} XRP",
+      "balanceWithReserve": "可用:{{amount}} XRP(准备金 {{reserve}} XRP)",
+      "balanceUnknown": "{{symbol}} 余额不可用",
+      "balanceLoading": "正在加载 {{symbol}} 余额…",
+      "balanceError": "无法获取 {{symbol}} 余额",
+      "balanceGeneric": "可用:{{amount}} {{symbol}}",
+      "error": {
+        "zero": "金额必须大于零",
+        "exceedsBalance": "金额超出可用余额(准备金 1 XRP)",
+        "exceedsBalanceGeneric": "金额超出可用余额",
+        "invalid": "金额无效"
+      }
+    },
+    "memo": {
+      "label": "目标标签(备注)",
+      "helper": "交易所和托管服务用于识别你的转账的数字标签。",
+      "badge": {
+        "required": "必填",
+        "optional": "可选"
+      },
+      "error": {
+        "requiredByRecipient": "此收款方要求目标标签",
+        "range": "标签必须在 0–4294967295 之间"
+      }
+    },
+    "fee": {
+      "label": "网络费",
+      "estimated": "预估 gas"
+    },
+    "gas": {
+      "customize": "自定义 gas",
+      "hide": "隐藏 gas 设置",
+      "helper": "留空字段则使用网络估算值。单位为 gwei。",
+      "gasLimit": "Gas 上限(单位)",
+      "gasLimitPlaceholder": "自动估算",
+      "maxFee": "每 gas 最高费用(gwei)",
+      "priority": "优先费(gwei)"
+    },
+    "total": "总计",
+    "destinationTag": {
+      "label": "目标标签",
+      "helper": "交易所和托管服务用于识别您转账的数字标签。",
+      "badge": {
+        "required": "必填",
+        "optional": "选填"
+      },
+      "error": {
+        "requiredByRecipient": "此收款方需要目标标签",
+        "range": "标签必须在 0–4294967295 范围内"
+      }
+    },
+    "memoText": {
+      "label": "备注",
+      "helper": "附加到交易上的可选自由文本（最多 100 字节）。",
+      "placeholder": "例如：发票 #42",
+      "error": {
+        "tooLong": "备注不得超过 100 字节"
+      }
+    }
+  },
+  "cta": {
+    "review": "审核",
+    "back": "返回",
+    "confirm": "确认并签名",
+    "close": "关闭"
+  },
+  "warnings": {
+    "notActivated": {
+      "title": "你的钱包未激活",
+      "body": "请先接收至少 1 XRP 激活钱包,然后才能发送。"
+    },
+    "ledgerEvm": {
+      "title": "Ledger 在本版本仅支持 XRP",
+      "body": "切换到多链账户以发送 EVM 资产,或在后续版本中更新所支持的应用。"
+    }
+  },
+  "review": {
+    "title": "审核付款",
+    "firstTime": {
+      "title": "首次向此地址发送",
+      "body": "务必与收款方核对地址。区块链转账无法撤销。"
+    },
+    "summary": {
+      "from": "来自",
+      "to": "至",
+      "memo": "目标标签",
+      "amount": "金额",
+      "fee": "网络费",
+      "total": "总计",
+      "network": "网络",
+      "destinationTag": "目标标签"
+    },
+    "preview": {
+      "disclaimer": "你即将签署并广播一笔向 {{address}} 的付款。",
+      "disclaimerEvm": "你即将签署并广播一笔向 {{address}} 的 EVM 交易。"
+    }
+  },
+  "sign": {
+    "title": "正在本设备签名…",
+    "body": "你的密钥仅保存在本地。我们签署交易并广播到网络。",
+    "broadcasting": "正在广播到网络…"
+  },
+  "status": {
+    "success": {
+      "title": "发送成功",
+      "body": "{{amount}} 已发送至 {{recipient}}。",
+      "toRecipient": "至 {{recipient}}",
+      "txid": "交易 ID",
+      "copyTxid": "复制交易 ID",
+      "copied": "已复制",
+      "viewOnExplorer": "在浏览器中查看",
+      "close": "完成"
+    },
+    "failure": {
+      "title": "发送失败",
+      "body": "无法广播交易。请重试。",
+      "retry": "重试"
+    }
+  }
+}

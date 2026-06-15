@@ -1,0 +1,54 @@
+{
+  "title": "Empfangen",
+  "subtitle": "Teile deine Adresse, um unterstützte Assets in jedem Netzwerk zu empfangen.",
+  "asset": {
+    "label": "Asset"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "Ethereum, BSC, Polygon",
+      "helper": "Gleiche Adresse für Ethereum, BSC und Polygon. Der Sender wählt das Netzwerk."
+    }
+  },
+  "address": {
+    "label": "Deine Adresse",
+    "copy": "Kopieren",
+    "copied": "Adresse kopiert",
+    "share": "Teilen"
+  },
+  "banner": {
+    "inactive": {
+      "title": "Konto nicht aktiviert",
+      "body": "Empfange mindestens 1 XRP, um dieses Konto im XRP Ledger zu aktivieren. Bis dahin ist die Adresse im Netzwerk reserviert, aber noch nicht gespeichert.",
+      "learnMore": "Mehr erfahren"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "Was bedeutet Aktivierung?",
+      "body": "Im XRP Ledger existiert eine Adresse erst, wenn sie mindestens 1 XRP hält — dies wird als Basisreserve bezeichnet. Die Reserve ist keine Gebühr; sie bleibt auf der Adresse und kann beim Löschen des Kontos zurückgefordert werden.\n\nBis du diese ersten 1 XRP erhältst, gehört die Adresse dir und du kannst sie teilen, das Netzwerk zeigt sie aber nicht im Ledger an. Sobald eine Zahlung eingeht, wird das Konto automatisch aktiviert.",
+      "dismiss": "Verstanden"
+    }
+  },
+  "qr": {
+    "alt": "QR-Code für Adresse {{address}}",
+    "destinationTagHint": "Subkonto aktiv — Destination Tag {{tag}} im QR enthalten."
+  },
+  "subAccount": {
+    "title": "Subkonto erstellen",
+    "body": "Generiere einen Destination Tag, damit eine Börse eingehende Zahlungen einem bestimmten Nutzer zuordnen kann.",
+    "labelField": "Bezeichnung",
+    "labelPlaceholder": "z. B. Trading Desk",
+    "tagField": "Destination Tag",
+    "create": "Subkonto erstellen",
+    "creating": "Wird erstellt…",
+    "error": {
+      "label": "Bezeichnung ist erforderlich",
+      "range": "Tag muss zwischen 0 und 4294967295 liegen"
+    }
+  }
+}

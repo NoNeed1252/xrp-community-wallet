@@ -1,0 +1,39 @@
+{
+  "actions": {
+    "viewAll": "View all",
+    "copy": "Copy",
+    "copied": "Copied",
+    "retry": "Retry",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "status": {
+    "open": "Open",
+    "pending": "Pending",
+    "completed": "Completed",
+    "failed": "Failed",
+    "inactive": "Inactive"
+  },
+  "nav": {
+    "home": "Home",
+    "send": "Send",
+    "receive": "Receive",
+    "history": "History",
+    "portfolio": "Portfolio",
+    "staking": "Staking",
+    "settings": "Settings",
+    "more": "More",
+    "lockNow": "Lock wallet"
+  },
+  "topbar": {
+    "help": "Help",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "account": "Account",
+    "context": "Wallet"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  }
+}

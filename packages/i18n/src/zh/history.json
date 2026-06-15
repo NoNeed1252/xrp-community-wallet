@@ -1,0 +1,78 @@
+{
+  "title": "交易历史",
+  "subtitle": "你所有网络上的付款和质押活动。",
+  "filters": {
+    "types": {
+      "label": "类型",
+      "payment": "付款",
+      "staking_deposit": "质押存入",
+      "staking_payout": "质押收益"
+    },
+    "status": {
+      "label": "状态",
+      "all": "全部",
+      "pending": "处理中",
+      "completed": "已完成",
+      "failed": "失败"
+    },
+    "period": {
+      "label": "时段",
+      "today": "今天",
+      "7d": "最近 7 天",
+      "30d": "最近 30 天",
+      "all": "全部时间"
+    },
+    "search": {
+      "placeholder": "按地址、标签或备注搜索…"
+    },
+    "clear": "清除筛选"
+  },
+  "list": {
+    "columns": {
+      "date": "日期",
+      "type": "类型",
+      "counterparty": "对方",
+      "amount": "金额",
+      "status": "状态",
+      "actions": "操作"
+    },
+    "showing": "显示 {{shown}} 条,共 {{total}} 条"
+  },
+  "empty": {
+    "title": "暂无交易",
+    "body": "你的付款和质押活动将显示在这里。",
+    "send": "发送",
+    "receive": "接收",
+    "filtered": {
+      "title": "没有符合筛选条件的交易",
+      "body": "尝试更改筛选条件或清除筛选以查看全部。"
+    }
+  },
+  "details": {
+    "title": "交易详情",
+    "from": "来自",
+    "to": "至",
+    "memo": "目标标签",
+    "memoText": "备注",
+    "amount": "金额",
+    "fee": "手续费",
+    "status": "状态",
+    "txHash": "交易哈希",
+    "ledgerIndex": "账本索引",
+    "created": "创建时间",
+    "completed": "完成时间",
+    "failed": {
+      "code": "失败代码"
+    },
+    "copy": "复制",
+    "copied": "已复制",
+    "viewOnExplorer": "在浏览器中查看",
+    "userSendBadge": "从此钱包发送"
+  },
+  "errors": {
+    "explorer": {
+      "title": "部分历史记录不可用",
+      "body": "某个浏览器未响应。列表可能不完整 — 请稍后重试。"
+    }
+  }
+}

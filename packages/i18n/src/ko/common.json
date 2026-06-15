@@ -1,0 +1,39 @@
+{
+  "actions": {
+    "viewAll": "모두 보기",
+    "copy": "복사",
+    "copied": "복사됨",
+    "retry": "다시 시도",
+    "confirm": "확인",
+    "cancel": "취소",
+    "close": "닫기"
+  },
+  "status": {
+    "open": "열림",
+    "pending": "대기 중",
+    "completed": "완료됨",
+    "failed": "실패",
+    "inactive": "비활성"
+  },
+  "nav": {
+    "home": "홈",
+    "send": "보내기",
+    "receive": "받기",
+    "history": "내역",
+    "portfolio": "포트폴리오",
+    "staking": "스테이킹",
+    "settings": "설정",
+    "more": "더보기",
+    "lockNow": "지갑 잠금"
+  },
+  "topbar": {
+    "help": "도움말",
+    "notifications": "알림",
+    "settings": "설정",
+    "account": "계정",
+    "context": "지갑"
+  },
+  "a11y": {
+    "skipToContent": "본문으로 건너뛰기"
+  }
+}

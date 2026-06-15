@@ -1,0 +1,62 @@
+{
+  "title": "Staking",
+  "subtitle": "Earn rewards by delegating XRP to the community pool.",
+  "hero": {
+    "tagline": "Community pool",
+    "title": "Put your XRP to work",
+    "body": "Stake XRP to earn rewards at {{apr}}% APR. Funds remain on the XRPL — payouts arrive automatically on a monthly schedule.",
+    "totalStaked": "Total staked",
+    "totalRewards": "Rewards accrued",
+    "apr": "APR",
+    "startCta": "Stake XRP"
+  },
+  "pool": {
+    "title": "Pool details",
+    "helper": "Operational policy and on-chain identifier.",
+    "body": "Custodial XRP pool. Rewards are accrued daily and paid out every 30 days.",
+    "apr": "APR",
+    "minDeposit": "Min. deposit",
+    "payoutFreq": "Payout",
+    "payoutFreqValue": "every {{days}} days",
+    "destinationTag": "Destination tag",
+    "nextPayout": "Next payout: {{date}}",
+    "docs": "Docs"
+  },
+  "positions": {
+    "title": "Your positions",
+    "openedAt": "Opened {{date}}",
+    "accrued": "Accrued",
+    "unstakeCta": "Withdraw",
+    "status": {
+      "active": "Active",
+      "pending": "Pending",
+      "withdrawing": "Withdrawing",
+      "closed": "Closed"
+    },
+    "empty": {
+      "title": "No staking positions yet",
+      "body": "Stake some XRP to start earning rewards. You can withdraw at any time."
+    }
+  },
+  "modal": {
+    "title": "Stake XRP",
+    "intro": "Delegate XRP to the community pool and earn {{apr}}% APR. Rewards accrue daily and are paid monthly.",
+    "amount": {
+      "label": "Amount to stake",
+      "balance": "Available: {{amount}} XRP",
+      "max": "Max",
+      "error": {
+        "tooBig": "Amount exceeds available balance",
+        "tooSmall": "Minimum stake is {{min}} XRP"
+      }
+    },
+    "summary": {
+      "apr": "APR",
+      "estYearly": "Est. yearly reward",
+      "fee": "Network fee"
+    },
+    "disclaimer": "Staking rewards are estimates. Actual returns depend on pool performance and may vary.",
+    "cancel": "Cancel",
+    "confirm": "Confirm & stake"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "¡Bienvenido de nuevo!",
+    "welcomeBackNamed": "¡Bienvenido de nuevo, {{name}}!"
+  },
+  "cta": {
+    "createTransaction": "Crear transacción",
+    "menu": {
+      "send": "Enviar",
+      "stake": "Añadir staking"
+    }
+  },
+  "warnings": {
+    "evmReimport": "Reimporta tu frase semilla para habilitar activos EVM"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "Intentos abiertos",
+      "helper": "Acciones pendientes en tus bóvedas de tesorería.",
+      "empty": "Sin intentos abiertos",
+      "columns": {
+        "createdAt": "Creado el",
+        "intent": "Intento",
+        "initiatedBy": "Iniciado por",
+        "status": "Estado"
+      }
+    },
+    "lastTransactions": {
+      "title": "Últimas transacciones",
+      "helper": "Actividad on-chain más reciente de la cuenta activa.",
+      "empty": "Aún no hay transacciones",
+      "columns": {
+        "createdAt": "Creado el",
+        "source": "Origen",
+        "destination": "Destino",
+        "value": "Valor",
+        "status": "Estado"
+      }
+    },
+    "balances": {
+      "title": "Saldos",
+      "helper": "Valor total estimado de tus activos.",
+      "estTotalValue": "Valor total est.",
+      "empty": "Aún no hay activos"
+    },
+    "accounts": {
+      "title": "Cuentas",
+      "helper": "Tus wallets y las cadenas que cubren.",
+      "empty": "Aún no hay cuentas",
+      "kinds": {
+        "multi": "Multi-cadena",
+        "ledger": "Ledger",
+        "importedKey": "Clave importada",
+        "legacy": "Solo XRPL"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "La cuenta «{{label}}» no está activada",
+      "body": "Recibe al menos 1 XRP para activarla en el XRP Ledger.",
+      "cta": "Mostrar dirección de recepción"
+    },
+    "backup": {
+      "title": "Haz copia de tu frase semilla",
+      "body": "No has confirmado la copia de tu frase semilla. Sin ella no podrás recuperar tu wallet.",
+      "cta": "Confirmar copia"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "No se pudo cargar el panel",
+      "body": "Algo ha salido mal. Por favor, reintenta."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "Próximamente",
+      "body": "Esta sección se desarrollará en un sprint posterior."
+    }
+  }
+}

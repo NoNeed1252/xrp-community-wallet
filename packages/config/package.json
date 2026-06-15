@@ -1,0 +1,24 @@
+{
+  "name": "@rc/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tailwind-preset": "./tailwind-preset.cjs",
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/react.json": "./tsconfig/react.json"
+  },
+  "files": [
+    "tailwind-preset.cjs",
+    "tsconfig"
+  ],
+  "scripts": {
+    "typecheck": "echo 'no ts in config'",
+    "build": "echo 'no build'",
+    "lint": "echo 'no lint'",
+    "test": "echo 'no tests'"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "title": "Impostazioni",
+  "subtitle": "Gestisci il tuo wallet, la sicurezza e le preferenze.",
+  "nav": {
+    "general": "Generale",
+    "security": "Sicurezza",
+    "accounts": "Account",
+    "subAccounts": "Sub-account",
+    "tokens": "Token"
+  },
+  "actions": {
+    "cancel": "Annulla",
+    "save": "Salva",
+    "rename": "Rinomina",
+    "delete": "Elimina",
+    "close": "Chiudi"
+  },
+  "general": {
+    "appearance": {
+      "title": "Aspetto",
+      "body": "Personalizza come il wallet appare su questo dispositivo."
+    },
+    "security": {
+      "title": "Sicurezza e blocco",
+      "body": "Gestisci il blocco automatico del tuo wallet."
+    },
+    "about": {
+      "title": "Informazioni",
+      "version": "Versione",
+      "network": "Reti"
+    },
+    "language": { "label": "Lingua" },
+    "theme": {
+      "label": "Tema",
+      "light": "Chiaro",
+      "system": "Sistema",
+      "dark": "Scuro",
+      "helper": "Il tema scuro è disponibile; \"Sistema\" segue la preferenza del tuo OS."
+    },
+    "autoLock": {
+      "label": "Blocco automatico",
+      "helper": "Il wallet si blocca dopo questo periodo di inattività.",
+      "options": {
+        "1": "1m",
+        "5": "5m",
+        "15": "15m",
+        "30": "30m",
+        "60": "1h"
+      },
+      "lockOnHidden": "Blocca quando la scheda è nascosta",
+      "lockOnHiddenHelper": "Blocca immediatamente ogni volta che cambi scheda."
+    }
+  },
+  "security": {
+    "password": {
+      "title": "Password",
+      "body": "Usata per cifrare il tuo wallet su questo dispositivo.",
+      "change": "Cambia password",
+      "modal": {
+        "title": "Cambia password",
+        "old": "Password attuale",
+        "new": "Nuova password",
+        "confirm": "Conferma nuova password",
+        "submit": "Aggiorna password",
+        "working": "Ri-cifratura del wallet in corso…",
+        "strength": "Robustezza",
+        "strength_weak": "Debole",
+        "strength_fair": "Discreta",
+        "strength_good": "Buona",
+        "strength_strong": "Forte",
+        "error": {
+          "wrong": "La password attuale è errata.",
+          "mismatch": "Le password non corrispondono.",
+          "weak": "La password è troppo debole."
+        },
+        "success": "Password aggiornata"
+      }
+    },
+    "seed": {
+      "title": "Frase di recupero",
+      "body": "Rivela il segreto che controlla questo wallet. Non condividerlo mai.",
+      "view": "Mostra seed",
+      "modal": {
+        "title": "Mostra frase di recupero",
+        "warning": "Chiunque abbia questa chiave controlla il tuo wallet. Non condividerla mai. Non te la chiederemo mai.",
+        "passwordPrompt": "Inserisci la tua password per rivelarla",
+        "reveal": "Rivela",
+        "autoHide": "Verrà nascosta automaticamente in 60 secondi.",
+        "error": "Password errata"
+      }
+    },
+    "lockNow": {
+      "title": "Blocca ora",
+      "body": "Blocca immediatamente il wallet su questo dispositivo.",
+      "cta": "Blocca"
+    },
+    "reset": {
+      "title": "Resetta wallet",
+      "body": "Cancella il wallet cifrato su questo dispositivo. Puoi ripristinarlo dalla tua frase di recupero.",
+      "cta": "Resetta…",
+      "modal": {
+        "title": "Resettare il wallet?",
+        "body": "Tutti gli account su questo dispositivo verranno rimossi. La tua frase di recupero funziona ancora per re-importarli — senza di essa, i fondi sono irrecuperabili.",
+        "confirmPrompt": "Digita {{word}} per confermare",
+        "confirm": "Cancella wallet"
+      }
+    }
+  },
+  "accounts": {
+    "list": { "title": "Account su questo dispositivo" },
+    "active": "Attivo",
+    "hardware": "Hardware",
+    "setActive": "Imposta come attivo",
+    "switched": "Account cambiato",
+    "add": { "cta": "Aggiungi account" },
+    "rename": {
+      "cta": "Rinomina",
+      "modal": { "title": "Rinomina account", "label": "Nome account" },
+      "success": "Account rinominato"
+    },
+    "delete": {
+      "cta": "Elimina",
+      "success": "Account eliminato",
+      "failed": "Impossibile eliminare l'account",
+      "modal": {
+        "title": "Eliminare l'account?",
+        "body": "La rimozione di {{label}} da questo dispositivo non può essere annullata — avrai bisogno della frase di recupero per re-importarlo.",
+        "confirmPrompt": "Digita {{label}} per confermare",
+        "confirm": "Elimina account"
+      }
+    }
+  },
+  "subAccounts": {
+    "title": "Sub-account",
+    "subtitle": "Usa i destination tag per raggruppare i pagamenti per {{label}}.",
+    "dtPrefix": "Destination tag",
+    "empty": {
+      "title": "Nessun sub-account",
+      "body": "I sub-account ti permettono di ricevere pagamenti raggruppati tramite destination tag."
+    },
+    "add": {
+      "cta": "Aggiungi sub-account",
+      "success": "Sub-account aggiunto",
+      "fields": {
+        "label": "Etichetta",
+        "destinationTag": "Destination tag",
+        "dtHelper": "Qualsiasi numero 0–4294967295. I mittenti lo includono per identificare il tuo sub-account.",
+        "note": "Nota (opzionale)"
+      },
+      "errors": {
+        "labelEmpty": "L'etichetta è obbligatoria",
+        "tagRange": "Il tag deve essere 0–4294967295",
+        "tagDuplicate": "Il tag è già usato in questo account",
+        "generic": "Impossibile aggiungere sub-account"
+      },
+      "modal": { "title": "Aggiungi sub-account", "submit": "Aggiungi" }
+    },
+    "rename": { "title": "Rinomina sub-account", "success": "Sub-account rinominato" },
+    "delete": {
+      "title": "Eliminare il sub-account?",
+      "body": "{{label}} verrà rimosso. Questa azione non può essere annullata.",
+      "success": "Sub-account eliminato"
+    }
+  },
+  "tokens": {
+    "notMultiChain": "I token personalizzati sono disponibili solo per wallet multi-chain. Re-importa la tua frase di recupero per abilitare EVM.",
+    "added": "Token aggiunto",
+    "removed": "Token rimosso",
+    "list": {
+      "title": "Token aggiunti",
+      "empty": "Nessun token personalizzato. Aggiungi un indirizzo di contratto sopra.",
+      "loading": "Caricamento…"
+    },
+    "scamWarning": {
+      "title": "Verifica il contratto prima di aggiungerlo",
+      "body": "Chiunque può distribuire un ERC-20 falso. Assicurati che l'indirizzo provenga da una fonte affidabile — block explorer, sito ufficiale del progetto o un elenco di token verificato. Il wallet non approva i token importati."
+    },
+    "add": {
+      "title": "Aggiungi un token",
+      "body": "Aggiungi un token ERC-20 tramite il suo indirizzo di contratto. Nome, simbolo e decimali vengono letti direttamente dal contratto on-chain.",
+      "chainLabel": "Rete",
+      "addressLabel": "Indirizzo contratto",
+      "addressHelper": "Incolla l'indirizzo contratto 0x…. Recupereremo i metadati.",
+      "previewCta": "Cerca token",
+      "confirmCta": "Aggiungi al wallet",
+      "decimals": "Decimali: {{decimals}}",
+      "verifyHint": "Ricontrolla"
+    },
+    "errors": {
+      "invalid_address": "Questo non è un indirizzo contratto valido.",
+      "no_contract": "Nessun contratto trovato a questo indirizzo sulla rete selezionata.",
+      "not_erc20": "Questo contratto non è un token ERC-20.",
+      "network": "Impossibile raggiungere la rete. Riprova tra un momento.",
+      "duplicate": "Questo token è già stato aggiunto."
+    }
+  }
+}

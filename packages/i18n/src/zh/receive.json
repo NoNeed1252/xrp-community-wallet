@@ -1,0 +1,54 @@
+{
+  "title": "接收",
+  "subtitle": "分享你的地址,在各个网络上接收支持的资产。",
+  "asset": {
+    "label": "资产"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "以太坊、BSC、Polygon",
+      "helper": "以太坊、BSC 和 Polygon 共用同一地址。由发送方选择使用哪个网络。"
+    }
+  },
+  "address": {
+    "label": "你的地址",
+    "copy": "复制",
+    "copied": "地址已复制",
+    "share": "分享"
+  },
+  "banner": {
+    "inactive": {
+      "title": "账户未激活",
+      "body": "接收至少 1 XRP 以在 XRP Ledger 上激活此账户。在此之前,地址已在网络上保留但尚未存储。",
+      "learnMore": "了解更多"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "什么是账户激活?",
+      "body": "在 XRP Ledger 上,地址只有持有至少 1 XRP 后才正式存在 — 这称为基础准备金。准备金不是手续费,它保留在地址上,删除账户时可以收回。\n\n收到第一笔 1 XRP 之前,你仍可分享该地址,但网络的账本中不会显示。一旦收到付款,账户将自动激活。",
+      "dismiss": "知道了"
+    }
+  },
+  "qr": {
+    "alt": "地址 {{address}} 的二维码",
+    "destinationTagHint": "子账户已激活 — 二维码包含目标标签 {{tag}}。"
+  },
+  "subAccount": {
+    "title": "创建子账户",
+    "body": "生成一个目标标签,以便交易所将入账款项记入特定用户。",
+    "labelField": "标签",
+    "labelPlaceholder": "例如 交易部",
+    "tagField": "目标标签",
+    "create": "创建子账户",
+    "creating": "创建中…",
+    "error": {
+      "label": "标签为必填项",
+      "range": "标签必须在 0–4294967295 之间"
+    }
+  }
+}

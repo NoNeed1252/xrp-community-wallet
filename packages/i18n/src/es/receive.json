@@ -1,0 +1,54 @@
+{
+  "title": "Recibir",
+  "subtitle": "Comparte tu dirección para recibir los activos compatibles en cada red.",
+  "asset": {
+    "label": "Activo"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "Ethereum, BSC, Polygon",
+      "helper": "Misma dirección para Ethereum, BSC y Polygon. El remitente elige qué red usar."
+    }
+  },
+  "address": {
+    "label": "Tu dirección",
+    "copy": "Copiar",
+    "copied": "Dirección copiada",
+    "share": "Compartir"
+  },
+  "banner": {
+    "inactive": {
+      "title": "Cuenta no activada",
+      "body": "Recibe al menos 1 XRP para activar esta cuenta en el XRP Ledger. Hasta entonces, la dirección queda reservada en la red pero aún no se almacena.",
+      "learnMore": "Más información"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "¿Qué significa activar?",
+      "body": "En el XRP Ledger, una dirección solo existe cuando contiene al menos 1 XRP — esto se llama reserva base. La reserva no es una comisión; permanece en la dirección y puede recuperarse al eliminar la cuenta.\n\nHasta que recibas ese primer XRP, la dirección es tuya para compartir, pero la red no la mostrará en el ledger. Cuando llega un pago, la cuenta se activa automáticamente.",
+      "dismiss": "Entendido"
+    }
+  },
+  "qr": {
+    "alt": "Código QR para la dirección {{address}}",
+    "destinationTagHint": "Subcuenta activa — destination tag {{tag}} incluido en el QR."
+  },
+  "subAccount": {
+    "title": "Crear una subcuenta",
+    "body": "Genera un destination tag para que un exchange pueda acreditar pagos entrantes a un usuario concreto.",
+    "labelField": "Etiqueta",
+    "labelPlaceholder": "p. ej. Mesa de trading",
+    "tagField": "Destination tag",
+    "create": "Crear subcuenta",
+    "creating": "Creando…",
+    "error": {
+      "label": "La etiqueta es obligatoria",
+      "range": "El tag debe estar entre 0 y 4294967295"
+    }
+  }
+}

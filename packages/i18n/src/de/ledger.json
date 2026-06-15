@@ -1,0 +1,78 @@
+{
+  "title": "Verbinde deinen Ledger",
+  "subtitle": "Nutze eine Hardware-Wallet, um Transaktionen zu signieren, ohne deine Schlüssel offenzulegen.",
+  "badge": "Hardware",
+  "support": {
+    "unsupported": {
+      "title": "Hardware-Wallet-Support erfordert einen Chromium-basierten Browser",
+      "body": "WebHID, das für die Kommunikation mit Ledger-Geräten genutzt wird, ist in Chrome, Edge, Brave und Opera verfügbar. Öffne diese Wallet in einem unterstützten Browser, um ein Hardware-Konto hinzuzufügen."
+    },
+    "docs": "Mehr erfahren"
+  },
+  "connect": {
+    "steps": {
+      "1": "Schließe deinen Ledger per USB an",
+      "2": "Öffne die XRP-App auf dem Gerät",
+      "3": "Bestätige die Browser-Berechtigungsanfrage",
+      "4": "Bestätige die Adresse auf dem Gerätedisplay"
+    },
+    "cta": {
+      "connect": "Ledger verbinden",
+      "retry": "Erneut versuchen",
+      "done": "Weiter"
+    },
+    "status": {
+      "device": {
+        "none": "Nicht verbunden",
+        "connecting": "Wird verbunden…",
+        "connected": "Verbunden: {{name}}"
+      },
+      "app": {
+        "unknown": "—",
+        "notOpen": "Öffne die XRP-App auf dem Gerät",
+        "open": "XRP-App geöffnet"
+      },
+      "address": {
+        "label": "Adresse",
+        "pending": "Wartet…"
+      }
+    }
+  },
+  "naming": {
+    "title": "Benenne dein Ledger-Konto",
+    "label": "Kontoname",
+    "placeholder": "z. B. Ledger Nano X",
+    "cta": "Konto hinzufügen"
+  },
+  "errors": {
+    "unsupported": "WebHID wird in diesem Browser nicht unterstützt.",
+    "permission_denied": "Browser-Berechtigung wurde verweigert. Klicke erneut auf „Ledger verbinden“ und bestätige die Anfrage.",
+    "no_device": "Kein Ledger-Gerät gefunden. Stecke es ein und versuche es erneut.",
+    "transport": "Verbindung zum Gerät fehlgeschlagen. USB-Kabel neu anschließen und erneut versuchen.",
+    "app_not_open": "Öffne die XRP-App auf deinem Ledger und versuche es erneut.",
+    "app_locked": "Entsperre deinen Ledger mit der PIN und versuche es erneut.",
+    "user_rejected": "Du hast die Anfrage auf dem Gerät abgelehnt.",
+    "timeout": "Das Gerät hat nicht rechtzeitig geantwortet.",
+    "path_forbidden": "Dieser Derivation Path ist nicht erlaubt.",
+    "address_mismatch": "Die vom Gerät zurückgegebene Adresse stimmt nicht mit dem öffentlichen Schlüssel überein. Trenne die Verbindung und versuche es erneut.",
+    "generic": "Bei der Kommunikation mit dem Ledger ist etwas schiefgelaufen."
+  },
+  "sign": {
+    "title": "Überprüfe auf deinem Ledger",
+    "body": "Bestätige die Zahlung auf deinem Gerät mit beiden Tasten.",
+    "fields": {
+      "to": "An",
+      "amount": "Betrag",
+      "fee": "Gebühr",
+      "memo": "Destination Tag"
+    },
+    "cancel": "Abbrechen",
+    "cancelled": "Signierung abgebrochen."
+  },
+  "send": {
+    "disabled": {
+      "title": "Senden mit Ledger ist noch nicht verfügbar",
+      "body": "Echte XRPL-Transaktionssignaturen auf Ledger-Geräten werden noch implementiert. Wechsle vorübergehend zu einem seed-basierten Software-Konto in der Konten-Auswahl."
+    }
+  }
+}

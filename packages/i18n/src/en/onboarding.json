@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "Back",
+    "continue": "Continue",
+    "finish": "Finish setup"
+  },
+  "steps": {
+    "label": "Step {{current}} of {{total}}"
+  },
+  "welcome": {
+    "title": "Welcome to your wallet",
+    "subtitle": "How would you like to get started?",
+    "options": {
+      "create": {
+        "title": "Create a new wallet",
+        "body": "Generate a fresh seed phrase. Recommended for new users."
+      },
+      "importSeed": {
+        "title": "Import a seed phrase",
+        "body": "Restore a wallet using your 12 or 24 BIP-39 words."
+      },
+      "importKey": {
+        "title": "Import a private key",
+        "body": "Paste your XRPL family seed (starts with sEd... or s...)."
+      },
+      "ledger": {
+        "title": "Connect a Ledger device",
+        "body": "Sign transactions on your hardware wallet. Available in a later release."
+      }
+    }
+  },
+  "create": {
+    "title": "Your seed phrase",
+    "helper": "12 BIP-39 words that fully control this wallet.",
+    "body": "Write these words down in order and keep them offline. Anyone with these words can access your funds.",
+    "disclaimer": "We will ask you to confirm a few of them on the next step.",
+    "actions": {
+      "regenerate": "Generate new",
+      "copy": "Copy",
+      "copied": "Copied",
+      "next": "I saved it, continue"
+    },
+    "copy": {
+      "warning": "Clipboard will be cleared automatically in 60 seconds."
+    }
+  },
+  "confirm": {
+    "title": "Confirm your seed phrase",
+    "body": "Type the requested words exactly as shown earlier.",
+    "prompt": "Word #{{n}}",
+    "error": "Doesn't match"
+  },
+  "importSeed": {
+    "title": "Import your seed phrase",
+    "body": "Enter 12 or 24 BIP-39 words separated by spaces.",
+    "label": "Seed phrase",
+    "helper": "We expect {{count}} words. Case is ignored.",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "Detected address",
+    "error": {
+      "wordCount": "Must contain exactly 12 or 24 words.",
+      "notInDict": "One or more words are not in the BIP-39 dictionary.",
+      "invalidChecksum": "Checksum is invalid — please double-check the words."
+    }
+  },
+  "importKey": {
+    "title": "Import a private key",
+    "body": "Paste an XRPL family seed (starts with sEd... or s...).",
+    "label": "Private key",
+    "helper": "The key stays on this device.",
+    "derivedAddress": "Detected address",
+    "error": {
+      "invalidFormat": "Not a valid XRPL family seed."
+    }
+  },
+  "setPassword": {
+    "title": "Protect your wallet",
+    "body": "This password encrypts your wallet on this device. We cannot recover it for you.",
+    "password": "Password",
+    "confirm": "Confirm password",
+    "requirements": "At least 10 characters with mixed case, a digit, and a special character.",
+    "securing": "Securing your password…",
+    "strength": {
+      "weak": "Weak",
+      "fair": "Fair",
+      "good": "Good",
+      "strong": "Strong"
+    },
+    "error": {
+      "mismatch": "Passwords don't match."
+    },
+    "addMode": {
+      "title": "Add account",
+      "body": "Enter your wallet password to encrypt the new account.",
+      "password": "Wallet password",
+      "submit": "Add account"
+    }
+  },
+  "done": {
+    "title": "You're all set",
+    "body": "Your wallet is ready to use. You can lock and unlock it anytime from settings.",
+    "cta": "Open wallet"
+  },
+  "ledger": {
+    "title": "Coming soon",
+    "body": "Hardware wallet flow is being built (sprint W8). For now please use one of the seed-based options."
+  },
+  "unlock": {
+    "title": "Welcome back",
+    "tagline": "Sign in to your community wallet.",
+    "autoLockHint": "Auto-locked for your protection.",
+    "body": "Enter your password to unlock the wallet.",
+    "password": "Password",
+    "action": "Unlock",
+    "error": {
+      "wrongPassword": "Wrong password.",
+      "cooldown": "Too many attempts. Try again in {{sec}} seconds."
+    },
+    "forgot": {
+      "link": "Forgot password? Reset wallet…",
+      "modal": {
+        "title": "Reset wallet?",
+        "body": "This permanently erases the encrypted wallet on this device. With your seed phrase you can import again — without it, funds are unrecoverable.",
+        "confirmText": "WIPE",
+        "typeToConfirm": "Type {{word}} to confirm",
+        "helper": "Case is ignored. This action cannot be undone.",
+        "confirm": "Wipe wallet"
+      }
+    }
+  }
+}

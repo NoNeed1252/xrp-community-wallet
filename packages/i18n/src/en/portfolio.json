@@ -1,0 +1,43 @@
+{
+  "title": "Portfolio",
+  "subtitle": "Your holdings and the wider market at a glance.",
+  "tabs": {
+    "my-assets": "My assets",
+    "market": "Market"
+  },
+  "total": {
+    "label": "Estimated total value",
+    "change24h": {
+      "up": "+{{pct}}% 24h",
+      "down": "−{{pct}}% 24h"
+    }
+  },
+  "holdings": {
+    "columns": {
+      "asset": "Asset",
+      "price": "Price",
+      "balance": "Balance",
+      "value": "Value",
+      "change24h": "24h"
+    },
+    "empty": {
+      "title": "No assets yet",
+      "body": "Receive XRP or another asset to start building your portfolio.",
+      "cta": "Receive your first transaction"
+    }
+  },
+  "market": {
+    "loading": "Loading market data…",
+    "error": {
+      "title": "Market data is unavailable",
+      "body": "Couldn't reach CoinGecko. Try again in a moment."
+    },
+    "columns": {
+      "asset": "Asset",
+      "price": "Price",
+      "change24h": "24h",
+      "marketCap": "Market cap",
+      "chart": "24h chart"
+    }
+  }
+}

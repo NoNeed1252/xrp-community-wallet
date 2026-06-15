@@ -1,0 +1,62 @@
+{
+  "title": "ステーキング",
+  "subtitle": "XRPをコミュニティプールに委任して報酬を獲得します。",
+  "hero": {
+    "tagline": "コミュニティプール",
+    "title": "あなたのXRPを活用しましょう",
+    "body": "XRPをステーキングしてAPR {{apr}}%の報酬を獲得しましょう。資金はXRPL上に留まり、報酬は月次スケジュールで自動的に届きます。",
+    "totalStaked": "総ステーキング額",
+    "totalRewards": "獲得済み報酬",
+    "apr": "APR",
+    "startCta": "XRPをステーキング"
+  },
+  "pool": {
+    "title": "プール詳細",
+    "helper": "運用ポリシーとオンチェーン識別子。",
+    "body": "カストディアルXRPプール。報酬は日次で積み上げられ、30日ごとに支払われます。",
+    "apr": "APR",
+    "minDeposit": "最低預入額",
+    "payoutFreq": "支払い",
+    "payoutFreqValue": "{{days}}日ごと",
+    "destinationTag": "宛先タグ",
+    "nextPayout": "次回支払い: {{date}}",
+    "docs": "ドキュメント"
+  },
+  "positions": {
+    "title": "あなたのポジション",
+    "openedAt": "{{date}} に開始",
+    "accrued": "累積",
+    "unstakeCta": "引き出し",
+    "status": {
+      "active": "アクティブ",
+      "pending": "処理中",
+      "withdrawing": "引き出し中",
+      "closed": "終了"
+    },
+    "empty": {
+      "title": "ステーキングポジションはまだありません",
+      "body": "XRPをステーキングして報酬の獲得を始めましょう。いつでも引き出せます。"
+    }
+  },
+  "modal": {
+    "title": "XRPをステーキング",
+    "intro": "XRPをコミュニティプールに委任してAPR {{apr}}%の報酬を獲得します。報酬は日次で積み上がり、月次で支払われます。",
+    "amount": {
+      "label": "ステーキング額",
+      "balance": "利用可能: {{amount}} XRP",
+      "max": "最大",
+      "error": {
+        "tooBig": "金額が利用可能残高を超えています",
+        "tooSmall": "最低ステーキング額は {{min}} XRP です"
+      }
+    },
+    "summary": {
+      "apr": "APR",
+      "estYearly": "推定年間報酬",
+      "fee": "ネットワーク手数料"
+    },
+    "disclaimer": "ステーキング報酬は推定値です。実際のリターンはプールのパフォーマンスに依存し、変動する可能性があります。",
+    "cancel": "キャンセル",
+    "confirm": "確認してステーキング"
+  }
+}

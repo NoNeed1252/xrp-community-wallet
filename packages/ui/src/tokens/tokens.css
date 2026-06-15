@@ -1,0 +1,139 @@
+/*
+ * Дизайн-токены Ripple Community Wallet.
+ * Light-first. Dark — placeholder (значения = light), включается в W9.
+ * Все цвета — в формате "r g b" (без rgb()) для поддержки <alpha-value> в Tailwind.
+ */
+
+:root,
+:root[data-theme='light'] {
+  /* Brand cobalt */
+  --rc-brand-50: 242 246 255;
+  --rc-brand-100: 230 238 255;
+  --rc-brand-500: 59 124 255;
+  --rc-brand-600: 26 93 255;
+  --rc-brand-700: 17 71 204;
+
+  /* Neutrals */
+  --rc-neutral-0: 255 255 255;
+  --rc-neutral-50: 245 246 248;
+  --rc-neutral-100: 238 240 244;
+  --rc-neutral-200: 228 231 236;
+  --rc-neutral-300: 205 210 218;
+  --rc-neutral-400: 156 162 171;
+  --rc-neutral-500: 94 100 112;
+  --rc-neutral-700: 42 47 56;
+  --rc-neutral-900: 14 17 22;
+
+  /* Semantic */
+  --rc-success-100: 220 245 227;
+  --rc-success-700: 11 122 59;
+  --rc-info-100: 222 234 251;
+  --rc-info-700: 27 81 178;
+  --rc-warning-100: 255 243 214;
+  --rc-warning-700: 138 90 0;
+  --rc-danger-100: 251 228 228;
+  --rc-danger-700: 183 37 60;
+
+  /* Composite surfaces */
+  --rc-page: 245 246 248;
+  --rc-surface: 255 255 255;
+  --rc-nested: 244 246 249;
+}
+
+:root[data-theme='dark'] {
+  /* Dark palette (W9). Активация — manual через ThemeProvider; не по prefers-color-scheme.
+   * См. ADR‑050. Контрастность под WCAG 2.1 AA (body ≥ 4.5:1). */
+
+  /* Brand cobalt: мягче на тёмном bg */
+  --rc-brand-50: 23 41 88;
+  --rc-brand-100: 30 53 110;
+  --rc-brand-500: 96 153 255;
+  --rc-brand-600: 122 170 255;
+  --rc-brand-700: 158 192 255;
+
+  /* Neutrals — инвертированная шкала */
+  --rc-neutral-0: 14 17 22;
+  --rc-neutral-50: 19 23 30;
+  --rc-neutral-100: 27 32 41;
+  --rc-neutral-200: 42 49 60;
+  --rc-neutral-300: 65 74 88;
+  --rc-neutral-400: 124 134 148;
+  --rc-neutral-500: 168 176 188;
+  --rc-neutral-700: 215 220 228;
+  --rc-neutral-900: 244 246 250;
+
+  /* Semantic — тёмные оттенки + светлый foreground */
+  --rc-success-100: 19 60 35;
+  --rc-success-700: 134 222 168;
+  --rc-info-100: 22 49 92;
+  --rc-info-700: 148 188 252;
+  --rc-warning-100: 78 56 14;
+  --rc-warning-700: 248 211 122;
+  --rc-danger-100: 78 26 36;
+  --rc-danger-700: 252 152 168;
+
+  /* Composite surfaces */
+  --rc-page: 11 14 19;
+  --rc-surface: 19 23 30;
+  --rc-nested: 27 32 41;
+}
+
+html {
+  font-family:
+    'Inter Variable',
+    'Inter',
+    system-ui,
+    sans-serif;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: rgb(var(--rc-page));
+  color: rgb(var(--rc-neutral-900));
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 80ms !important;
+    animation-duration: 80ms !important;
+    animation-iteration-count: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Утилита для focus-visible — единый стиль */
+:focus-visible {
+  outline: 2px solid rgb(var(--rc-brand-600));
+  outline-offset: 2px;
+}
+
+/* Logo wordmark — single element with background-image, swaps by theme.
+ * Height ≈ 2× the suffix font-size (text-h3 ≈ 18px) so the wordmark
+ * height visually matches "| wallet" — same proportion the landing uses.
+ * Width matches the trimmed asset (952x239 ≈ 3.98) to keep the gap to "| wallet" tight. */
+.rc-logo-mark {
+  height: 2.25rem; /* 36px @ 16px base */
+  width: 9rem;     /* ~144px ≈ 36 × (952/239) */
+  background-image: url('/logo-black.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+:root[data-theme='dark'] .rc-logo-mark {
+  background-image: url('/logo-white.png');
+}
+.rc-logo-mark.rc-logo-mark-white { background-image: url('/logo-white.png'); }
+.rc-logo-mark.rc-logo-mark-black { background-image: url('/logo-black.png'); }

@@ -1,0 +1,148 @@
+{
+  "title": "보내기",
+  "subtitle": "다른 주소로 자산을 전송합니다. 수신자를 다시 확인하십시오 — 블록체인 전송은 되돌릴 수 없습니다.",
+  "form": {
+    "asset": {
+      "label": "자산"
+    },
+    "recipient": {
+      "label": "수신자 주소",
+      "helper": "r…로 시작하는 XRPL 주소를 붙여넣으십시오",
+      "helperKnown": "알려진 연락처: {{label}}",
+      "helperEvm": "이 네트워크의 0x… 주소를 붙여넣으십시오.",
+      "detectedLabel": "{{label}} — {{address}}",
+      "error": {
+        "required": "주소는 필수입니다",
+        "invalid": "유효한 XRPL 주소가 아닙니다",
+        "invalidEvm": "유효한 0x 주소가 아닙니다",
+        "checksum": "주소 체크섬(EIP-55)이 잘못되었습니다. 문자의 대소문자를 다시 확인하십시오.",
+        "selfSend": "본인의 주소입니다. 의도한 것이 맞는지 확인하십시오."
+      },
+      "flagsUnverified": {
+        "title": "수신자 설정을 확인할 수 없습니다",
+        "body": "대상 태그가 필요한지 확인하기 위해 XRPL 네트워크에 연결할 수 없습니다. 거래소나 커스터디 계정인 경우 전송 전에 수동으로 확인하세요."
+      }
+    },
+    "amount": {
+      "label": "금액",
+      "max": "최대",
+      "balance": "사용 가능: {{amount}} XRP",
+      "balanceWithReserve": "사용 가능: {{amount}} XRP (예치금 {{reserve}} XRP)",
+      "balanceUnknown": "{{symbol}} 잔액을 확인할 수 없습니다",
+      "balanceLoading": "{{symbol}} 잔액 불러오는 중…",
+      "balanceError": "{{symbol}} 잔액을 가져오지 못했습니다",
+      "balanceGeneric": "사용 가능: {{amount}} {{symbol}}",
+      "error": {
+        "zero": "금액은 0보다 커야 합니다",
+        "exceedsBalance": "금액이 사용 가능한 잔액을 초과합니다 (예치금 1 XRP)",
+        "exceedsBalanceGeneric": "금액이 사용 가능한 잔액을 초과합니다",
+        "invalid": "유효하지 않은 금액"
+      }
+    },
+    "memo": {
+      "label": "데스티네이션 태그 (메모)",
+      "helper": "거래소 및 수탁 서비스가 전송을 식별하는 데 사용하는 숫자 태그입니다.",
+      "badge": {
+        "required": "필수",
+        "optional": "선택"
+      },
+      "error": {
+        "requiredByRecipient": "이 수신자는 데스티네이션 태그를 요구합니다",
+        "range": "태그는 0–4294967295 범위여야 합니다"
+      }
+    },
+    "fee": {
+      "label": "네트워크 수수료",
+      "estimated": "예상 가스"
+    },
+    "gas": {
+      "customize": "가스 사용자 지정",
+      "hide": "가스 설정 숨기기",
+      "helper": "네트워크 추정값을 사용하려면 필드를 비워두십시오. 값은 gwei 단위입니다.",
+      "gasLimit": "가스 한도 (단위)",
+      "gasLimitPlaceholder": "자동으로 추정됨",
+      "maxFee": "가스당 최대 수수료 (gwei)",
+      "priority": "우선 수수료 (gwei)"
+    },
+    "total": "합계",
+    "destinationTag": {
+      "label": "대상 태그",
+      "helper": "거래소나 커스터디 서비스에서 송금을 식별하기 위해 사용하는 숫자 태그.",
+      "badge": {
+        "required": "필수",
+        "optional": "선택"
+      },
+      "error": {
+        "requiredByRecipient": "이 수신자는 대상 태그가 필요합니다",
+        "range": "태그는 0–4294967295 범위여야 합니다"
+      }
+    },
+    "memoText": {
+      "label": "메모",
+      "helper": "트랜잭션에 첨부되는 선택적 자유 메모 (최대 100바이트).",
+      "placeholder": "예: 청구서 #42",
+      "error": {
+        "tooLong": "메모는 100바이트 이하여야 합니다"
+      }
+    }
+  },
+  "cta": {
+    "review": "검토",
+    "back": "뒤로",
+    "confirm": "확인 및 서명",
+    "close": "닫기"
+  },
+  "warnings": {
+    "notActivated": {
+      "title": "지갑이 활성화되지 않았습니다",
+      "body": "보내기 전에 지갑을 활성화하려면 최소 1 XRP를 받으십시오."
+    },
+    "ledgerEvm": {
+      "title": "이번 릴리스에서 Ledger는 XRP만 지원합니다",
+      "body": "EVM 자산을 보내려면 멀티 체인 계정으로 전환하거나 향후 릴리스에서 지원되는 앱을 업데이트하십시오."
+    }
+  },
+  "review": {
+    "title": "결제 검토",
+    "firstTime": {
+      "title": "이 주소로 처음 보내기",
+      "body": "수신자와 항상 주소를 확인하십시오. 블록체인 전송은 되돌릴 수 없습니다."
+    },
+    "summary": {
+      "from": "보내는 곳",
+      "to": "받는 곳",
+      "memo": "데스티네이션 태그",
+      "amount": "금액",
+      "fee": "네트워크 수수료",
+      "total": "합계",
+      "network": "네트워크",
+      "destinationTag": "대상 태그"
+    },
+    "preview": {
+      "disclaimer": "{{address}}로의 결제에 서명하여 전파하려고 합니다.",
+      "disclaimerEvm": "{{address}}로의 EVM 거래에 서명하여 전파하려고 합니다."
+    }
+  },
+  "sign": {
+    "title": "이 기기에서 서명 중…",
+    "body": "키는 로컬에 보관됩니다. 거래에 서명하여 네트워크에 전파합니다.",
+    "broadcasting": "네트워크에 전파 중…"
+  },
+  "status": {
+    "success": {
+      "title": "성공적으로 전송됨",
+      "body": "{{amount}}이(가) {{recipient}}(으)로 전송되었습니다.",
+      "toRecipient": "{{recipient}}(으)로",
+      "txid": "거래 ID",
+      "copyTxid": "거래 ID 복사",
+      "copied": "복사됨",
+      "viewOnExplorer": "탐색기에서 보기",
+      "close": "완료"
+    },
+    "failure": {
+      "title": "전송 실패",
+      "body": "거래를 전파하지 못했습니다. 다시 시도해 주십시오.",
+      "retry": "다시 시도"
+    }
+  }
+}

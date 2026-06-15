@@ -1,0 +1,197 @@
+{
+  "title": "Einstellungen",
+  "subtitle": "Verwalte deine Wallet, Sicherheit und Präferenzen.",
+  "nav": {
+    "general": "Allgemein",
+    "security": "Sicherheit",
+    "accounts": "Konten",
+    "subAccounts": "Subkonten",
+    "tokens": "Token"
+  },
+  "actions": {
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "rename": "Umbenennen",
+    "delete": "Löschen",
+    "close": "Schließen"
+  },
+  "general": {
+    "appearance": {
+      "title": "Erscheinungsbild",
+      "body": "Passe an, wie die Wallet auf diesem Gerät aussieht."
+    },
+    "security": {
+      "title": "Sicherheit & Sperre",
+      "body": "Verwalte die automatische Sperre deiner Wallet."
+    },
+    "about": {
+      "title": "Über",
+      "version": "Version",
+      "network": "Netzwerke"
+    },
+    "language": { "label": "Sprache" },
+    "theme": {
+      "label": "Theme",
+      "light": "Hell",
+      "system": "System",
+      "dark": "Dunkel",
+      "helper": "Dunkles Theme ist verfügbar; „System“ folgt deiner Betriebssystem-Einstellung."
+    },
+    "autoLock": {
+      "label": "Auto-Sperre",
+      "helper": "Wallet wird nach dieser Inaktivitätszeit gesperrt.",
+      "options": {
+        "1": "1 Min.",
+        "5": "5 Min.",
+        "15": "15 Min.",
+        "30": "30 Min.",
+        "60": "1 Std."
+      },
+      "lockOnHidden": "Sperren, wenn Tab ausgeblendet ist",
+      "lockOnHiddenHelper": "Sofort sperren, sobald du diesen Tab verlässt."
+    }
+  },
+  "security": {
+    "password": {
+      "title": "Passwort",
+      "body": "Verschlüsselt deine Wallet auf diesem Gerät.",
+      "change": "Passwort ändern",
+      "modal": {
+        "title": "Passwort ändern",
+        "old": "Aktuelles Passwort",
+        "new": "Neues Passwort",
+        "confirm": "Neues Passwort bestätigen",
+        "submit": "Passwort aktualisieren",
+        "working": "Wallet wird neu verschlüsselt…",
+        "strength": "Stärke",
+        "strength_weak": "Schwach",
+        "strength_fair": "Mittel",
+        "strength_good": "Gut",
+        "strength_strong": "Stark",
+        "error": {
+          "wrong": "Aktuelles Passwort ist falsch.",
+          "mismatch": "Passwörter stimmen nicht überein.",
+          "weak": "Passwort ist zu schwach."
+        },
+        "success": "Passwort aktualisiert"
+      }
+    },
+    "seed": {
+      "title": "Seed-Phrase",
+      "body": "Zeige das Geheimnis an, das diese Wallet kontrolliert. Niemals weitergeben.",
+      "view": "Seed anzeigen",
+      "modal": {
+        "title": "Seed-Phrase anzeigen",
+        "warning": "Jeder mit diesem Schlüssel kontrolliert deine Wallet. Niemals weitergeben. Wir fragen nie danach.",
+        "passwordPrompt": "Passwort eingeben, um anzuzeigen",
+        "reveal": "Anzeigen",
+        "autoHide": "Wird in 60 Sekunden automatisch ausgeblendet.",
+        "error": "Falsches Passwort"
+      }
+    },
+    "lockNow": {
+      "title": "Jetzt sperren",
+      "body": "Sperre die Wallet sofort auf diesem Gerät.",
+      "cta": "Sperren"
+    },
+    "reset": {
+      "title": "Wallet zurücksetzen",
+      "body": "Lösche die verschlüsselte Wallet auf diesem Gerät. Du kannst sie mit deiner Seed-Phrase wiederherstellen.",
+      "cta": "Zurücksetzen…",
+      "modal": {
+        "title": "Wallet zurücksetzen?",
+        "body": "Alle Konten auf diesem Gerät werden entfernt. Deine Seed-Phrase funktioniert weiterhin, um sie erneut zu importieren — ohne sie sind die Gelder nicht wiederherstellbar.",
+        "confirmPrompt": "Gib {{word}} ein, um zu bestätigen",
+        "confirm": "Wallet löschen"
+      }
+    }
+  },
+  "accounts": {
+    "list": { "title": "Konten auf diesem Gerät" },
+    "active": "Aktiv",
+    "hardware": "Hardware",
+    "setActive": "Aktivieren",
+    "switched": "Konto gewechselt",
+    "add": { "cta": "Konto hinzufügen" },
+    "rename": {
+      "cta": "Umbenennen",
+      "modal": { "title": "Konto umbenennen", "label": "Kontoname" },
+      "success": "Konto umbenannt"
+    },
+    "delete": {
+      "cta": "Löschen",
+      "success": "Konto gelöscht",
+      "failed": "Konto konnte nicht gelöscht werden",
+      "modal": {
+        "title": "Konto löschen?",
+        "body": "Das Entfernen von {{label}} von diesem Gerät kann nicht rückgängig gemacht werden — du brauchst die Seed-Phrase, um es erneut zu importieren.",
+        "confirmPrompt": "Gib {{label}} ein, um zu bestätigen",
+        "confirm": "Konto löschen"
+      }
+    }
+  },
+  "subAccounts": {
+    "title": "Subkonten",
+    "subtitle": "Nutze Destination Tags, um Zahlungen für {{label}} zu gruppieren.",
+    "dtPrefix": "Destination Tag",
+    "empty": {
+      "title": "Noch keine Subkonten",
+      "body": "Mit Subkonten kannst du gruppierte Zahlungen über Destination Tags empfangen."
+    },
+    "add": {
+      "cta": "Subkonto hinzufügen",
+      "success": "Subkonto hinzugefügt",
+      "fields": {
+        "label": "Bezeichnung",
+        "destinationTag": "Destination Tag",
+        "dtHelper": "Eine beliebige Zahl von 0 bis 4294967295. Sender geben sie an, um dein Subkonto zu identifizieren.",
+        "note": "Notiz (optional)"
+      },
+      "errors": {
+        "labelEmpty": "Bezeichnung ist erforderlich",
+        "tagRange": "Tag muss zwischen 0 und 4294967295 liegen",
+        "tagDuplicate": "Tag wird in diesem Konto bereits verwendet",
+        "generic": "Subkonto konnte nicht hinzugefügt werden"
+      },
+      "modal": { "title": "Subkonto hinzufügen", "submit": "Hinzufügen" }
+    },
+    "rename": { "title": "Subkonto umbenennen", "success": "Subkonto umbenannt" },
+    "delete": {
+      "title": "Subkonto löschen?",
+      "body": "{{label}} wird entfernt. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "success": "Subkonto gelöscht"
+    }
+  },
+  "tokens": {
+    "notMultiChain": "Eigene Token sind nur für Multi-Chain-Wallets verfügbar. Importiere deine Seed-Phrase neu, um EVM zu aktivieren.",
+    "added": "Token hinzugefügt",
+    "removed": "Token entfernt",
+    "list": {
+      "title": "Hinzugefügte Token",
+      "empty": "Noch keine eigenen Token. Füge oben eine Vertragsadresse hinzu.",
+      "loading": "Wird geladen…"
+    },
+    "scamWarning": {
+      "title": "Vertrag vor dem Hinzufügen verifizieren",
+      "body": "Jeder kann einen gefälschten ERC-20 deployen. Stelle sicher, dass die Adresse aus einer vertrauenswürdigen Quelle stammt — Block Explorer, offizielle Projektseite oder eine verifizierte Token-Liste. Die Wallet befürwortet importierte Token nicht."
+    },
+    "add": {
+      "title": "Token hinzufügen",
+      "body": "Füge einen ERC-20-Token über seine Vertragsadresse hinzu. Name, Symbol und Dezimalstellen werden direkt vom Vertrag On-Chain gelesen.",
+      "chainLabel": "Netzwerk",
+      "addressLabel": "Vertragsadresse",
+      "addressHelper": "Füge die 0x…-Vertragsadresse ein. Wir laden die Metadaten.",
+      "previewCta": "Token nachschlagen",
+      "confirmCta": "Zur Wallet hinzufügen",
+      "decimals": "Dezimalstellen: {{decimals}}",
+      "verifyHint": "Doppelt prüfen"
+    },
+    "errors": {
+      "invalid_address": "Dies ist keine gültige Vertragsadresse.",
+      "no_contract": "Unter dieser Adresse wurde im gewählten Netzwerk kein Vertrag gefunden.",
+      "not_erc20": "Dieser Vertrag ist kein ERC-20-Token.",
+      "network": "Netzwerk nicht erreichbar. Versuche es gleich erneut.",
+      "duplicate": "Dieser Token wurde bereits hinzugefügt."
+    }
+  }
+}

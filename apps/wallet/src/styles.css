@@ -1,0 +1,52 @@
+@import '@rc/ui/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Стабильное место под scrollbar — иначе при появлении вертикального скролла
+   на длинных страницах (History) ширина viewport мгновенно уменьшается на
+   ~15px, и sidebar/main сдвигается. */
+html {
+  scrollbar-gutter: stable;
+}
+
+@layer utilities {
+  .rc-no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .rc-no-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
+
+/* Shimmer для Skeleton */
+@layer utilities {
+  .rc-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .rc-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(var(--rc-neutral-50) / 0.7),
+      transparent
+    );
+    animation: rc-shimmer 1.6s linear infinite;
+  }
+  @keyframes rc-shimmer {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}

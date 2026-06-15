@@ -1,0 +1,54 @@
+{
+  "title": "Receber",
+  "subtitle": "Compartilhe seu endereço para receber ativos suportados em cada rede.",
+  "asset": {
+    "label": "Ativo"
+  },
+  "network": {
+    "xrp": {
+      "subtitle": "XRP Ledger"
+    },
+    "evm": {
+      "title": "EVM",
+      "subtitle": "Ethereum, BSC, Polygon",
+      "helper": "Mesmo endereço para Ethereum, BSC e Polygon. O remetente escolhe qual rede usar."
+    }
+  },
+  "address": {
+    "label": "Seu endereço",
+    "copy": "Copiar",
+    "copied": "Endereço copiado",
+    "share": "Compartilhar"
+  },
+  "banner": {
+    "inactive": {
+      "title": "Conta não ativada",
+      "body": "Receba pelo menos 1 XRP para ativar esta conta no XRP Ledger. Até lá, o endereço está reservado na rede, mas ainda não armazenado.",
+      "learnMore": "Saiba mais"
+    }
+  },
+  "modal": {
+    "activation": {
+      "title": "O que significa ativação?",
+      "body": "No XRP Ledger, um endereço só existe quando contém pelo menos 1 XRP — isso é chamado de reserva base. A reserva não é uma taxa; ela permanece no endereço e pode ser recuperada quando a conta é excluída.\n\nAté você receber esse primeiro 1 XRP, o endereço é seu para compartilhar, mas a rede não o mostrará no ledger. Assim que um pagamento chega, a conta é ativada automaticamente.",
+      "dismiss": "Entendi"
+    }
+  },
+  "qr": {
+    "alt": "Código QR do endereço {{address}}",
+    "destinationTagHint": "Sub-conta ativa — destination tag {{tag}} incluída no QR."
+  },
+  "subAccount": {
+    "title": "Criar uma sub-conta",
+    "body": "Gere uma destination tag para que uma exchange possa creditar pagamentos recebidos a um usuário específico.",
+    "labelField": "Rótulo",
+    "labelPlaceholder": "ex.: Mesa de trading",
+    "tagField": "Destination tag",
+    "create": "Criar sub-conta",
+    "creating": "Criando…",
+    "error": {
+      "label": "O rótulo é obrigatório",
+      "range": "A tag deve estar entre 0–4294967295"
+    }
+  }
+}

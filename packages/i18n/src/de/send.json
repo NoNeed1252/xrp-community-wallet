@@ -1,0 +1,148 @@
+{
+  "title": "Senden",
+  "subtitle": "Sende Assets an eine andere Adresse. Prüfe den Empfänger sorgfältig — Blockchain-Überweisungen können nicht rückgängig gemacht werden.",
+  "form": {
+    "asset": {
+      "label": "Asset"
+    },
+    "recipient": {
+      "label": "Empfängeradresse",
+      "helper": "Füge eine XRPL-Adresse ein, die mit r… beginnt",
+      "helperKnown": "Bekannter Kontakt: {{label}}",
+      "helperEvm": "Füge eine 0x…-Adresse in diesem Netzwerk ein.",
+      "detectedLabel": "{{label}} — {{address}}",
+      "error": {
+        "required": "Adresse ist erforderlich",
+        "invalid": "Keine gültige XRPL-Adresse",
+        "invalidEvm": "Keine gültige 0x-Adresse",
+        "checksum": "Adressprüfsumme (EIP-55) ist falsch. Prüfe die Groß-/Kleinschreibung der Buchstaben.",
+        "selfSend": "Dies ist deine eigene Adresse. Stelle sicher, dass du das wirklich willst."
+      },
+      "flagsUnverified": {
+        "title": "Empfänger-Einstellungen nicht überprüfbar",
+        "body": "Wir konnten die XRPL-Netzwerk nicht erreichen, um zu prüfen, ob ein Destination Tag erforderlich ist. Bei einer Börse oder einem Verwahrer bitte manuell bestätigen."
+      }
+    },
+    "amount": {
+      "label": "Betrag",
+      "max": "Max",
+      "balance": "Verfügbar: {{amount}} XRP",
+      "balanceWithReserve": "Verfügbar: {{amount}} XRP (Reserve {{reserve}} XRP)",
+      "balanceUnknown": "{{symbol}}-Guthaben nicht verfügbar",
+      "balanceLoading": "{{symbol}}-Guthaben wird geladen…",
+      "balanceError": "{{symbol}}-Guthaben konnte nicht abgerufen werden",
+      "balanceGeneric": "Verfügbar: {{amount}} {{symbol}}",
+      "error": {
+        "zero": "Betrag muss größer als null sein",
+        "exceedsBalance": "Betrag übersteigt verfügbares Guthaben (Reserve 1 XRP)",
+        "exceedsBalanceGeneric": "Betrag übersteigt verfügbares Guthaben",
+        "invalid": "Ungültiger Betrag"
+      }
+    },
+    "memo": {
+      "label": "Destination Tag (Memo)",
+      "helper": "Ein numerischer Tag, den Börsen und Custodial-Services nutzen, um deine Überweisung zu identifizieren.",
+      "badge": {
+        "required": "Erforderlich",
+        "optional": "Optional"
+      },
+      "error": {
+        "requiredByRecipient": "Dieser Empfänger benötigt einen Destination Tag",
+        "range": "Tag muss zwischen 0 und 4294967295 liegen"
+      }
+    },
+    "fee": {
+      "label": "Netzwerkgebühr",
+      "estimated": "Geschätztes Gas"
+    },
+    "gas": {
+      "customize": "Gas anpassen",
+      "hide": "Gas-Einstellungen ausblenden",
+      "helper": "Felder leer lassen, um die Netzwerkschätzung zu verwenden. Werte in Gwei.",
+      "gasLimit": "Gaslimit (Einheiten)",
+      "gasLimitPlaceholder": "Automatisch geschätzt",
+      "maxFee": "Max. Gebühr pro Gas (Gwei)",
+      "priority": "Priority Fee (Gwei)"
+    },
+    "total": "Gesamt",
+    "destinationTag": {
+      "label": "Destination Tag",
+      "helper": "Numerischer Tag, mit dem Börsen und Verwahrer deine Überweisung zuordnen.",
+      "badge": {
+        "required": "Erforderlich",
+        "optional": "Optional"
+      },
+      "error": {
+        "requiredByRecipient": "Dieser Empfänger benötigt ein Destination Tag",
+        "range": "Tag muss zwischen 0 und 4294967295 liegen"
+      }
+    },
+    "memoText": {
+      "label": "Memo",
+      "helper": "Optionale freie Notiz zur Transaktion (bis 100 Bytes).",
+      "placeholder": "z. B. Rechnung #42",
+      "error": {
+        "tooLong": "Memo darf höchstens 100 Bytes lang sein"
+      }
+    }
+  },
+  "cta": {
+    "review": "Überprüfen",
+    "back": "Zurück",
+    "confirm": "Bestätigen & signieren",
+    "close": "Schließen"
+  },
+  "warnings": {
+    "notActivated": {
+      "title": "Deine Wallet ist nicht aktiviert",
+      "body": "Empfange mindestens 1 XRP, um deine Wallet zu aktivieren, bevor du senden kannst."
+    },
+    "ledgerEvm": {
+      "title": "Ledger unterstützt in diesem Release nur XRP",
+      "body": "Wechsle zu einem Multi-Chain-Konto, um EVM-Assets zu senden, oder aktualisiere die unterstützte App in einem zukünftigen Release."
+    }
+  },
+  "review": {
+    "title": "Zahlung überprüfen",
+    "firstTime": {
+      "title": "Erstes Senden an diese Adresse",
+      "body": "Überprüfe die Adresse immer mit dem Empfänger. Blockchain-Überweisungen können nicht rückgängig gemacht werden."
+    },
+    "summary": {
+      "from": "Von",
+      "to": "An",
+      "memo": "Destination Tag",
+      "amount": "Betrag",
+      "fee": "Netzwerkgebühr",
+      "total": "Gesamt",
+      "network": "Netzwerk",
+      "destinationTag": "Destination Tag"
+    },
+    "preview": {
+      "disclaimer": "Du bist dabei, eine Zahlung an {{address}} zu signieren und zu senden.",
+      "disclaimerEvm": "Du bist dabei, eine EVM-Transaktion an {{address}} zu signieren und zu senden."
+    }
+  },
+  "sign": {
+    "title": "Signieren auf diesem Gerät…",
+    "body": "Dein Schlüssel bleibt lokal. Wir signieren die Transaktion und senden sie ans Netzwerk.",
+    "broadcasting": "Wird ins Netzwerk gesendet…"
+  },
+  "status": {
+    "success": {
+      "title": "Erfolgreich gesendet",
+      "body": "{{amount}} an {{recipient}} gesendet.",
+      "toRecipient": "an {{recipient}}",
+      "txid": "Transaktions-ID",
+      "copyTxid": "Transaktions-ID kopieren",
+      "copied": "Kopiert",
+      "viewOnExplorer": "Im Explorer anzeigen",
+      "close": "Fertig"
+    },
+    "failure": {
+      "title": "Senden fehlgeschlagen",
+      "body": "Die Transaktion konnte nicht gesendet werden. Bitte erneut versuchen.",
+      "retry": "Erneut versuchen"
+    }
+  }
+}

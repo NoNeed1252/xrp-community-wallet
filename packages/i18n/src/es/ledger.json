@@ -1,0 +1,78 @@
+{
+  "title": "Conecta tu Ledger",
+  "subtitle": "Usa una wallet hardware para firmar transacciones sin exponer tus claves.",
+  "badge": "Hardware",
+  "support": {
+    "unsupported": {
+      "title": "El soporte para wallet hardware requiere un navegador basado en Chromium",
+      "body": "WebHID, que se usa para comunicarse con los dispositivos Ledger, está disponible en Chrome, Edge, Brave y Opera. Abre esta wallet en un navegador compatible para añadir una cuenta hardware."
+    },
+    "docs": "Más información"
+  },
+  "connect": {
+    "steps": {
+      "1": "Conecta tu Ledger por USB",
+      "2": "Abre la app XRP en el dispositivo",
+      "3": "Aprueba el aviso de permisos del navegador",
+      "4": "Confirma la dirección en la pantalla del dispositivo"
+    },
+    "cta": {
+      "connect": "Conectar Ledger",
+      "retry": "Intentar de nuevo",
+      "done": "Continuar"
+    },
+    "status": {
+      "device": {
+        "none": "No conectado",
+        "connecting": "Conectando…",
+        "connected": "Conectado: {{name}}"
+      },
+      "app": {
+        "unknown": "—",
+        "notOpen": "Abre la app XRP en el dispositivo",
+        "open": "App XRP abierta"
+      },
+      "address": {
+        "label": "Dirección",
+        "pending": "Esperando…"
+      }
+    }
+  },
+  "naming": {
+    "title": "Da nombre a tu cuenta Ledger",
+    "label": "Nombre de la cuenta",
+    "placeholder": "p. ej. Ledger Nano X",
+    "cta": "Añadir cuenta"
+  },
+  "errors": {
+    "unsupported": "WebHID no es compatible con este navegador.",
+    "permission_denied": "Se denegó el permiso del navegador. Haz clic en Conectar Ledger de nuevo y aprueba el aviso.",
+    "no_device": "No se encontró ningún dispositivo Ledger. Conéctalo e inténtalo de nuevo.",
+    "transport": "No se pudo conectar al dispositivo. Vuelve a conectar el cable USB e inténtalo de nuevo.",
+    "app_not_open": "Abre la app XRP en tu Ledger e inténtalo de nuevo.",
+    "app_locked": "Desbloquea tu Ledger con el PIN e inténtalo de nuevo.",
+    "user_rejected": "Rechazaste la petición en el dispositivo.",
+    "timeout": "El dispositivo no respondió a tiempo.",
+    "path_forbidden": "Esta ruta de derivación no está permitida.",
+    "address_mismatch": "La dirección devuelta por el dispositivo no coincide con su clave pública. Desconecta e inténtalo de nuevo.",
+    "generic": "Algo salió mal al comunicarse con el Ledger."
+  },
+  "sign": {
+    "title": "Revisa en tu Ledger",
+    "body": "Aprueba el pago en tu dispositivo con ambos botones.",
+    "fields": {
+      "to": "A",
+      "amount": "Importe",
+      "fee": "Comisión",
+      "memo": "Destination tag"
+    },
+    "cancel": "Cancelar",
+    "cancelled": "Firma cancelada."
+  },
+  "send": {
+    "disabled": {
+      "title": "Envío con Ledger aún no disponible",
+      "body": "La firma real de transacciones XRPL en dispositivos Ledger aún se está implementando. Para enviar fondos por ahora, cambia a una cuenta basada en seed en el selector de cuentas."
+    }
+  }
+}

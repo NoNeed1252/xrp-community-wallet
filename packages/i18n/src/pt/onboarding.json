@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "Voltar",
+    "continue": "Continuar",
+    "finish": "Concluir configuração"
+  },
+  "steps": {
+    "label": "Passo {{current}} de {{total}}"
+  },
+  "welcome": {
+    "title": "Bem-vindo à tua carteira",
+    "subtitle": "Como queres começar?",
+    "options": {
+      "create": {
+        "title": "Criar uma nova carteira",
+        "body": "Gera uma nova frase de recuperação. Recomendado para novos utilizadores."
+      },
+      "importSeed": {
+        "title": "Importar uma frase de recuperação",
+        "body": "Restaura uma carteira usando as tuas 12 ou 24 palavras BIP-39."
+      },
+      "importKey": {
+        "title": "Importar uma chave privada",
+        "body": "Cola a tua family seed XRPL (começa por sEd... ou s...)."
+      },
+      "ledger": {
+        "title": "Ligar um dispositivo Ledger",
+        "body": "Assina transações na tua carteira por hardware. Disponível numa versão posterior."
+      }
+    }
+  },
+  "create": {
+    "title": "A tua frase de recuperação",
+    "helper": "12 palavras BIP-39 que controlam totalmente esta carteira.",
+    "body": "Anota estas palavras pela ordem certa e guarda-as offline. Qualquer pessoa com elas pode aceder aos teus fundos.",
+    "disclaimer": "Vamos pedir-te para confirmar algumas delas no passo seguinte.",
+    "actions": {
+      "regenerate": "Gerar nova",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "next": "Já guardei, continuar"
+    },
+    "copy": {
+      "warning": "A área de transferência será limpa automaticamente em 60 segundos."
+    }
+  },
+  "confirm": {
+    "title": "Confirma a tua frase de recuperação",
+    "body": "Escreve as palavras pedidas exatamente como apareceram antes.",
+    "prompt": "Palavra #{{n}}",
+    "error": "Não corresponde"
+  },
+  "importSeed": {
+    "title": "Importa a tua frase de recuperação",
+    "body": "Introduz 12 ou 24 palavras BIP-39 separadas por espaços.",
+    "label": "Frase de recuperação",
+    "helper": "Esperamos {{count}} palavras. As maiúsculas são ignoradas.",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "Endereço detetado",
+    "error": {
+      "wordCount": "Tem de conter exatamente 12 ou 24 palavras.",
+      "notInDict": "Uma ou mais palavras não estão no dicionário BIP-39.",
+      "invalidChecksum": "O checksum é inválido — confirma as palavras."
+    }
+  },
+  "importKey": {
+    "title": "Importar uma chave privada",
+    "body": "Cola uma family seed XRPL (começa por sEd... ou s...).",
+    "label": "Chave privada",
+    "helper": "A chave permanece neste dispositivo.",
+    "derivedAddress": "Endereço detetado",
+    "error": {
+      "invalidFormat": "Não é uma family seed XRPL válida."
+    }
+  },
+  "setPassword": {
+    "title": "Protege a tua carteira",
+    "body": "Esta palavra-passe encripta a tua carteira neste dispositivo. Não a podemos recuperar por ti.",
+    "password": "Palavra-passe",
+    "confirm": "Confirmar palavra-passe",
+    "requirements": "Pelo menos 10 caracteres com maiúsculas e minúsculas, um dígito e um caractere especial.",
+    "securing": "A proteger a tua palavra-passe…",
+    "strength": {
+      "weak": "Fraca",
+      "fair": "Razoável",
+      "good": "Boa",
+      "strong": "Forte"
+    },
+    "error": {
+      "mismatch": "As palavras-passe não coincidem."
+    },
+    "addMode": {
+      "title": "Adicionar conta",
+      "body": "Introduz a palavra-passe da carteira para encriptar a nova conta.",
+      "password": "Palavra-passe da carteira",
+      "submit": "Adicionar conta"
+    }
+  },
+  "done": {
+    "title": "Está tudo pronto",
+    "body": "A tua carteira está pronta a usar. Podes bloqueá-la e desbloqueá-la a qualquer momento nas definições.",
+    "cta": "Abrir carteira"
+  },
+  "ledger": {
+    "title": "Brevemente",
+    "body": "O fluxo para carteira por hardware está em construção (sprint W8). Por agora, usa uma das opções baseadas em seed."
+  },
+  "unlock": {
+    "title": "Bem-vindo de volta",
+    "tagline": "Inicia sessão na tua carteira da comunidade.",
+    "autoLockHint": "Bloqueada automaticamente para tua proteção.",
+    "body": "Introduz a tua palavra-passe para desbloquear a carteira.",
+    "password": "Palavra-passe",
+    "action": "Desbloquear",
+    "error": {
+      "wrongPassword": "Palavra-passe errada.",
+      "cooldown": "Demasiadas tentativas. Tenta novamente em {{sec}} segundos."
+    },
+    "forgot": {
+      "link": "Esqueceste a palavra-passe? Repor carteira…",
+      "modal": {
+        "title": "Repor carteira?",
+        "body": "Isto apaga permanentemente a carteira encriptada neste dispositivo. Com a tua frase de recuperação podes importar novamente — sem ela, os fundos são irrecuperáveis.",
+        "confirmText": "APAGAR",
+        "typeToConfirm": "Escreve {{word}} para confirmar",
+        "helper": "As maiúsculas são ignoradas. Esta ação não pode ser anulada.",
+        "confirm": "Apagar carteira"
+      }
+    }
+  }
+}

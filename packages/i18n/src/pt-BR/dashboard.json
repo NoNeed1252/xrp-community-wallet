@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "Bem-vindo de volta!",
+    "welcomeBackNamed": "Bem-vindo de volta, {{name}}!"
+  },
+  "cta": {
+    "createTransaction": "Criar transação",
+    "menu": {
+      "send": "Enviar",
+      "stake": "Adicionar stake"
+    }
+  },
+  "warnings": {
+    "evmReimport": "Reimporte sua seed para habilitar ativos EVM"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "Intenções abertas",
+      "helper": "Ações pendentes nos seus cofres de tesouraria.",
+      "empty": "Nenhuma intenção aberta",
+      "columns": {
+        "createdAt": "Criada em",
+        "intent": "Intenção",
+        "initiatedBy": "Iniciada por",
+        "status": "Status"
+      }
+    },
+    "lastTransactions": {
+      "title": "Últimas transações",
+      "helper": "Atividade on-chain mais recente da conta ativa.",
+      "empty": "Nenhuma transação ainda",
+      "columns": {
+        "createdAt": "Criada em",
+        "source": "Origem",
+        "destination": "Destino",
+        "value": "Valor",
+        "status": "Status"
+      }
+    },
+    "balances": {
+      "title": "Saldos",
+      "helper": "Valor total estimado em todos os seus ativos.",
+      "estTotalValue": "Valor total est.",
+      "empty": "Nenhum ativo ainda"
+    },
+    "accounts": {
+      "title": "Contas",
+      "helper": "Suas carteiras e as redes que elas cobrem.",
+      "empty": "Nenhuma conta ainda",
+      "kinds": {
+        "multi": "Multi-chain",
+        "ledger": "Ledger",
+        "importedKey": "Chave importada",
+        "legacy": "Apenas XRPL"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "A conta \"{{label}}\" não está ativada",
+      "body": "Receba pelo menos 1 XRP para ativá-la no XRP Ledger.",
+      "cta": "Mostrar endereço de recebimento"
+    },
+    "backup": {
+      "title": "Faça backup da sua frase de recuperação",
+      "body": "Você ainda não confirmou o backup da sua frase de recuperação. Sem ela, não é possível recuperar sua carteira.",
+      "cta": "Confirmar backup"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "Falha ao carregar o painel",
+      "body": "Algo deu errado. Por favor, tente novamente."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "Em breve",
+      "body": "Esta seção está sendo construída em um sprint futuro."
+    }
+  }
+}

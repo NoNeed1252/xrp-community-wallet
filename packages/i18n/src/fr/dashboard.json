@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "Bon retour !",
+    "welcomeBackNamed": "Bon retour, {{name}} !"
+  },
+  "cta": {
+    "createTransaction": "Créer une transaction",
+    "menu": {
+      "send": "Envoyer",
+      "stake": "Ajouter du stake"
+    }
+  },
+  "warnings": {
+    "evmReimport": "Réimporte ta phrase de récupération pour activer les actifs EVM"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "Intentions ouvertes",
+      "helper": "Actions en attente dans tes coffres trésorerie.",
+      "empty": "Aucune intention ouverte",
+      "columns": {
+        "createdAt": "Créée le",
+        "intent": "Intention",
+        "initiatedBy": "Initiée par",
+        "status": "Statut"
+      }
+    },
+    "lastTransactions": {
+      "title": "Dernières transactions",
+      "helper": "Activité on-chain la plus récente pour le compte actif.",
+      "empty": "Aucune transaction pour l'instant",
+      "columns": {
+        "createdAt": "Créée le",
+        "source": "Source",
+        "destination": "Destination",
+        "value": "Valeur",
+        "status": "Statut"
+      }
+    },
+    "balances": {
+      "title": "Soldes",
+      "helper": "Valeur totale estimée de tes actifs.",
+      "estTotalValue": "Valeur totale est.",
+      "empty": "Aucun actif pour l'instant"
+    },
+    "accounts": {
+      "title": "Comptes",
+      "helper": "Tes portefeuilles et les chaînes qu'ils couvrent.",
+      "empty": "Aucun compte pour l'instant",
+      "kinds": {
+        "multi": "Multi-chaînes",
+        "ledger": "Ledger",
+        "importedKey": "Clé importée",
+        "legacy": "XRPL uniquement"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "Le compte « {{label}} » n'est pas activé",
+      "body": "Reçois au moins 1 XRP pour l'activer sur le XRP Ledger.",
+      "cta": "Afficher l'adresse de réception"
+    },
+    "backup": {
+      "title": "Sauvegarde ta phrase de récupération",
+      "body": "Tu n'as pas confirmé la sauvegarde de ta phrase de récupération. Sans elle, tu ne pourras pas récupérer ton portefeuille.",
+      "cta": "Confirmer la sauvegarde"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "Impossible de charger le tableau de bord",
+      "body": "Quelque chose s'est mal passé. Réessaie."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "Bientôt disponible",
+      "body": "Cette section sera développée dans un sprint à venir."
+    }
+  }
+}

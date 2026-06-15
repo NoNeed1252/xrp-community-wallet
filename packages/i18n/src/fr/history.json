@@ -1,0 +1,78 @@
+{
+  "title": "Historique des transactions",
+  "subtitle": "Tous les paiements et l'activité de staking sur tes réseaux.",
+  "filters": {
+    "types": {
+      "label": "Type",
+      "payment": "Paiement",
+      "staking_deposit": "Dépôt de staking",
+      "staking_payout": "Versement de staking"
+    },
+    "status": {
+      "label": "Statut",
+      "all": "Tous",
+      "pending": "En attente",
+      "completed": "Terminé",
+      "failed": "Échoué"
+    },
+    "period": {
+      "label": "Période",
+      "today": "Aujourd'hui",
+      "7d": "7 derniers jours",
+      "30d": "30 derniers jours",
+      "all": "Tout le temps"
+    },
+    "search": {
+      "placeholder": "Rechercher par adresse, libellé ou mémo…"
+    },
+    "clear": "Effacer les filtres"
+  },
+  "list": {
+    "columns": {
+      "date": "Date",
+      "type": "Type",
+      "counterparty": "Contrepartie",
+      "amount": "Montant",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "showing": "Affichage de {{shown}} sur {{total}}"
+  },
+  "empty": {
+    "title": "Aucune transaction pour l'instant",
+    "body": "Tes paiements et ton activité de staking apparaîtront ici.",
+    "send": "Envoyer",
+    "receive": "Recevoir",
+    "filtered": {
+      "title": "Aucune transaction ne correspond à tes filtres",
+      "body": "Essaie de modifier les filtres ou efface-les pour tout afficher."
+    }
+  },
+  "details": {
+    "title": "Détails de la transaction",
+    "from": "De",
+    "to": "À",
+    "memo": "Destination tag",
+    "memoText": "Mémo",
+    "amount": "Montant",
+    "fee": "Frais",
+    "status": "Statut",
+    "txHash": "Hash de transaction",
+    "ledgerIndex": "Index du ledger",
+    "created": "Créée le",
+    "completed": "Terminée le",
+    "failed": {
+      "code": "Code d'échec"
+    },
+    "copy": "Copier",
+    "copied": "Copié",
+    "viewOnExplorer": "Voir sur l'explorateur",
+    "userSendBadge": "Envoyé depuis ce portefeuille"
+  },
+  "errors": {
+    "explorer": {
+      "title": "Une partie de l'historique est indisponible",
+      "body": "L'un des explorateurs n'a pas répondu. La liste peut être incomplète — réessaie plus tard."
+    }
+  }
+}

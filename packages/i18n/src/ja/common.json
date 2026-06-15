@@ -1,0 +1,39 @@
+{
+  "actions": {
+    "viewAll": "すべて表示",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "retry": "再試行",
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "close": "閉じる"
+  },
+  "status": {
+    "open": "オープン",
+    "pending": "処理中",
+    "completed": "完了",
+    "failed": "失敗",
+    "inactive": "未有効化"
+  },
+  "nav": {
+    "home": "ホーム",
+    "send": "送信",
+    "receive": "受取",
+    "history": "履歴",
+    "portfolio": "ポートフォリオ",
+    "staking": "ステーキング",
+    "settings": "設定",
+    "more": "その他",
+    "lockNow": "ウォレットをロック"
+  },
+  "topbar": {
+    "help": "ヘルプ",
+    "notifications": "通知",
+    "settings": "設定",
+    "account": "アカウント",
+    "context": "ウォレット"
+  },
+  "a11y": {
+    "skipToContent": "メインコンテンツへスキップ"
+  }
+}

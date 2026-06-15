@@ -1,0 +1,78 @@
+{
+  "title": "Transaktionsverlauf",
+  "subtitle": "Alle Zahlungen und Staking-Aktivitäten in deinen Netzwerken.",
+  "filters": {
+    "types": {
+      "label": "Typ",
+      "payment": "Zahlung",
+      "staking_deposit": "Staking-Einzahlung",
+      "staking_payout": "Staking-Auszahlung"
+    },
+    "status": {
+      "label": "Status",
+      "all": "Alle",
+      "pending": "Ausstehend",
+      "completed": "Abgeschlossen",
+      "failed": "Fehlgeschlagen"
+    },
+    "period": {
+      "label": "Zeitraum",
+      "today": "Heute",
+      "7d": "Letzte 7 Tage",
+      "30d": "Letzte 30 Tage",
+      "all": "Gesamter Zeitraum"
+    },
+    "search": {
+      "placeholder": "Suche nach Adresse, Bezeichnung oder Memo…"
+    },
+    "clear": "Filter zurücksetzen"
+  },
+  "list": {
+    "columns": {
+      "date": "Datum",
+      "type": "Typ",
+      "counterparty": "Gegenpartei",
+      "amount": "Betrag",
+      "status": "Status",
+      "actions": "Aktionen"
+    },
+    "showing": "{{shown}} von {{total}} angezeigt"
+  },
+  "empty": {
+    "title": "Noch keine Transaktionen",
+    "body": "Deine Zahlungen und Staking-Aktivitäten erscheinen hier.",
+    "send": "Senden",
+    "receive": "Empfangen",
+    "filtered": {
+      "title": "Keine Transaktionen passen zu deinen Filtern",
+      "body": "Versuche, die Filter zu ändern oder zurückzusetzen, um alles zu sehen."
+    }
+  },
+  "details": {
+    "title": "Transaktionsdetails",
+    "from": "Von",
+    "to": "An",
+    "memo": "Destination Tag",
+    "memoText": "Memo",
+    "amount": "Betrag",
+    "fee": "Gebühr",
+    "status": "Status",
+    "txHash": "Transaktions-Hash",
+    "ledgerIndex": "Ledger-Index",
+    "created": "Erstellt am",
+    "completed": "Abgeschlossen am",
+    "failed": {
+      "code": "Fehlercode"
+    },
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "viewOnExplorer": "Im Explorer anzeigen",
+    "userSendBadge": "Von dieser Wallet gesendet"
+  },
+  "errors": {
+    "explorer": {
+      "title": "Ein Teil des Verlaufs ist nicht verfügbar",
+      "body": "Einer der Explorer hat nicht geantwortet. Die Liste ist möglicherweise unvollständig — versuche es später erneut."
+    }
+  }
+}

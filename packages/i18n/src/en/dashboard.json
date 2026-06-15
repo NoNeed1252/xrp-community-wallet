@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "Welcome back!",
+    "welcomeBackNamed": "Welcome back, {{name}}!"
+  },
+  "cta": {
+    "createTransaction": "Create transaction",
+    "menu": {
+      "send": "Send",
+      "stake": "Add stake"
+    }
+  },
+  "warnings": {
+    "evmReimport": "Re-import your seed to enable EVM assets"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "Open intents",
+      "helper": "Pending actions across your treasury vaults.",
+      "empty": "No open intents",
+      "columns": {
+        "createdAt": "Created at",
+        "intent": "Intent",
+        "initiatedBy": "Initiated by",
+        "status": "Status"
+      }
+    },
+    "lastTransactions": {
+      "title": "Last transactions",
+      "helper": "Most recent on-chain activity for the active account.",
+      "empty": "No transactions yet",
+      "columns": {
+        "createdAt": "Created at",
+        "source": "Source",
+        "destination": "Destination",
+        "value": "Value",
+        "status": "Status"
+      }
+    },
+    "balances": {
+      "title": "Balances",
+      "helper": "Estimated total value across your assets.",
+      "estTotalValue": "Est. total value",
+      "empty": "No assets yet"
+    },
+    "accounts": {
+      "title": "Accounts",
+      "helper": "Your wallets and the chains they cover.",
+      "empty": "No accounts yet",
+      "kinds": {
+        "multi": "Multi-chain",
+        "ledger": "Ledger",
+        "importedKey": "Imported key",
+        "legacy": "XRPL only"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "Account \"{{label}}\" is not activated",
+      "body": "Receive at least 1 XRP to activate it on the XRP Ledger.",
+      "cta": "Show receive address"
+    },
+    "backup": {
+      "title": "Backup your seed phrase",
+      "body": "You haven't confirmed your seed phrase backup. Without it you cannot recover your wallet.",
+      "cta": "Confirm backup"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "Failed to load dashboard",
+      "body": "Something went wrong. Please retry."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "Coming soon",
+      "body": "This section is being built in a future sprint."
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "다시 오신 것을 환영합니다!",
+    "welcomeBackNamed": "{{name}}님, 다시 오신 것을 환영합니다!"
+  },
+  "cta": {
+    "createTransaction": "거래 생성",
+    "menu": {
+      "send": "보내기",
+      "stake": "스테이킹 추가"
+    }
+  },
+  "warnings": {
+    "evmReimport": "EVM 자산을 사용하려면 시드를 다시 가져오십시오"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "진행 중인 의도",
+      "helper": "트레저리 볼트에서 대기 중인 작업입니다.",
+      "empty": "진행 중인 의도가 없습니다",
+      "columns": {
+        "createdAt": "생성 시각",
+        "intent": "의도",
+        "initiatedBy": "시작자",
+        "status": "상태"
+      }
+    },
+    "lastTransactions": {
+      "title": "최근 거래",
+      "helper": "활성 계정의 가장 최근 온체인 활동입니다.",
+      "empty": "아직 거래 내역이 없습니다",
+      "columns": {
+        "createdAt": "생성 시각",
+        "source": "출처",
+        "destination": "수신처",
+        "value": "금액",
+        "status": "상태"
+      }
+    },
+    "balances": {
+      "title": "잔액",
+      "helper": "자산의 추정 총 가치입니다.",
+      "estTotalValue": "추정 총 가치",
+      "empty": "아직 자산이 없습니다"
+    },
+    "accounts": {
+      "title": "계정",
+      "helper": "지갑과 지원하는 체인 목록입니다.",
+      "empty": "아직 계정이 없습니다",
+      "kinds": {
+        "multi": "멀티 체인",
+        "ledger": "Ledger",
+        "importedKey": "가져온 키",
+        "legacy": "XRPL 전용"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "\"{{label}}\" 계정이 활성화되지 않았습니다",
+      "body": "XRP Ledger에서 활성화하려면 최소 1 XRP를 받으십시오.",
+      "cta": "수신 주소 보기"
+    },
+    "backup": {
+      "title": "시드 문구를 백업하십시오",
+      "body": "시드 문구 백업을 확인하지 않으셨습니다. 백업이 없으면 지갑을 복구할 수 없습니다.",
+      "cta": "백업 확인"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "대시보드를 불러오지 못했습니다",
+      "body": "문제가 발생했습니다. 다시 시도해 주십시오."
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "곧 출시 예정",
+      "body": "이 섹션은 향후 스프린트에서 구축될 예정입니다."
+    }
+  }
+}

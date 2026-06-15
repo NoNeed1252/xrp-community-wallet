@@ -1,0 +1,43 @@
+{
+  "title": "Cartera",
+  "subtitle": "Tus tenencias y el mercado de un vistazo.",
+  "tabs": {
+    "my-assets": "Mis activos",
+    "market": "Mercado"
+  },
+  "total": {
+    "label": "Valor total estimado",
+    "change24h": {
+      "up": "+{{pct}}% 24h",
+      "down": "−{{pct}}% 24h"
+    }
+  },
+  "holdings": {
+    "columns": {
+      "asset": "Activo",
+      "price": "Precio",
+      "balance": "Saldo",
+      "value": "Valor",
+      "change24h": "24h"
+    },
+    "empty": {
+      "title": "Aún no hay activos",
+      "body": "Recibe XRP u otro activo para empezar a construir tu cartera.",
+      "cta": "Recibe tu primera transacción"
+    }
+  },
+  "market": {
+    "loading": "Cargando datos de mercado…",
+    "error": {
+      "title": "Datos de mercado no disponibles",
+      "body": "No se pudo contactar con CoinGecko. Inténtalo de nuevo en un momento."
+    },
+    "columns": {
+      "asset": "Activo",
+      "price": "Precio",
+      "change24h": "24h",
+      "marketCap": "Capitalización",
+      "chart": "Gráfico 24h"
+    }
+  }
+}

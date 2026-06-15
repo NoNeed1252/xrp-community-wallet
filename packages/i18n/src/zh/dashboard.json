@@ -1,0 +1,82 @@
+{
+  "greeting": {
+    "welcomeBack": "欢迎回来!",
+    "welcomeBackNamed": "欢迎回来,{{name}}!"
+  },
+  "cta": {
+    "createTransaction": "创建交易",
+    "menu": {
+      "send": "发送",
+      "stake": "添加质押"
+    }
+  },
+  "warnings": {
+    "evmReimport": "重新导入助记词以启用 EVM 资产"
+  },
+  "widgets": {
+    "openIntents": {
+      "title": "待处理意向",
+      "helper": "跨各资金库的待处理操作。",
+      "empty": "暂无待处理意向",
+      "columns": {
+        "createdAt": "创建时间",
+        "intent": "意向",
+        "initiatedBy": "发起人",
+        "status": "状态"
+      }
+    },
+    "lastTransactions": {
+      "title": "最近交易",
+      "helper": "当前账户最新的链上活动。",
+      "empty": "暂无交易",
+      "columns": {
+        "createdAt": "创建时间",
+        "source": "来源",
+        "destination": "目标",
+        "value": "金额",
+        "status": "状态"
+      }
+    },
+    "balances": {
+      "title": "余额",
+      "helper": "你所有资产的估算总价值。",
+      "estTotalValue": "估算总价值",
+      "empty": "暂无资产"
+    },
+    "accounts": {
+      "title": "账户",
+      "helper": "你的钱包及其覆盖的网络。",
+      "empty": "暂无账户",
+      "kinds": {
+        "multi": "多链",
+        "ledger": "Ledger",
+        "importedKey": "导入密钥",
+        "legacy": "仅 XRPL"
+      }
+    }
+  },
+  "banners": {
+    "inactive": {
+      "title": "账户 \"{{label}}\" 未激活",
+      "body": "接收至少 1 XRP 即可在 XRP Ledger 上激活此账户。",
+      "cta": "显示接收地址"
+    },
+    "backup": {
+      "title": "备份你的助记词",
+      "body": "你还未确认助记词备份。没有备份将无法恢复钱包。",
+      "cta": "确认备份"
+    }
+  },
+  "errors": {
+    "loadFailed": {
+      "title": "无法加载仪表板",
+      "body": "出错了,请重试。"
+    }
+  },
+  "placeholder": {
+    "comingSoon": {
+      "title": "即将推出",
+      "body": "此功能将在后续迭代中推出。"
+    }
+  }
+}

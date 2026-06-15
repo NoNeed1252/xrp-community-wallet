@@ -1,0 +1,148 @@
+{
+  "title": "Envoyer",
+  "subtitle": "Envoie des actifs vers une autre adresse. Vérifie le destinataire — les transferts blockchain sont irréversibles.",
+  "form": {
+    "asset": {
+      "label": "Actif"
+    },
+    "recipient": {
+      "label": "Adresse du destinataire",
+      "helper": "Colle une adresse XRPL commençant par r…",
+      "helperKnown": "Contact connu : {{label}}",
+      "helperEvm": "Colle une adresse 0x… sur ce réseau.",
+      "detectedLabel": "{{label}} — {{address}}",
+      "error": {
+        "required": "L'adresse est requise",
+        "invalid": "Adresse XRPL invalide",
+        "invalidEvm": "Adresse 0x invalide",
+        "checksum": "Somme de contrôle de l'adresse (EIP-55) incorrecte. Vérifie la casse des lettres.",
+        "selfSend": "Il s'agit de ta propre adresse. Assure-toi que c'est bien ce que tu veux."
+      },
+      "flagsUnverified": {
+        "title": "Impossible de vérifier les réglages du destinataire",
+        "body": "Nous n'avons pas pu joindre le réseau XRPL pour vérifier si un tag de destination est requis. S'il s'agit d'un exchange ou d'un service de garde, confirmez-le manuellement avant d'envoyer."
+      }
+    },
+    "amount": {
+      "label": "Montant",
+      "max": "Max",
+      "balance": "Disponible : {{amount}} XRP",
+      "balanceWithReserve": "Disponible : {{amount}} XRP (réserve {{reserve}} XRP)",
+      "balanceUnknown": "Le solde {{symbol}} est indisponible",
+      "balanceLoading": "Chargement du solde {{symbol}}…",
+      "balanceError": "Impossible de récupérer le solde {{symbol}}",
+      "balanceGeneric": "Disponible : {{amount}} {{symbol}}",
+      "error": {
+        "zero": "Le montant doit être supérieur à zéro",
+        "exceedsBalance": "Le montant dépasse le solde disponible (réserve 1 XRP)",
+        "exceedsBalanceGeneric": "Le montant dépasse le solde disponible",
+        "invalid": "Montant invalide"
+      }
+    },
+    "memo": {
+      "label": "Destination tag (mémo)",
+      "helper": "Un tag numérique utilisé par les plateformes d'échange et les services de garde pour identifier ton transfert.",
+      "badge": {
+        "required": "Requis",
+        "optional": "Facultatif"
+      },
+      "error": {
+        "requiredByRecipient": "Ce destinataire exige un destination tag",
+        "range": "Le tag doit être compris entre 0 et 4294967295"
+      }
+    },
+    "fee": {
+      "label": "Frais réseau",
+      "estimated": "Gas estimé"
+    },
+    "gas": {
+      "customize": "Personnaliser le gas",
+      "hide": "Masquer les paramètres de gas",
+      "helper": "Laisse les champs vides pour utiliser l'estimation du réseau. Valeurs en gwei.",
+      "gasLimit": "Limite de gas (unités)",
+      "gasLimitPlaceholder": "Estimée automatiquement",
+      "maxFee": "Frais max par gas (gwei)",
+      "priority": "Frais de priorité (gwei)"
+    },
+    "total": "Total",
+    "destinationTag": {
+      "label": "Tag de destination",
+      "helper": "Étiquette numérique utilisée par les exchanges et services de garde pour identifier votre transfert.",
+      "badge": {
+        "required": "Requis",
+        "optional": "Facultatif"
+      },
+      "error": {
+        "requiredByRecipient": "Ce destinataire exige un tag de destination",
+        "range": "Le tag doit être compris entre 0 et 4294967295"
+      }
+    },
+    "memoText": {
+      "label": "Mémo",
+      "helper": "Note libre facultative jointe à la transaction (jusqu'à 100 octets).",
+      "placeholder": "ex. : Facture #42",
+      "error": {
+        "tooLong": "Le mémo ne doit pas dépasser 100 octets"
+      }
+    }
+  },
+  "cta": {
+    "review": "Vérifier",
+    "back": "Retour",
+    "confirm": "Confirmer et signer",
+    "close": "Fermer"
+  },
+  "warnings": {
+    "notActivated": {
+      "title": "Ton portefeuille n'est pas activé",
+      "body": "Reçois au moins 1 XRP pour activer ton portefeuille avant de pouvoir envoyer."
+    },
+    "ledgerEvm": {
+      "title": "Ledger ne prend en charge que XRP dans cette version",
+      "body": "Passe à un compte multi-chaînes pour envoyer des actifs EVM, ou mets à jour l'application prise en charge dans une future version."
+    }
+  },
+  "review": {
+    "title": "Vérifier le paiement",
+    "firstTime": {
+      "title": "Premier envoi vers cette adresse",
+      "body": "Vérifie toujours l'adresse avec le destinataire. Les transferts blockchain sont irréversibles."
+    },
+    "summary": {
+      "from": "De",
+      "to": "À",
+      "memo": "Destination tag",
+      "amount": "Montant",
+      "fee": "Frais réseau",
+      "total": "Total",
+      "network": "Réseau",
+      "destinationTag": "Tag de destination"
+    },
+    "preview": {
+      "disclaimer": "Tu es sur le point de signer et de diffuser un paiement vers {{address}}.",
+      "disclaimerEvm": "Tu es sur le point de signer et de diffuser une transaction EVM vers {{address}}."
+    }
+  },
+  "sign": {
+    "title": "Signature sur cet appareil…",
+    "body": "Ta clé reste locale. Nous signons la transaction et la diffusons sur le réseau.",
+    "broadcasting": "Diffusion sur le réseau…"
+  },
+  "status": {
+    "success": {
+      "title": "Envoi réussi",
+      "body": "{{amount}} envoyé à {{recipient}}.",
+      "toRecipient": "à {{recipient}}",
+      "txid": "ID de transaction",
+      "copyTxid": "Copier l'ID de transaction",
+      "copied": "Copié",
+      "viewOnExplorer": "Voir sur l'explorateur",
+      "close": "Terminé"
+    },
+    "failure": {
+      "title": "Échec de l'envoi",
+      "body": "Impossible de diffuser la transaction. Réessaie.",
+      "retry": "Réessayer"
+    }
+  }
+}

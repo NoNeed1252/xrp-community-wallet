@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "Voltar",
+    "continue": "Continuar",
+    "finish": "Concluir configuração"
+  },
+  "steps": {
+    "label": "Passo {{current}} de {{total}}"
+  },
+  "welcome": {
+    "title": "Bem-vindo à sua carteira",
+    "subtitle": "Como você gostaria de começar?",
+    "options": {
+      "create": {
+        "title": "Criar uma nova carteira",
+        "body": "Gere uma nova frase de recuperação. Recomendado para novos usuários."
+      },
+      "importSeed": {
+        "title": "Importar uma frase de recuperação",
+        "body": "Restaure uma carteira usando suas 12 ou 24 palavras BIP-39."
+      },
+      "importKey": {
+        "title": "Importar uma chave privada",
+        "body": "Cole sua family seed do XRPL (começa com sEd... ou s...)."
+      },
+      "ledger": {
+        "title": "Conectar um dispositivo Ledger",
+        "body": "Assine transações na sua carteira de hardware. Disponível em uma versão posterior."
+      }
+    }
+  },
+  "create": {
+    "title": "Sua frase de recuperação",
+    "helper": "12 palavras BIP-39 que controlam totalmente esta carteira.",
+    "body": "Anote estas palavras na ordem e mantenha-as offline. Qualquer pessoa com estas palavras pode acessar seus fundos.",
+    "disclaimer": "Vamos pedir que você confirme algumas delas na próxima etapa.",
+    "actions": {
+      "regenerate": "Gerar nova",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "next": "Salvei, continuar"
+    },
+    "copy": {
+      "warning": "A área de transferência será limpa automaticamente em 60 segundos."
+    }
+  },
+  "confirm": {
+    "title": "Confirme sua frase de recuperação",
+    "body": "Digite as palavras solicitadas exatamente como mostradas anteriormente.",
+    "prompt": "Palavra nº {{n}}",
+    "error": "Não confere"
+  },
+  "importSeed": {
+    "title": "Importe sua frase de recuperação",
+    "body": "Digite 12 ou 24 palavras BIP-39 separadas por espaços.",
+    "label": "Frase de recuperação",
+    "helper": "Esperamos {{count}} palavras. Maiúsculas/minúsculas são ignoradas.",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "Endereço detectado",
+    "error": {
+      "wordCount": "Deve conter exatamente 12 ou 24 palavras.",
+      "notInDict": "Uma ou mais palavras não estão no dicionário BIP-39.",
+      "invalidChecksum": "O checksum é inválido — verifique as palavras novamente."
+    }
+  },
+  "importKey": {
+    "title": "Importar uma chave privada",
+    "body": "Cole uma family seed do XRPL (começa com sEd... ou s...).",
+    "label": "Chave privada",
+    "helper": "A chave permanece neste dispositivo.",
+    "derivedAddress": "Endereço detectado",
+    "error": {
+      "invalidFormat": "Não é uma family seed XRPL válida."
+    }
+  },
+  "setPassword": {
+    "title": "Proteja sua carteira",
+    "body": "Esta senha criptografa sua carteira neste dispositivo. Não podemos recuperá-la para você.",
+    "password": "Senha",
+    "confirm": "Confirmar senha",
+    "requirements": "Pelo menos 10 caracteres com maiúsculas e minúsculas, um dígito e um caractere especial.",
+    "securing": "Protegendo sua senha…",
+    "strength": {
+      "weak": "Fraca",
+      "fair": "Razoável",
+      "good": "Boa",
+      "strong": "Forte"
+    },
+    "error": {
+      "mismatch": "As senhas não coincidem."
+    },
+    "addMode": {
+      "title": "Adicionar conta",
+      "body": "Digite a senha da sua carteira para criptografar a nova conta.",
+      "password": "Senha da carteira",
+      "submit": "Adicionar conta"
+    }
+  },
+  "done": {
+    "title": "Tudo pronto",
+    "body": "Sua carteira está pronta para uso. Você pode bloqueá-la e desbloqueá-la a qualquer momento nas configurações.",
+    "cta": "Abrir carteira"
+  },
+  "ledger": {
+    "title": "Em breve",
+    "body": "O fluxo da carteira de hardware está sendo construído (sprint W8). Por enquanto, use uma das opções baseadas em seed."
+  },
+  "unlock": {
+    "title": "Bem-vindo de volta",
+    "tagline": "Entre na sua carteira da comunidade.",
+    "autoLockHint": "Bloqueado automaticamente para sua proteção.",
+    "body": "Digite sua senha para desbloquear a carteira.",
+    "password": "Senha",
+    "action": "Desbloquear",
+    "error": {
+      "wrongPassword": "Senha incorreta.",
+      "cooldown": "Muitas tentativas. Tente novamente em {{sec}} segundos."
+    },
+    "forgot": {
+      "link": "Esqueceu a senha? Resetar carteira…",
+      "modal": {
+        "title": "Resetar carteira?",
+        "body": "Isso apaga permanentemente a carteira criptografada neste dispositivo. Com sua frase de recuperação você pode importar novamente — sem ela, os fundos são irrecuperáveis.",
+        "confirmText": "APAGAR",
+        "typeToConfirm": "Digite {{word}} para confirmar",
+        "helper": "Maiúsculas/minúsculas são ignoradas. Esta ação não pode ser desfeita.",
+        "confirm": "Apagar carteira"
+      }
+    }
+  }
+}

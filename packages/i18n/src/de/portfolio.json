@@ -1,0 +1,43 @@
+{
+  "title": "Portfolio",
+  "subtitle": "Deine Bestände und der Markt auf einen Blick.",
+  "tabs": {
+    "my-assets": "Meine Assets",
+    "market": "Markt"
+  },
+  "total": {
+    "label": "Geschätzter Gesamtwert",
+    "change24h": {
+      "up": "+{{pct}}% 24h",
+      "down": "−{{pct}}% 24h"
+    }
+  },
+  "holdings": {
+    "columns": {
+      "asset": "Asset",
+      "price": "Preis",
+      "balance": "Guthaben",
+      "value": "Wert",
+      "change24h": "24h"
+    },
+    "empty": {
+      "title": "Noch keine Assets",
+      "body": "Empfange XRP oder ein anderes Asset, um dein Portfolio aufzubauen.",
+      "cta": "Erste Transaktion empfangen"
+    }
+  },
+  "market": {
+    "loading": "Marktdaten werden geladen…",
+    "error": {
+      "title": "Marktdaten nicht verfügbar",
+      "body": "CoinGecko ist nicht erreichbar. Versuche es gleich erneut."
+    },
+    "columns": {
+      "asset": "Asset",
+      "price": "Preis",
+      "change24h": "24h",
+      "marketCap": "Marktkapitalisierung",
+      "chart": "24h-Chart"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "back": "Indietro",
+    "continue": "Continua",
+    "finish": "Termina configurazione"
+  },
+  "steps": {
+    "label": "Passaggio {{current}} di {{total}}"
+  },
+  "welcome": {
+    "title": "Benvenuto nel tuo wallet",
+    "subtitle": "Come vuoi iniziare?",
+    "options": {
+      "create": {
+        "title": "Crea un nuovo wallet",
+        "body": "Genera una nuova frase di recupero. Consigliato per i nuovi utenti."
+      },
+      "importSeed": {
+        "title": "Importa una frase di recupero",
+        "body": "Ripristina un wallet usando le tue 12 o 24 parole BIP-39."
+      },
+      "importKey": {
+        "title": "Importa una chiave privata",
+        "body": "Incolla la tua family seed XRPL (inizia con sEd... o s...)."
+      },
+      "ledger": {
+        "title": "Connetti un dispositivo Ledger",
+        "body": "Firma le transazioni sul tuo hardware wallet. Disponibile in una versione futura."
+      }
+    }
+  },
+  "create": {
+    "title": "La tua frase di recupero",
+    "helper": "12 parole BIP-39 che controllano completamente questo wallet.",
+    "body": "Scrivi queste parole in ordine e tienile offline. Chiunque abbia queste parole può accedere ai tuoi fondi.",
+    "disclaimer": "Ti chiederemo di confermarne alcune nel passaggio successivo.",
+    "actions": {
+      "regenerate": "Genera nuova",
+      "copy": "Copia",
+      "copied": "Copiato",
+      "next": "L'ho salvata, continua"
+    },
+    "copy": {
+      "warning": "Gli appunti verranno cancellati automaticamente in 60 secondi."
+    }
+  },
+  "confirm": {
+    "title": "Conferma la tua frase di recupero",
+    "body": "Digita le parole richieste esattamente come mostrate prima.",
+    "prompt": "Parola #{{n}}",
+    "error": "Non corrisponde"
+  },
+  "importSeed": {
+    "title": "Importa la tua frase di recupero",
+    "body": "Inserisci 12 o 24 parole BIP-39 separate da spazi.",
+    "label": "Frase di recupero",
+    "helper": "Ci aspettiamo {{count}} parole. Il maiuscolo/minuscolo viene ignorato.",
+    "placeholder": "abandon abandon abandon ...",
+    "derivedAddress": "Indirizzo rilevato",
+    "error": {
+      "wordCount": "Deve contenere esattamente 12 o 24 parole.",
+      "notInDict": "Una o più parole non sono nel dizionario BIP-39.",
+      "invalidChecksum": "Il checksum non è valido — controlla nuovamente le parole."
+    }
+  },
+  "importKey": {
+    "title": "Importa una chiave privata",
+    "body": "Incolla una family seed XRPL (inizia con sEd... o s...).",
+    "label": "Chiave privata",
+    "helper": "La chiave rimane su questo dispositivo.",
+    "derivedAddress": "Indirizzo rilevato",
+    "error": {
+      "invalidFormat": "Non è una family seed XRPL valida."
+    }
+  },
+  "setPassword": {
+    "title": "Proteggi il tuo wallet",
+    "body": "Questa password cifra il tuo wallet su questo dispositivo. Non possiamo recuperarla per te.",
+    "password": "Password",
+    "confirm": "Conferma password",
+    "requirements": "Almeno 10 caratteri con maiuscole, minuscole, una cifra e un carattere speciale.",
+    "securing": "Protezione della password in corso…",
+    "strength": {
+      "weak": "Debole",
+      "fair": "Discreta",
+      "good": "Buona",
+      "strong": "Forte"
+    },
+    "error": {
+      "mismatch": "Le password non corrispondono."
+    },
+    "addMode": {
+      "title": "Aggiungi account",
+      "body": "Inserisci la password del wallet per cifrare il nuovo account.",
+      "password": "Password del wallet",
+      "submit": "Aggiungi account"
+    }
+  },
+  "done": {
+    "title": "Tutto pronto",
+    "body": "Il tuo wallet è pronto all'uso. Puoi bloccarlo e sbloccarlo in qualsiasi momento dalle impostazioni.",
+    "cta": "Apri wallet"
+  },
+  "ledger": {
+    "title": "Prossimamente",
+    "body": "Il flusso per hardware wallet è in fase di sviluppo (sprint W8). Per ora usa una delle opzioni basate sulla seed."
+  },
+  "unlock": {
+    "title": "Bentornato",
+    "tagline": "Accedi al tuo community wallet.",
+    "autoLockHint": "Bloccato automaticamente per la tua sicurezza.",
+    "body": "Inserisci la tua password per sbloccare il wallet.",
+    "password": "Password",
+    "action": "Sblocca",
+    "error": {
+      "wrongPassword": "Password errata.",
+      "cooldown": "Troppi tentativi. Riprova tra {{sec}} secondi."
+    },
+    "forgot": {
+      "link": "Password dimenticata? Resetta wallet…",
+      "modal": {
+        "title": "Resettare il wallet?",
+        "body": "Questo cancella permanentemente il wallet cifrato su questo dispositivo. Con la tua frase di recupero potrai re-importarlo — senza di essa, i fondi sono irrecuperabili.",
+        "confirmText": "WIPE",
+        "typeToConfirm": "Digita {{word}} per confermare",
+        "helper": "Il maiuscolo/minuscolo viene ignorato. Questa azione non può essere annullata.",
+        "confirm": "Cancella wallet"
+      }
+    }
+  }
+}
